@@ -4,7 +4,7 @@ require 'nokogiri'
 require 'open-uri'
 
 
-def request(url)
+def request_json_parse(url)
     body_dic={}
 
     client=HTTPClient.new()
@@ -30,5 +30,20 @@ def request(url)
 
     response_body=Nokogiri::HTML.parse(response,nil,charset)
     return response_body,status
+ end
+
+ def request(url,opt)
+
+    charset=nil
+    status=[]
+    response=open(url,opt) do |f|
+        charset=f.charset
+        status=f.status
+        f.read
+    end
+
+    #response_body=Nokogiri::HTML.parse(response,nil,charset)
+    #return response_body,status
+    return response,status
  end
  

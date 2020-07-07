@@ -25,7 +25,11 @@ class Youtubelive_analyze
     end
 
 
-    def chat_url_get(url=@video_url)
+    """
+    chat url get from iframe 
+    202077end
+    """
+    def chat_url_get_iframe_extraction(url=@video_url)
 
         next_url=""
         body_status=""
@@ -37,6 +41,7 @@ class Youtubelive_analyze
             iframe_count+=1
             first_respons, body_status=request_html_parse(url,opt)
             first_respons.search('iframe').each do |info|
+                puts info
                 if info["src"].include?("live_chat_replay") then
                     next_url=info["src"]
                 end
@@ -48,8 +53,33 @@ class Youtubelive_analyze
         return next_url,body_status
 
     end
-    
 
+
+    """
+    chat url get from htmljs
+    202077start
+    """
+    def chat_url_get_js_extraction(url=@video_url)
+        
+        opt={}
+        next_url_polymer=""
+        next_url=""
+
+        chat_respons,chat_status=request_html_parse(url,opt)
+        chat_respons.search('script').each do |script|
+            script=script.to_s
+            if script.include?("window[\"ytInitialData\"]") then
+                next_url_polymer=script.split("=",2)[1].split("\n",2)[0]
+                next_url_polymer=next_url_polymer.strip.chomp(";")
+                next_url_polymer=JSON.parse(next_url_polymer)
+            end
+        end
+
+        next_url=next_url_polymer["contents"]["twoColumnWatchNextResults"]["conversationBar"]["liveChatRenderer"]["continuations"][0]["reloadContinuationData"]["continuation"]
+        next_url=@CHAT_REQUEST_URL+next_url
+        return next_url,chat_status
+    end
+    
 
     def chat_scrape(log_path=@chatlog_filepath)
     
@@ -57,15 +87,14 @@ class Youtubelive_analyze
     chat_list=[]
     chat_count=0
     opt={'User-Agent' => @USER_AGENT}
-
-
-    next_url,chat_url_status=chat_url_get(@video_url)
+    next_url,status=chat_url_get_js_extraction(@video_url)
 
     File.open(log_path,"w") do |file|
+
         while true do
+
             begin
                 chat_respons,chat_status=request_html_parse(next_url,opt)
-
                 chat_respons.search('script').each do |script|
                     script=script.to_s
 
@@ -86,6 +115,7 @@ class Youtubelive_analyze
             rescue
                 break
             end
+
         end
     end
 
@@ -93,11 +123,11 @@ class Youtubelive_analyze
     return chat_list
     end
 
-    public :chat_scrape, :chat_url_get
+    public :chat_scrape, :chat_url_get_js_extraction
     private :videoid_get!, :videoinfo_get
 
 end
 
 #obj=Youtubelive_analyze.new(ARGV[0])
 #obj.chat_scrape
-#obj.videoinfo_get
+
