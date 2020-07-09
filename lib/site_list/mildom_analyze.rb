@@ -1,3 +1,4 @@
+require 'site_list/video_analyze'
 require 'requests/request'
 require 'progressbars/progressbar'
 
@@ -5,7 +6,7 @@ require 'progressbars/progressbar'
 """
 """
 
-class Mildom_analyze
+class Mildom_analyze<Video_analyze
     attr_reader :video_id, :videoinfo, :videoinfo_request_status
     def initialize(url)
         @VIDEOINFO_REQEST_URL="https://cloudac.mildom.com/nonolive/videocontent/playback/getPlaybackDetail?v_id="

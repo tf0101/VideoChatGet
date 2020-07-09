@@ -1,11 +1,15 @@
+require 'site_list/video_analyze'
 require 'requests/request'
 require 'progressbars/progressbar'
 require 'json'
 require 'nokogiri'
 
 
-class Youtubelive_analyze
+class Youtubelive_analyze<Video_analyze
+
     attr_reader :video_id
+
+
     def initialize(url)
         @CHAT_REQUEST_URL="https://www.youtube.com/live_chat_replay?continuation="
         @USER_AGENT='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36'
@@ -15,6 +19,7 @@ class Youtubelive_analyze
         @chatlog_filepath="./"+@video_id+".txt"
     end
     
+
     def videoid_get!(url)
         videoid=url.split("=")[1].split("&")[0]
         return videoid
@@ -51,7 +56,6 @@ class Youtubelive_analyze
 
         puts "iframe search finished!! iframe acquisition count  #{iframe_count} "
         return next_url,body_status
-
     end
 
 
@@ -123,7 +127,7 @@ class Youtubelive_analyze
     return chat_list
     end
 
-    public :chat_scrape, :chat_url_get_js_extraction
+    public :chat_scrape, :chat_url_get_iframe_extraction, :chat_url_get_js_extraction
     private :videoid_get!, :videoinfo_get
 
 end

@@ -1,3 +1,4 @@
+require 'site_list/video_analyze'
 require 'requests/request'
 require 'progressbars/progressbar'
 
@@ -31,10 +32,9 @@ Check if the request statuscode is 200
 
 videoinfo_request_status==200
 chatinfo_request_status==200
-
 """
 
-class Openrec_analyze
+class Openrec_analyze<Video_analyze
     attr_reader :video_id, :videoinfo, :videoinfo_request_status
     def initialize(url)
 
