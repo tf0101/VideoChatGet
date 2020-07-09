@@ -3,6 +3,7 @@ RSpec.describe Fuwatch_analyze do
     before(:all) do
         @video_url = "https://whowatch.tv/archives/12373483"
         @video_obj = Fuwatch_analyze.new(@video_url)
+        @chat_log_path="./spec/testdata_log/"+@video_obj.video_id+".txt"
     end
 
     describe 'video&chat info check' do
@@ -37,7 +38,7 @@ RSpec.describe Fuwatch_analyze do
             context 'chat_list is existence' do
 
                 before do
-                    @chat_list=@video_obj.chat_scrape
+                    @chat_list=@video_obj.chat_scrape(@chat_log_path)
                  end
 
                 it 'return Array chat_list' do 

@@ -3,6 +3,7 @@ RSpec.describe Mildom_analyze do
     before(:all) do
         @video_url = "https://www.mildom.com/playback/10558567?v_id=10558567-1593954251"
         @video_obj = Mildom_analyze.new(@video_url)
+        @chat_log_path="./spec/testdata_log/"+@video_obj.video_id+".txt"
     end
     
     describe 'videoinfo check' do
@@ -28,7 +29,7 @@ RSpec.describe Mildom_analyze do
             context 'chat_list is existence' do
 
                 before do
-                    @chat_list=@video_obj.chat_scrape
+                    @chat_list=@video_obj.chat_scrape(@chat_log_path)
                  end
 
                 it 'return Array chat_list' do 

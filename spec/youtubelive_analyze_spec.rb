@@ -3,6 +3,7 @@ RSpec.describe Youtubelive_analyze do
     before(:all) do
         @video_url = "https://www.youtube.com/watch?v=QepaEuJ9pvE"
         @video_obj = Youtubelive_analyze.new(@video_url)
+        @chat_log_path="./spec/testdata_log/"+@video_obj.video_id+".txt"
     end
 
     describe 'chat check' do
@@ -26,7 +27,7 @@ RSpec.describe Youtubelive_analyze do
         describe '#chat_scrape(chat_write_path)' do
             context 'chat_list is existence' do
                 before do
-                    @chat_list=@video_obj.chat_scrape
+                    @chat_list=@video_obj.chat_scrape(@chat_log_path)
                 end
 
                 it 'return Array chat_list' do
