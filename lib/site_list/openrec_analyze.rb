@@ -1,6 +1,7 @@
 require 'site_list/video_analyze'
 require 'requests/request'
 require 'progressbars/progressbar'
+require 'file_operats/file_operat_chatdata'
 
 
 """
@@ -35,7 +36,9 @@ chatinfo_request_status==200
 """
 
 class Openrec_analyze<Video_analyze
+
     attr_reader :video_id, :videoinfo, :videoinfo_request_status
+
     def initialize(url)
 
         @VIDEOINFO_REQEST_URL="https://public.openrec.tv/external/api/v5/movies/"
@@ -69,7 +72,7 @@ class Openrec_analyze<Video_analyze
     end
 
 
-    def chat_scrape(log_path=@chatlog_filepath)
+    def chat_scrape(log_flag=true,log_path=@chatlog_filepath)
 
         start_time=@videoinfo["started_at"]
         end_time=@videoinfo["ended_at"]
@@ -80,25 +83,20 @@ class Openrec_analyze<Video_analyze
         next_time=""
         head=0
         
-        File.open(log_path,"w") do |file|
-            while !(chat_body[head..-1].empty?) do
-                chat_body[head..-1].each do |chat|
-                    chat_list.push chat
-                    next_time=chat["posted_at"]
-                    chat=chat.to_s
-                    file.puts chat
-                end
-            
-                head=1
-                next_url=chat_nextpage_get(next_time)
-                chat_body,chat_status=request_json_parse(next_url)
-                progressbar(next_time,end_time)
+        while !(chat_body[head..-1].empty?) do
+            chat_body[head..-1].each do |chat|
+                chat_list.push chat
+                next_time=chat["posted_at"]
             end
+            
+            head=1
+            next_url=chat_nextpage_get(next_time)
+            chat_body,chat_status=request_json_parse(next_url)
+            progressbar(next_time,end_time)
         end
 
-        puts "Scraping finished!! last chat time is #{next_time} , chat log is (#{log_path}) "
+        file_write(chat_list,log_flag,log_path)
         return chat_list
-
     end
 
     public :chat_scrape

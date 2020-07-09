@@ -1,6 +1,7 @@
 require 'site_list/video_analyze'
 require 'requests/request'
 require 'progressbars/progressbar'
+require 'file_operats/file_operat_chatdata'
 
 
 
@@ -8,7 +9,9 @@ require 'progressbars/progressbar'
 """
 
 class Fuwatch_analyze<Video_analyze
+
     attr_reader :video_id, :videoinfo, :chat_body, :videoandchat_info_request_status
+
     def initialize(url)
         @VIDEOINFO_REQEST_URL="https://api.whowatch.tv/lives/"
         
@@ -33,25 +36,20 @@ class Fuwatch_analyze<Video_analyze
     end
 
 
-    def chat_scrape(log_path=@chatlog_filepath)
+    def chat_scrape(log_flag=true,log_path=@chatlog_filepath)
         
         comment_count=@videoinfo["live"]["comment_count"]
         chat_list=[]
         count=0
         
-        File.open(log_path,"w") do |file|
-            @chat_body[0..-1].each do |chat|
-                chat_list.push chat
-                chat=chat.to_s
-                file.puts chat
-                count+=1
-                progressbar(count,comment_count)
-            end
+        @chat_body[0..-1].each do |chat|
+            chat_list.push chat
+            count+=1
+            progressbar(count,comment_count)
         end
         
-        puts "Scraping finished!! comment_count is #{count} , chat log is (#{log_path}) "
+        file_write(chat_list,log_flag,log_path)
         return chat_list
-
      end
 
     public :chat_scrape
@@ -60,8 +58,4 @@ class Fuwatch_analyze<Video_analyze
 end
 
 #obj=Fuwatch_analyze.new(ARGV[0])
-#obj.chat_scrape
-#list=obj.chat_scrape
-#puts list[0]
-#puts list[0].class
-#puts list.size()
+#obj.chat_scrape(false)

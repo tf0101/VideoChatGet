@@ -30,7 +30,7 @@ RSpec.describe Openrec_analyze do
             context 'chat_list is existence' do
 
                 before do
-                    @chat_list=@video_obj.chat_scrape(@chat_log_path)
+                    @chat_list=@video_obj.chat_scrape(true,@chat_log_path)
                  end
 
                 it 'return Array chat_list' do 

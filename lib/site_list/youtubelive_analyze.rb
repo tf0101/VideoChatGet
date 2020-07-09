@@ -1,6 +1,7 @@
 require 'site_list/video_analyze'
 require 'requests/request'
 require 'progressbars/progressbar'
+require 'file_operats/file_operat_chatdata'
 require 'json'
 require 'nokogiri'
 
@@ -8,7 +9,6 @@ require 'nokogiri'
 class Youtubelive_analyze<Video_analyze
 
     attr_reader :video_id
-
 
     def initialize(url)
         @CHAT_REQUEST_URL="https://www.youtube.com/live_chat_replay?continuation="
@@ -85,7 +85,7 @@ class Youtubelive_analyze<Video_analyze
     end
     
 
-    def chat_scrape(log_path=@chatlog_filepath)
+    def chat_scrape(log_flag=true,log_path=@chatlog_filepath)
     
     chat_body={}
     chat_list=[]
@@ -93,37 +93,33 @@ class Youtubelive_analyze<Video_analyze
     opt={'User-Agent' => @USER_AGENT}
     next_url,status=chat_url_get_js_extraction(@video_url)
 
-    File.open(log_path,"w") do |file|
+    while true do
 
-        while true do
+        begin
+            chat_respons,chat_status=request_html_parse(next_url,opt)
 
-            begin
-                chat_respons,chat_status=request_html_parse(next_url,opt)
-                chat_respons.search('script').each do |script|
-                    script=script.to_s
+            chat_respons.search('script').each do |script|
+                script=script.to_s
 
-                    if script.include?("window[\"ytInitialData\"]") then
-                        chat_body=script.split("=",2)[1].chomp("</script>").strip.chomp(";")
-                        chat_body=JSON.parse(chat_body)
-                        continue_url = chat_body["continuationContents"]["liveChatContinuation"]["continuations"][0]["liveChatReplayContinuationData"]["continuation"]
-                        next_url=@CHAT_REQUEST_URL+continue_url
+                if script.include?("window[\"ytInitialData\"]") then
+                    chat_body=script.split("=",2)[1].chomp("</script>").strip.chomp(";")
+                    chat_body=JSON.parse(chat_body)
+                    continue_url = chat_body["continuationContents"]["liveChatContinuation"]["continuations"][0]["liveChatReplayContinuationData"]["continuation"]
+                    next_url=@CHAT_REQUEST_URL+continue_url
 
-                        chat_body["continuationContents"]["liveChatContinuation"]["actions"][1..-1].each do |chat|
-                            chat_count+=1
-                            chat_list.push chat
-                            file.puts chat
+                    chat_body["continuationContents"]["liveChatContinuation"]["actions"][1..-1].each do |chat|
+                        chat_count+=1
+                        chat_list.push chat
                         end
-                        progressbar(chat_count,"chat_count_inf")
-                    end
+                    progressbar(chat_count,"chat_count_inf")
                 end
-            rescue
-                break
             end
-
+        rescue
+            break
         end
     end
 
-    puts "Scraping finished!! chat count is #{chat_count} , chat log is (#{log_path}) "
+    file_write(chat_list,log_flag,log_path)
     return chat_list
     end
 
