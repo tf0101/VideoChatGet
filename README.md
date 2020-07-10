@@ -28,6 +28,8 @@ use CLI:
 
 ### In code
 ```ruby
+require 'video_chat_get'
+
 obj=Youtubelive_analyze.new(videourl)
 chat_list=obj.chat_scrape
 ```
