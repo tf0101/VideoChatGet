@@ -26,6 +26,17 @@ use CLI:
 
     $ videochatget videourl
 
+### Supported sites
+
+|:---|:---:|
+|mildom |◯ |
+|niconico | |
+|openrec |◯ |
+|twitcast | |
+|twitch | |
+|whowatch |◯ |
+|youtubelive |◯ |
+
 
 ## Development
 
