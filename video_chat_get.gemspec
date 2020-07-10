@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["tf0101"]
   spec.email         = ["tf0101sh@gmail.com"]
 
-  spec.summary       = %q{gem VideoChatGet}
-  spec.description   = %q{test description}
+  spec.summary       = %q{videochat scraping package}
+  spec.description   = %q{videochat scraping}
   spec.homepage      = "https://github.com/tf0101/VideoChatGet"
   spec.license       = "MIT"
 

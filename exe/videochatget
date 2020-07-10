@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'video_chat_get'
+
+puts VideoChatGet.url_route(ARGV[0])

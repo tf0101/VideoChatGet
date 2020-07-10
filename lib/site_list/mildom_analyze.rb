@@ -58,7 +58,7 @@ class Mildom_analyze<Video_analyze
             chat_body,chat_status=request_json_parse(next_url)
             progressbar(next_time,time_length)
         end
-        
+
         file_write(chat_list,log_flag,log_path)
         return chat_list
     end
@@ -67,12 +67,5 @@ class Mildom_analyze<Video_analyze
     private :videoid_get!, :chat_nextpage_get
 
 end
-
-#obj=Mildom_analyze.new(ARGV[0])
-#list=obj.chat_scrape
-#puts list[0]
-#puts list[0].class
-#puts list.size()
-
 
 

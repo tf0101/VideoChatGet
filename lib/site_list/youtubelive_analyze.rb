@@ -127,7 +127,3 @@ class Youtubelive_analyze<Video_analyze
     private :videoid_get!, :videoinfo_get
 
 end
-
-#obj=Youtubelive_analyze.new(ARGV[0])
-#obj.chat_scrape
-

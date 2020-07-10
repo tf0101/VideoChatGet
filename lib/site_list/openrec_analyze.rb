@@ -103,11 +103,3 @@ class Openrec_analyze<Video_analyze
     private :videoid_get!, :chat_nextpage_get
 
 end
-
-
-#obj=Openrec_analyze.new(ARGV[0])
-#list=obj.chat_scrape
-#puts list[0]
-#puts list[0].class
-#puts list.size()
-

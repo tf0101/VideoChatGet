@@ -49,9 +49,7 @@ module VideoChatGet
         puts "urlerr"
     end
 
-    puts "end"
+    "end"
   end
 
 end
-
-print(VideoChatGet.url_route(ARGV[0]))
