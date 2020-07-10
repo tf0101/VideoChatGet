@@ -8,7 +8,7 @@ require 'file_operats/file_operat_chatdata'
 """
 """
 
-class Fuwatch_analyze<Video_analyze
+class Whowatch_analyze<Video_analyze
 
     attr_reader :video_id, :videoinfo, :chat_body, :videoandchat_info_request_status
 
@@ -56,6 +56,3 @@ class Fuwatch_analyze<Video_analyze
     private :videoid_get!, :videoinfo_get!
 
 end
-
-#obj=Fuwatch_analyze.new(ARGV[0])
-#obj.chat_scrape(false)

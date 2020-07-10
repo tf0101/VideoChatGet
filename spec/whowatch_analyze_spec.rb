@@ -1,8 +1,8 @@
-RSpec.describe Fuwatch_analyze do
+RSpec.describe Whowatch_analyze do
 
     before(:all) do
         @video_url = "https://whowatch.tv/archives/12373483"
-        @video_obj = Fuwatch_analyze.new(@video_url)
+        @video_obj = Whowatch_analyze.new(@video_url)
         @chat_log_path="./spec/testdata_log/"+@video_obj.video_id+".txt"
     end
 

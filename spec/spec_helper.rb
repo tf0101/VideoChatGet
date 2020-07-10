@@ -3,7 +3,7 @@ require "video_chat_get"
 require "site_list/video_analyze"
 require "site_list/openrec_analyze"
 require "site_list/mildom_analyze"
-require "site_list/fuwatch_analyze"
+require "site_list/whowatch_analyze"
 require "site_list/youtubelive_analyze"
 
 RSpec.configure do |config|
