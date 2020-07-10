@@ -27,7 +27,7 @@ use CLI:
     $ videochatget videourl
 
 ### Supported sites
-
+|sitename |status |
 |:---|:---:|
 |mildom |◯ |
 |niconico | |
