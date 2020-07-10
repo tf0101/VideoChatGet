@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    video_chat_get (0.1.0)
+    video_chat_get (0.1.1)
 
 GEM
   remote: https://rubygems.org/
