@@ -26,8 +26,14 @@ use CLI:
 
     $ videochatget videourl
 
-### Supported sites
-|sitename |status |
+### In code
+```ruby
+obj=Youtubelive_analyze.new(videourl)
+chat_list=obj.chat_scrape
+```
+
+### Support sites
+|site_name |status |
 |:---|:---:|
 |mildom |◯ |
 |niconico | |
