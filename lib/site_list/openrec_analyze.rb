@@ -3,36 +3,7 @@ require 'requests/request'
 require 'progressbars/progressbar'
 require 'file_operats/file_operat_chatdata'
 
-
 """
-Openrec_analyze
-
-・Explanation
-get chat data from openrec
-
-・use
-obj=Openrec_analyze.new(url)
-obj.chat_scrape
-
-・instance variable
-video_id（String）:video identifier
-videoinfo（Hash）:Video information
-videoinfo_request_status(Integer):Videoinformation request statuscode
-
-・method
-private method:
-videoid_get!(url)
-chat_nextpage_get(time_key)
-
-public method:
-chat_scrape()
-chatinfo_request_status()
-
-・test
-Check if the request statuscode is 200
-
-videoinfo_request_status==200
-chatinfo_request_status==200
 """
 
 class Openrec_analyze<Video_analyze
