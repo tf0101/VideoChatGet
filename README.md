@@ -71,23 +71,23 @@ chat_list=obj.chat_scrape()
 ### instance variable
 @videoinfo
 
-Returns: hash
-         We can acquire broadcast frame information.
+Returns: hash  
+         We can acquire broadcast frame information.  
 
-###　instance method
-#chat_scrape(log_flag=true,log_path="./videoid.txt")
-
-Parameters: log_flag:Boolean (default=true)
-            Whether to write chat list to file, write when true.
+###　instance method  
+#chat_scrape(log_flag=true,log_path="./videoid.txt")  
+  
+Parameters: log_flag:Boolean (default=true)  
+            Whether to write chat list to file, write when true.  
              
-            log_path:string (default="./videoid.txt")
-            File path to write chat list.
+            log_path:string (default="./videoid.txt")  
+            File path to write chat list.  
 
-Returns:    chat_list:Array
-            Chat data list. Chat information is stored as dictionary data, and this dictionary data exists for the number of chats.
+Returns:    chat_list:Array  
+            Chat data list. Chat information is stored as dictionary data, and this dictionary data exists for the number of chats.  
+  
+            chat_list=[hash,hash,...]  
 
-            chat_list=[hash,hash,...]
-            
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/tf0101/VideoChatGet. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
