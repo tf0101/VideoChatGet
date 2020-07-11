@@ -72,21 +72,21 @@ chat_list=obj.chat_scrape()
 @videoinfo
 
 ・Returns: hash  
-<pre>    </pre>We can acquire broadcast frame information.  
+We can acquire broadcast frame information.  
 
 ### instance method  
 #chat_scrape(log_flag=true,log_path="./videoid.txt")  
   
 ・Parameters: log_flag:Boolean (default=true)  
-<pre>     </pre>Whether to write chat list to file, write when true.
+Whether to write chat list to file, write when true.
               <br>
-<pre>     </pre>log_path:string (default="./videoid.txt")  
-<pre>     </pre>File path to write chat list.  
+log_path:string (default="./videoid.txt")  
+File path to write chat list.  
 
 ・Returns:    chat_list:Array  
-<pre>     </pre>Chat data list. Chat information is stored as dictionary data, and this dictionary data exists for the number of chats.  
+Chat data list. Chat information is stored as dictionary data, and this dictionary data exists for the number of chats.  
               <br>
-<pre>     </pre>chat_list=[hash,hash,...]
+chat_list=[hash,hash,...]
 
 ## Contributing
 
