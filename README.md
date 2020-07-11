@@ -77,16 +77,16 @@ chat_list=obj.chat_scrape()
 ### instance method  
 #chat_scrape(log_flag=true,log_path="./videoid.txt")  
   
-・Parameters: 
-&emsp;&emsp;&emsp;log_flag:Boolean (default=true)  
-&emsp;&emsp;&emsp;Whether to write chat list to file, write when true.
+Parameters:  
+&emsp;&emsp;&emsp;・log_flag:Boolean (default=true)  
+&emsp;&emsp;&emsp;　Whether to write chat list to file, write when true.
               <br>
-&emsp;&emsp;&emsp;log_path:string (default="./videoid.txt")  
-&emsp;&emsp;&emsp;File path to write chat list.  
+&emsp;&emsp;&emsp;・log_path:string (default="./videoid.txt")  
+&emsp;&emsp;&emsp;　File path to write chat list.  
 
-・Returns:    chat_list:Array  
+Returns:  
+&emsp;&emsp;&emsp;・chat_list:Array  
 &emsp;&emsp;&emsp;Chat data list. Chat information is stored as dictionary data, and this dictionary data exists for the number of chats.  
-              <br>
 &emsp;&emsp;&emsp;chat_list=[hash,hash,...]
 
 ## Contributing
