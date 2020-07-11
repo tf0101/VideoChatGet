@@ -1,8 +1,18 @@
 # VideoChatGet
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/video_chat_get`. To experiment with that code, run `bin/console` for an interactive prompt.
+This is a ruby ​​package that gets a list of chats from the broadcasts of video distribution sites.
 
-TODO: Delete this and the text above, and describe your gem
+## Support sites
+|site_name |status |
+|:---|:---:|
+|mildom |◯ |
+|niconico | |
+|openrec |◯ |
+|twitcast | |
+|twitch | |
+|whowatch |◯ |
+|youtubelive |◯ |
+
 
 ## Installation
 
@@ -30,27 +40,55 @@ use CLI:
 ```ruby
 require 'video_chat_get'
 
-obj=Youtubelive_analyze.new(videourl)
+#mildom
+obj=Mildom_analyze.new(url)
 chat_list=obj.chat_scrape
+
+#openrec
+obj=Openrec_analyze.new(url)
+chat_list=obj.chat_scrape
+
+#whowatch
+obj=Whowatch_analyze.new(url)
+chat_list=obj.chat_scrape
+
+#youtubelive
+obj=Youtubelive_analyze.new(url)
+chat_list=obj.chat_scrape
+
 ```
 
-## Support sites
-|site_name |status |
-|:---|:---:|
-|mildom |◯ |
-|niconico | |
-|openrec |◯ |
-|twitcast | |
-|twitch | |
-|whowatch |◯ |
-|youtubelive |◯ |
+## Document
+Basically use instance method
+
+↓　Example of use
+```ruby
+obj=Mildom_analyze.new(url)
+video_info=obj.videoinfo
+chat_list=obj.chat_scrape()
+```
+
+###  instance variable
+@videoinfo
+
+Returns: hash
+         We can acquire broadcast frame information.
 
 
-## Development
+###　instance method
+#chat_scrape(log_flag=true,log_path="./videoid.txt")
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+Parameters: log_flag:Boolean (default=true)
+            Whether to write chat list to file, write when true.
+             
+            log_path:string (default="./videoid.txt")
+            File path to write chat list.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Returns:    chat_list:Array
+            Chat data list. Chat information is stored as dictionary data, and this dictionary data exists for the number of chats.
+
+            chat_list=[hash,hash,...]
+　　　　　　　　
 
 ## Contributing
 
