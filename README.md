@@ -86,7 +86,7 @@ Parameters:
 
 Returns:  
 &emsp;&emsp;&emsp;・chat_list:Array  
-&emsp;&emsp;&emsp;　Chat data list. Chat information is stored as dictionary data,
+&emsp;&emsp;&emsp;　Chat data list. Chat information is stored as dictionary data,  
 &emsp;&emsp;&emsp;　and this dictionary data exists for the number of chats.  
 
 &emsp;&emsp;&emsp;chat_list=[hash,hash,...]
