@@ -8,7 +8,7 @@ require 'nokogiri'
 
 class Youtubelive_analyze<Video_analyze
 
-    attr_reader :video_id
+    attr_reader :video_id, :videoinfo, :videoinfo_request_status
 
     def initialize(url)
         @CHAT_REQUEST_URL="https://www.youtube.com/live_chat_replay?continuation="
@@ -16,61 +16,26 @@ class Youtubelive_analyze<Video_analyze
 
         @video_url=url
         @video_id=videoid_get!(@video_url)
+        @videoinfo_polymer,@videoinfo_request_status=videoinfo_get(@video_url)
+        @videoinfo=videoinfo_extraction()
         @chatlog_filepath="./"+@video_id+".txt"
     end
     
 
-    def videoid_get!(url)
+    def videoid_get!(url=@video_url)
         videoid=url.split("=")[1].split("&")[0]
         return videoid
     end
 
-    
-    def videoinfo_get()
-    end
 
-
-    """
-    chat url get from iframe 
-    202077end
-    """
-    def chat_url_get_iframe_extraction(url=@video_url)
-
-        next_url=""
-        body_status=""
-        iframe_count=0
-        opt={}
-
-        while next_url.empty?
-            sleep(1)
-            iframe_count+=1
-            first_respons, body_status=request_html_parse(url,opt)
-            first_respons.search('iframe').each do |info|
-                puts info
-                if info["src"].include?("live_chat_replay") then
-                    next_url=info["src"]
-                end
-            end
-            progressbar(iframe_count,"iframe_count_inf")
-        end
-
-        puts "iframe search finished!! iframe acquisition count  #{iframe_count} "
-        return next_url,body_status
-    end
-
-
-    """
-    chat url get from htmljs
-    202077start
-    """
-    def chat_url_get_js_extraction(url=@video_url)
+    def videoinfo_get(url=@video_url)
         
         opt={}
         next_url_polymer=""
         next_url=""
 
-        chat_respons,chat_status=request_html_parse(url,opt)
-        chat_respons.search('script').each do |script|
+        videoinfo_respons,videoinfo_status=request_html_parse(url,opt)
+        videoinfo_respons.search('script').each do |script|
             script=script.to_s
             if script.include?("window[\"ytInitialData\"]") then
                 next_url_polymer=script.split("=",2)[1].split("\n",2)[0]
@@ -78,12 +43,26 @@ class Youtubelive_analyze<Video_analyze
                 next_url_polymer=JSON.parse(next_url_polymer)
             end
         end
-
-        next_url=next_url_polymer["contents"]["twoColumnWatchNextResults"]["conversationBar"]["liveChatRenderer"]["continuations"][0]["reloadContinuationData"]["continuation"]
-        next_url=@CHAT_REQUEST_URL+next_url
-        return next_url,chat_status
+        
+        return next_url_polymer,videoinfo_status
     end
     
+
+
+    def videoinfo_extraction()
+        videoinfo={}
+        common_hash=@videoinfo_polymer["contents"]["twoColumnWatchNextResults"]["results"]["results"]["contents"]
+
+        videoinfo["ch"]=common_hash[1]["videoSecondaryInfoRenderer"]["owner"]["videoOwnerRenderer"]["title"]["runs"][0]["text"]
+        videoinfo["title"]=common_hash[0]["videoPrimaryInfoRenderer"]["title"]["runs"][0]["text"]
+        videoinfo["starttime"]=common_hash[0]["videoPrimaryInfoRenderer"]["dateText"]["simpleText"]
+        videoinfo["videocount"]=common_hash[0]["videoPrimaryInfoRenderer"]["viewCount"]["videoViewCountRenderer"]["viewCount"]["simpleText"]
+        videoinfo["good"]=common_hash[0]["videoPrimaryInfoRenderer"]["videoActions"]["menuRenderer"]["topLevelButtons"][0]["toggleButtonRenderer"]["defaultText"]["simpleText"]
+        videoinfo["bad"]=common_hash[0]["videoPrimaryInfoRenderer"]["videoActions"]["menuRenderer"]["topLevelButtons"][1]["toggleButtonRenderer"]["defaultText"]["simpleText"]
+        
+        return videoinfo
+    end
+
 
     def chat_scrape(log_flag=true,log_path=@chatlog_filepath)
     
@@ -91,7 +70,8 @@ class Youtubelive_analyze<Video_analyze
     chat_list=[]
     chat_count=0
     opt={'User-Agent' => @USER_AGENT}
-    next_url,status=chat_url_get_js_extraction(@video_url)
+    next_url=@videoinfo_polymer["contents"]["twoColumnWatchNextResults"]["conversationBar"]["liveChatRenderer"]["continuations"][0]["reloadContinuationData"]["continuation"]
+    next_url=@CHAT_REQUEST_URL+next_url
 
     while true do
 
@@ -123,7 +103,8 @@ class Youtubelive_analyze<Video_analyze
     return chat_list
     end
 
-    public :chat_scrape, :chat_url_get_iframe_extraction, :chat_url_get_js_extraction
-    private :videoid_get!, :videoinfo_get
+
+    public :chat_scrape
+    private :videoid_get!, :videoinfo_get, :videoinfo_extraction
 
 end
