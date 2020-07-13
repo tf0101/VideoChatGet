@@ -6,24 +6,68 @@ RSpec.describe Youtubelive_analyze do
         @chat_log_path="./spec/testdata_log/"+@video_obj.video_id+".txt"
     end
 
-    describe 'chat check' do
-        describe '#chat_url_get_js_extraction(video_url)' do
-            context 'chat_url is existence' do
+    describe 'videoinfo check' do
 
-                before(:all) do
-                    @chat_url,@status=@video_obj.chat_url_get_js_extraction
-                end
+        before(:all) do
+            @videoinfo=@video_obj.videoinfo
+            @videoinfo_request_status=@video_obj.videoinfo_request_status
+        end
+
+        describe '@videoinfo_request_status' do
+            context 'videoinfo_request_status is existence' do
 
                 it 'return Array ["200","OK"]' do
-                    expect(@status[0]).to eq "200"
-                end
-
-                it 'return string chat_url' do
-                    expect(!(@chat_url.empty?)).to eq true
+                    expect(@videoinfo_request_status[0]).to eq "200"
                 end
             end
         end
 
+        describe '@videoinfo' do
+            context 'videoinfo is existence' do
+
+                context 'ch_name is existence' do
+                    it 'return string ch_name' do
+                        expect(!(@videoinfo["ch"].empty?)).to eq true
+                    end
+                end
+
+                context 'title is existence' do
+                    it 'return string title' do
+                        expect(!(@videoinfo["title"].empty?)).to eq true
+                    end
+                end
+                
+                context 'starttime is existence' do
+                    it 'return string starttime' do
+                        expect(!(@videoinfo["starttime"].empty?)).to eq true
+                    end
+                end
+
+                context 'videocount is existence' do
+                    it 'return string videocount' do
+                        expect(!(@videoinfo["videocount"].empty?)).to eq true
+                    end
+                end
+
+                context 'good is existence' do
+                    it 'return string good' do
+                        expect(!(@videoinfo["good"].empty?)).to eq true
+                    end
+                end
+
+                context 'bad is existence' do
+                    it 'return string bad' do
+                        expect(!(@videoinfo["bad"].empty?)).to eq true
+                    end
+                end
+
+            end
+        end
+
+    end
+
+
+    describe 'chat check' do
         describe '#chat_scrape(chat_write_path)' do
             context 'chat_list is existence' do
                 before do
@@ -35,7 +79,7 @@ RSpec.describe Youtubelive_analyze do
                 end
             end
         end
-
     end
+
 
 end
