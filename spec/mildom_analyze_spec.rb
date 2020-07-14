@@ -8,9 +8,9 @@ RSpec.describe Mildom_analyze do
     
     describe 'videoinfo check' do
         describe '@videoinfo' do
-            context 'videoinfo existence == video time length is existence' do
-                it 'return string videotimelength' do
-                    expect(@video_obj.videoinfo["body"]["playback"]["video_length"].integer?).to eq true
+            context 'videoinfo existence' do
+                it 'return hash videoinfo' do
+                    expect(!(@video_obj.videoinfo.empty?)).to eq true
                 end
              end
         end

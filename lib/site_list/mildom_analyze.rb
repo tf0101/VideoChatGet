@@ -67,5 +67,3 @@ class Mildom_analyze<Video_analyze
     private :videoid_get!, :chat_nextpage_get
 
 end
-
-

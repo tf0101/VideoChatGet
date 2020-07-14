@@ -25,6 +25,10 @@ RSpec.describe Youtubelive_analyze do
         describe '@videoinfo' do
             context 'videoinfo is existence' do
 
+                it 'return hash videoinfo' do
+                    expect(!(@videoinfo.empty?)).to eq true
+                end
+
                 context 'ch_name is existence' do
                     it 'return string ch_name' do
                         expect(!(@videoinfo["ch"].empty?)).to eq true

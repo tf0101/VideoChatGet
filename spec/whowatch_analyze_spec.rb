@@ -7,9 +7,10 @@ RSpec.describe Whowatch_analyze do
     end
 
     describe 'video&chat info check' do
+
         describe '@videoinfo' do
             context 'videoinfo is existence ' do
-                it 'return Hash videoinfo' do
+                it 'return hash videoinfo' do
                     expect(!(@video_obj.videoinfo.empty?)).to eq true
                 end
              end
@@ -17,7 +18,7 @@ RSpec.describe Whowatch_analyze do
 
         describe '@chat_body' do
             context 'chat_body is existence' do
-                it 'return Hash chat_body' do
+                it 'return hash chat_body' do
                     expect(!(@video_obj.chat_body.empty?)).to eq true
                 end
              end

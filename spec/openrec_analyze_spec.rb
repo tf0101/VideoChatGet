@@ -7,10 +7,11 @@ RSpec.describe Openrec_analyze do
     end
 
     describe 'videoinfo check' do
+
         describe '@videoinfo' do
-            context 'videoinfo existence == chat page first key is existence' do
-                it 'return string chatpage_firstkey' do
-                    expect(!(@video_obj.videoinfo["started_at"].empty?)).to eq true
+            context 'videoinfo existence' do
+                it 'return hash videoinfo' do
+                    expect(!(@video_obj.videoinfo.empty?)).to eq true
                 end
              end
         end
