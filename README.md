@@ -42,18 +42,22 @@ require 'video_chat_get'
 
 #mildom
 obj=Mildom_analyze.new(url)
+video_info=obj.videoinfo
 chat_list=obj.chat_scrape
 
 #openrec
 obj=Openrec_analyze.new(url)
+video_info=obj.videoinfo
 chat_list=obj.chat_scrape
 
 #whowatch
 obj=Whowatch_analyze.new(url)
+video_info=obj.videoinfo
 chat_list=obj.chat_scrape
 
 #youtubelive
 obj=Youtubelive_analyze.new(url)
+video_info=obj.videoinfo
 chat_list=obj.chat_scrape
 
 ```
@@ -63,9 +67,9 @@ Basically use instance method
 
 ↓　Example of use
 ```ruby
-obj=Mildom_analyze.new(url)
+obj=Youtubelive_analyze.new(url)
 video_info=obj.videoinfo
-chat_list=obj.chat_scrape()
+chat_list=obj.chat_scrape
 ```
 
 ### instance variable
