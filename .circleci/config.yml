@@ -23,20 +23,23 @@ jobs:
           key: gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
           paths:
             - ./vendor/bundle
-      
-      - persist_to_workspace:
-          root: .
-          paths:
-            - .
 
   test:
     executor: my-executor
     steps: 
-      - attach_workspace: 
-          at: .
-      - run: 
-         name: bundle exec rake spec
-         command: bundle exec rake spec
+       - checkout
+       
+       - restore_cache:
+          name: cache lord
+          key: gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+
+       - run: 
+          name: bundle install  
+          command: bundle check --path=vendor/bundle || bundle install --path vendor/bundle --clean --jobs 4 --retry 3
+
+       - run: 
+          name: bundle exec rake spec
+          command: bundle exec rake spec
 
 workflows:
   version: 2
