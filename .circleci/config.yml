@@ -32,13 +32,14 @@ jobs:
   test:
     executor: my-executor
     steps: 
+       - checkout 
 
        - attach_workspace: 
           at: .
 
        - run: 
-          name: rake spec
-          command: rake spec
+          name: bundle exec rake spec
+          command: bundle exec rake spec
 
 workflows:
   version: 2
