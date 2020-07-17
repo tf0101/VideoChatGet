@@ -24,22 +24,21 @@ jobs:
           paths:
             - ./vendor/bundle
 
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+
   test:
     executor: my-executor
     steps: 
-       - checkout
-       
-       - restore_cache:
-          name: cache lord
-          key: gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+
+       - attach_workspace: 
+          at: .
 
        - run: 
-          name: bundle install  
-          command: bundle check --path=vendor/bundle || bundle install --path vendor/bundle --clean --jobs 4 --retry 3
-
-       - run: 
-          name: bundle exec rake spec
-          command: bundle exec rake spec
+          name: bundle exec rspec
+          command: bundle exec rspec
 
 workflows:
   version: 2
