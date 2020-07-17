@@ -1,0 +1,52 @@
+version: 2.1
+executors:
+   my-executor:
+    docker:
+      - image: circleci/ruby:2.5.8-node-browsers
+
+jobs:
+  build:
+    branches:
+      onry: master
+    executor: my-executor
+    steps: 
+      - checkout 
+
+      - restore_cache:
+          name: cache lord
+          key: gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+
+      - run: 
+         name: bundle install  
+         command: bundle check --path=vendor/bundle || bundle install --path vendor/bundle --clean --jobs 4 --retry 3
+
+      - save_cache:
+          name: save cache
+          key: gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+          paths:
+            - ./vendor/bundle
+
+  test:
+    branches:
+      onry: master
+    executor: my-executor
+    steps: 
+      - checkout
+
+      - run: 
+         name: bundle exec rake spec
+         command: bundle exec rake spec
+  
+
+workflow:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - test:
+        requires:
+           - build
+
+
+
+
