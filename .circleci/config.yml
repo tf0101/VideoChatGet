@@ -24,14 +24,14 @@ jobs:
           paths:
             - ./vendor/bundle
 
-      - run: 
-         name: bundle exec rake spec
-         command: bundle exec rake spec
-
   test:
     executor: my-executor
     steps: 
       - checkout
+
+      - restore_cache:
+          name: cache lord
+          key: gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
 
       - run: 
          name: bundle exec rake spec
