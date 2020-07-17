@@ -33,6 +33,7 @@ jobs:
   
 
 workflow:
+  version: 2
   setup-test:
     jobs:
       - setup:
