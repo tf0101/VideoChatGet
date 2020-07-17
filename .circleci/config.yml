@@ -37,6 +37,7 @@ jobs:
 workflow:
   version: 2
   build_and_test:
+
     jobs:
       - build:
          filters:
@@ -47,3 +48,7 @@ workflow:
       - test:
         requires:
            - build
+        filters:
+            branches:
+              only:
+                - master
