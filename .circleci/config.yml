@@ -6,8 +6,6 @@ executors:
 
 jobs:
   build:
-    branches:
-      onry: master
     executor: my-executor
     steps: 
       - checkout 
@@ -27,8 +25,6 @@ jobs:
             - ./vendor/bundle
 
   test:
-    branches:
-      onry: master
     executor: my-executor
     steps: 
       - checkout
@@ -42,8 +38,12 @@ workflow:
   version: 2
   build_and_test:
     jobs:
-      - build
+      - build:
+         filters:
+            branches:
+              only:
+                - master
+
       - test:
         requires:
            - build
-
