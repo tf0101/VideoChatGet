@@ -23,7 +23,6 @@ jobs:
           key: gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
           paths:
             - ./vendor/bundle
-
   test:
     executor: my-executor
     steps: 
@@ -34,7 +33,6 @@ jobs:
   
 
 workflow:
-  version: 2
   build-test:
     jobs:
       - build:
