@@ -18,7 +18,6 @@ jobs:
          name: bundle install  
          command: bundle check --path=vendor/bundle || bundle install --path vendor/bundle --clean --jobs 4 --retry 3
 
-
       - save_cache:
           name: save cache
           key: gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
