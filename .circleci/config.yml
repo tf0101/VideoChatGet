@@ -37,8 +37,8 @@ jobs:
           at: .
 
        - run: 
-          name: bundle exec rspec
-          command: bundle exec rspec
+          name: rake spec
+          command: rake spec
 
 workflows:
   version: 2
