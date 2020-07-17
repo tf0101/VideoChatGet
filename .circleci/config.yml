@@ -25,9 +25,9 @@ jobs:
             - ./vendor/bundle
       
       - persist_to_workspace:
-          root: . 
+          root: .
           paths:
-            - . 
+            - .
 
   test:
     executor: my-executor
