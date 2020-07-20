@@ -70,17 +70,17 @@ class Youtubelive_analyze<Video_analyze
     chat_list=[]
     chat_count=0
     opt={'User-Agent' => @USER_AGENT}
-    next_url=@videoinfo_polymer["contents"]["twoColumnWatchNextResults"]["conversationBar"]["liveChatRenderer"]["continuations"][0]["reloadContinuationData"]["continuation"]
-    next_url=@CHAT_REQUEST_URL+next_url
+    continue_url=@videoinfo_polymer["contents"]["twoColumnWatchNextResults"]["conversationBar"]["liveChatRenderer"]["continuations"][0]["reloadContinuationData"]["continuation"]
+    next_url=@CHAT_REQUEST_URL+continue_url
+
 
     while true do
-
         begin
             chat_respons,chat_status=request_html_parse(next_url,opt)
 
             chat_respons.search('script').each do |script|
                 script=script.to_s
-
+                
                 if script.include?("window[\"ytInitialData\"]") then
                     chat_body=script.split("=",2)[1].chomp("</script>").strip.chomp(";")
                     chat_body=JSON.parse(chat_body)
@@ -90,14 +90,18 @@ class Youtubelive_analyze<Video_analyze
                     chat_body["continuationContents"]["liveChatContinuation"]["actions"][1..-1].each do |chat|
                         chat_count+=1
                         chat_list.push chat
-                        end
+                    end
+
                     progressbar(chat_count,"chat_count_inf")
                 end
             end
+
         rescue
             break
         end
+
     end
+
 
     file_write(chat_list,log_flag,log_path)
     return chat_list
