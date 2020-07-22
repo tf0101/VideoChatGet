@@ -18,13 +18,13 @@ class Mildom_analyze<Video_analyze
         @CHAT_STARTTIME="0"
 
         @video_url=url
-        @video_id=videoid_get!(@video_url)
+        @video_id=videoid_get(@video_url)
         @videoinfo,@videoinfo_request_status=request_json_parse(@VIDEOINFO_REQEST_URL+@video_id)
         @chatlog_filepath="./"+@video_id+".txt"
     end
 
 
-    def videoid_get!(url)
+    def videoid_get(url=@video_url)
         videoid=url.split("=")[1].split("&")[0]
         return videoid
     end
@@ -64,6 +64,6 @@ class Mildom_analyze<Video_analyze
     end
 
     public :chat_scrape
-    private :videoid_get!, :chat_nextpage_get
+    private :videoid_get, :chat_nextpage_get
 
 end

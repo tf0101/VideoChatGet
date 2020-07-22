@@ -16,20 +16,20 @@ class Whowatch_analyze<Video_analyze
         @VIDEOINFO_REQEST_URL="https://api.whowatch.tv/lives/"
         
         @video_url=url
-        @video_id=videoid_get!(@video_url)
-        @videoinfo,@chat_body,@videoandchat_info_request_status=videoinfo_get!(@VIDEOINFO_REQEST_URL+@video_id)
+        @video_id=videoid_get(@video_url)
+        @videoinfo,@chat_body,@videoandchat_info_request_status=videoinfo_get(@VIDEOINFO_REQEST_URL+@video_id)
         @chatlog_filepath="./"+@video_id+".txt"
 
     end
 
 
-    def videoid_get!(url)
+    def videoid_get(url=@video_url)
         videoid=url.split("/")[4]
         return videoid
     end
 
 
-    def videoinfo_get!(url)
+    def videoinfo_get(url)
         body,status=request_json_parse(url)
         chat_body=body.delete("comments")
         return body,chat_body,status
@@ -53,6 +53,6 @@ class Whowatch_analyze<Video_analyze
      end
 
     public :chat_scrape
-    private :videoid_get!, :videoinfo_get!
+    private :videoid_get, :videoinfo_get
 
 end
