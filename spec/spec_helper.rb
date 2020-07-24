@@ -5,6 +5,7 @@ require "site_list/openrec_analyze"
 require "site_list/mildom_analyze"
 require "site_list/whowatch_analyze"
 require "site_list/youtubelive_analyze"
+require "site_list/twitcasting_analyze"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
