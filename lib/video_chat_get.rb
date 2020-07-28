@@ -1,9 +1,5 @@
 require 'video_chat_get/version'
-require 'site_list/video_analyze'
-require 'site_list/openrec_analyze'
-require 'site_list/mildom_analyze'
-require 'site_list/whowatch_analyze'
-require 'site_list/youtubelive_analyze'
+Dir[File.expand_path('../site_list',__FILE__)<<'/*.rb'].each do |file| require file end
 
    """
     ・argument
