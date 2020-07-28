@@ -1,11 +1,6 @@
 require "bundler/setup"
 require "video_chat_get"
-require "site_list/video_analyze"
-require "site_list/openrec_analyze"
-require "site_list/mildom_analyze"
-require "site_list/whowatch_analyze"
-require "site_list/youtubelive_analyze"
-require "site_list/twitcasting_analyze"
+Dir[File.expand_path('../../lib/site_list',__FILE__)<<'/*.rb'].each do |file| require file end
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
