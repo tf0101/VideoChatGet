@@ -7,6 +7,7 @@ Dir[File.expand_path('../site_list',__FILE__)<<'/*.rb'].each do |file| require f
     @@MILDOM_IDENTFIER:
     @@WHOWATCH_IDENTFIER:
     @@YOUTUBELIVE_IDENTFIER:
+    @@TWITCASTING_IDENTFIER:
 
 　　 ・method
     url_route():
@@ -18,6 +19,7 @@ module VideoChatGet
   @@MILDOM_IDENTFIER="https://www.mildom.com/playback/"
   @@WHOWATCH_IDENTFIER="https://whowatch.tv/archives/"
   @@YOUTUBELIVE_IDENTFIER="https://www.youtube.com/watch?"
+  @@TWITCASTING_IDENTFIER="https://twitcasting.tv/"
 
   def self.test
     "hello"
@@ -40,6 +42,10 @@ module VideoChatGet
     elsif url.include?(@@YOUTUBELIVE_IDENTFIER) then
         puts "identifier:youtube videourl:#{url}"
         obj=Youtubelive_analyze.new(url)
+        obj.chat_scrape
+    elsif url.include?(@@TWITCASTING_IDENTFIER) then
+        puts "identifier:twitcasting videourl:#{url}"
+        obj=Twitcasting_analyze.new(url)
         obj.chat_scrape
     else
         puts "urlerr"
