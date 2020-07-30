@@ -8,7 +8,7 @@ This is a ruby ​​package that gets a list of chats from the broadcasts of vi
 |mildom |◯ |
 |niconico | |
 |openrec |◯ |
-|twitcast | |
+|twitcasting |◯ |
 |twitch | |
 |whowatch |◯ |
 |youtubelive |◯ |
@@ -47,6 +47,11 @@ chat_list=obj.chat_scrape()
 
 #openrec
 obj=Openrec_analyze.new(url)
+video_info=obj.videoinfo
+chat_list=obj.chat_scrape()
+
+#twitcasting
+obj=Twitcasting_analyze.new(url)
 video_info=obj.videoinfo
 chat_list=obj.chat_scrape()
 
