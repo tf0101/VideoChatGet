@@ -16,7 +16,7 @@ class Youtubelive_analyze<Video_analyze
 
         @video_url=url
         @video_id=videoid_get(@video_url)
-        @videoinfo_polymer,@videoinfo_request_status=videoinfo_get(@video_url)
+        @videoinfo_body,@videoinfo_request_status=videoinfo_get(@video_url)
         @videoinfo=videoinfo_extraction()
         @chatlog_filepath="./"+@video_id+".txt"
     end
@@ -31,27 +31,18 @@ class Youtubelive_analyze<Video_analyze
     def videoinfo_get(url=@video_url)
         
         opt={}
-        next_url_polymer=""
-        next_url=""
+        videoinfo_body=""
 
         videoinfo_respons,videoinfo_status=request_html_parse(url,opt)
-        videoinfo_respons.search('script').each do |script|
-            script=script.to_s
-            if script.include?("window[\"ytInitialData\"]") then
-                next_url_polymer=script.split("=",2)[1].split("\n",2)[0]
-                next_url_polymer=next_url_polymer.strip.chomp(";")
-                next_url_polymer=JSON.parse(next_url_polymer)
-            end
-        end
-        
-        return next_url_polymer,videoinfo_status
+        videoinfo_body=htmlpage_script_parse(videoinfo_respons,method(:videoinfo_script_cleanup))
+        return videoinfo_body,videoinfo_status
     end
     
 
-
     def videoinfo_extraction()
+
         videoinfo={}
-        common_hash=@videoinfo_polymer["contents"]["twoColumnWatchNextResults"]["results"]["results"]["contents"]
+        common_hash=@videoinfo_body["contents"]["twoColumnWatchNextResults"]["results"]["results"]["contents"]
 
         videoinfo["ch"]=common_hash[1]["videoSecondaryInfoRenderer"]["owner"]["videoOwnerRenderer"]["title"]["runs"][0]["text"]
         videoinfo["title"]=common_hash[0]["videoPrimaryInfoRenderer"]["title"]["runs"][0]["text"]
@@ -59,56 +50,72 @@ class Youtubelive_analyze<Video_analyze
         videoinfo["videocount"]=common_hash[0]["videoPrimaryInfoRenderer"]["viewCount"]["videoViewCountRenderer"]["viewCount"]["simpleText"]
         videoinfo["good"]=common_hash[0]["videoPrimaryInfoRenderer"]["videoActions"]["menuRenderer"]["topLevelButtons"][0]["toggleButtonRenderer"]["defaultText"]["simpleText"]
         videoinfo["bad"]=common_hash[0]["videoPrimaryInfoRenderer"]["videoActions"]["menuRenderer"]["topLevelButtons"][1]["toggleButtonRenderer"]["defaultText"]["simpleText"]
-        
         return videoinfo
+    end
+    
+
+    def videoinfo_script_cleanup(script_date)
+        script_body=""
+        script_body=script_date.split("=",2)[1].split("\n",2)[0].strip.chomp(";")
+        return script_body
+    end
+
+
+    def chatinfo_script_cleanup(script_date)
+        script_body=""
+        script_body=script_date.split("=",2)[1].chomp("</script>").strip.chomp(";")
+        return script_body
+    end
+
+
+    def htmlpage_script_parse(respons,callback)
+        script_body=""
+        respons.search('script').each do |script|
+            script=script.to_s
+            if script.include?("window[\"ytInitialData\"]") then
+                script_body=callback.call(script)
+                script_body=JSON.parse(script_body)
+            end
+        end
+        return script_body
     end
 
 
     def chat_scrape(log_flag=true,log_path=@chatlog_filepath)
-    
-    chat_body={}
-    chat_list=[]
-    chat_count=0
-    opt={'User-Agent' => @USER_AGENT}
-    continue_url=@videoinfo_polymer["contents"]["twoColumnWatchNextResults"]["conversationBar"]["liveChatRenderer"]["continuations"][0]["reloadContinuationData"]["continuation"]
-    next_url=@CHAT_REQUEST_URL+continue_url
 
+        chat_body={}
+        chat_list=[]
+        chat_count=0
+        opt={'User-Agent' => @USER_AGENT}
+        continue_parameter=@videoinfo_body["contents"]["twoColumnWatchNextResults"]["conversationBar"]["liveChatRenderer"]["continuations"][0]["reloadContinuationData"]["continuation"]
+        next_url=@CHAT_REQUEST_URL+continue_parameter
 
-    while true do
-        begin
-            chat_respons,chat_status=request_html_parse(next_url,opt)
+        while true do
+            begin
+                chat_respons,chat_status=request_html_parse(next_url,opt)
+                chat_body=htmlpage_script_parse(chat_respons,method(:chatinfo_script_cleanup))
+                continue_parameter = chat_body["continuationContents"]["liveChatContinuation"]["continuations"][0]["liveChatReplayContinuationData"]["continuation"]
+                next_url=@CHAT_REQUEST_URL+continue_parameter
 
-            chat_respons.search('script').each do |script|
-                script=script.to_s
-                
-                if script.include?("window[\"ytInitialData\"]") then
-                    chat_body=script.split("=",2)[1].chomp("</script>").strip.chomp(";")
-                    chat_body=JSON.parse(chat_body)
-                    continue_url = chat_body["continuationContents"]["liveChatContinuation"]["continuations"][0]["liveChatReplayContinuationData"]["continuation"]
-                    next_url=@CHAT_REQUEST_URL+continue_url
-
-                    chat_body["continuationContents"]["liveChatContinuation"]["actions"][1..-1].each do |chat|
-                        chat_count+=1
-                        chat_list.push chat
-                    end
-
-                    progressbar(chat_count,"chat_count_inf")
+                chat_body["continuationContents"]["liveChatContinuation"]["actions"][1..-1].each do |chat|
+                    chat_count+=1
+                    chat_list.push chat
                 end
+
+                progressbar(chat_count,"chat_count_inf")
+
+            rescue
+                break
             end
 
-        rescue
-            break
         end
 
-    end
-
-
-    file_write(chat_list,log_flag,log_path)
-    return chat_list
+        file_write(chat_list,log_flag,log_path)
+        return chat_list
     end
 
 
     public :chat_scrape
-    private :videoid_get, :videoinfo_get, :videoinfo_extraction
+    private :videoid_get, :videoinfo_get, :videoinfo_extraction, :htmlpage_script_parse, :videoinfo_script_cleanup, :chatinfo_script_cleanup
 
 end
