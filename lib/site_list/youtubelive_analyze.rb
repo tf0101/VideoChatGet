@@ -103,6 +103,7 @@ class Youtubelive_analyze<Video_analyze
                 end
 
                 progressbar(chat_count,"chat_count_inf")
+                sleep(1)
 
             rescue
                 break

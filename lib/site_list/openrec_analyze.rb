@@ -64,6 +64,7 @@ class Openrec_analyze<Video_analyze
             next_url=chat_nextpage_get(next_time)
             chat_body,chat_status=request_json_parse(next_url)
             progressbar(next_time,end_time)
+            sleep(1)
         end
 
         file_write(chat_list,log_flag,log_path)

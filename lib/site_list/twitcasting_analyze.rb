@@ -85,6 +85,7 @@ class Twitcasting_analyze<Video_analyze
                 next_url=@chat_request_url+"-"+"#{page_count}"
                 chatinfo_body,status=request_html_parse(next_url,{})
                 progressbar(page_count,page_range)
+                sleep(1)
 
             rescue
                 break
