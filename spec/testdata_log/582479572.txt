@@ -360,7 +360,7 @@
 {"comment"=>"ひん", "user_name"=>"あんにん", "time"=>"Wed, 18 Dec 2019 03:50:33 +0900"}
 {"comment"=>"ひん", "user_name"=>"シルバーレモン", "time"=>"Thu, 19 Dec 2019 13:00:44 +0900"}
 {"comment"=>"ひん", "user_name"=>"kl", "time"=>"Sun, 22 Dec 2019 17:27:12 +0900"}
-{"comment"=>"ひん", "user_name"=>"ドーモたーむ・D・エース", "time"=>"Sat, 04 Jan 2020 01:51:42 +0900"}
+{"comment"=>"ひん", "user_name"=>"たーむ", "time"=>"Sat, 04 Jan 2020 01:51:42 +0900"}
 {"comment"=>"ひん", "user_name"=>"fufryhe", "time"=>"Sun, 05 Jan 2020 11:00:39 +0900"}
 {"comment"=>"ひん", "user_name"=>"森真人(ぴざりん", "time"=>"Wed, 08 Jan 2020 20:34:47 +0900"}
 {"comment"=>"たいきー", "user_name"=>"内堀 拓哉", "time"=>"Thu, 09 Jan 2020 23:01:24 +0900"}
@@ -369,7 +369,7 @@
 {"comment"=>"ひん", "user_name"=>"aiueo", "time"=>"Sat, 25 Jan 2020 21:25:12 +0900"}
 {"comment"=>"ひん", "user_name"=>"出雲", "time"=>"Sat, 25 Jan 2020 22:33:59 +0900"}
 {"comment"=>"配信しろ", "user_name"=>"一郎", "time"=>"Sat, 01 Feb 2020 22:50:43 +0900"}
-{"comment"=>"ぴょぉぉぉおおおお", "user_name"=>"ドーモたーむ・D・エース", "time"=>"Sun, 02 Feb 2020 03:00:48 +0900"}
+{"comment"=>"ぴょぉぉぉおおおお", "user_name"=>"たーむ", "time"=>"Sun, 02 Feb 2020 03:00:48 +0900"}
 {"comment"=>"配信して", "user_name"=>"わなび", "time"=>"Sun, 02 Feb 2020 13:28:32 +0900"}
 {"comment"=>"やあ", "user_name"=>"かめ", "time"=>"Sun, 02 Feb 2020 15:04:33 +0900"}
 {"comment"=>"配信して", "user_name"=>"アオカン", "time"=>"Mon, 03 Feb 2020 00:54:50 +0900"}
@@ -498,3 +498,9 @@
 {"comment"=>"やあ", "user_name"=>"︎OzyogirI︎", "time"=>"Thu, 06 Aug 2020 15:42:51 +0900"}
 {"comment"=>"やあ", "user_name"=>"ゆゆうり", "time"=>"Thu, 06 Aug 2020 23:53:17 +0900"}
 {"comment"=>"やあ", "user_name"=>"酒やくざ", "time"=>"Fri, 07 Aug 2020 04:07:34 +0900"}
+{"comment"=>"やあ", "user_name"=>"ぼぼぼ", "time"=>"Sun, 09 Aug 2020 12:58:25 +0900"}
+{"comment"=>"やあ", "user_name"=>"純", "time"=>"Sun, 09 Aug 2020 18:54:44 +0900"}
+{"comment"=>"やあ", "user_name"=>"Hash", "time"=>"Mon, 10 Aug 2020 23:35:14 +0900"}
+{"comment"=>"やあ", "user_name"=>"ノリアキ", "time"=>"Thu, 13 Aug 2020 01:14:11 +0900"}
+{"comment"=>"やあ", "user_name"=>"ランド", "time"=>"Thu, 13 Aug 2020 03:44:18 +0900"}
+{"comment"=>"やあ", "user_name"=>"たき@コレリス", "time"=>"Thu, 13 Aug 2020 05:37:36 +0900"}
