@@ -14,6 +14,13 @@ RSpec.describe Whowatch_analyze do
                     expect(!(@video_obj.videoinfo.empty?)).to eq true
                 end
              end
+
+            context 'videoid is existence' do
+                it 'return integer videoid' do
+                    expect(@video_obj.videoinfo["live"]["id"].nil?).to eq false
+                end
+             end
+
         end
 
         describe '@chat_body' do

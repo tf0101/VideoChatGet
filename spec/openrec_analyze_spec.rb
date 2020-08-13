@@ -14,6 +14,13 @@ RSpec.describe Openrec_analyze do
                     expect(!(@video_obj.videoinfo.empty?)).to eq true
                 end
              end
+
+             context 'videoid existence' do
+                it 'return string videoid' do
+                    expect(@video_obj.videoinfo["id"].nil?).to eq false
+                end
+             end
+
         end
         
         describe '@videoinfo_request_status' do
