@@ -22,7 +22,7 @@ def request_json_parse(url)
 
     charset=nil
     status=[]
-    response=open(url,opt) do |f|
+    response=URI.open(url,opt) do |f|
         charset=f.charset
         status=f.status
         f.read
