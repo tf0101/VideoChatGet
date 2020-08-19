@@ -360,7 +360,7 @@
 {"comment"=>"ひん", "user_name"=>"あんにん", "time"=>"Wed, 18 Dec 2019 03:50:33 +0900"}
 {"comment"=>"ひん", "user_name"=>"シルバーレモン", "time"=>"Thu, 19 Dec 2019 13:00:44 +0900"}
 {"comment"=>"ひん", "user_name"=>"kl", "time"=>"Sun, 22 Dec 2019 17:27:12 +0900"}
-{"comment"=>"ひん", "user_name"=>"たーむ", "time"=>"Sat, 04 Jan 2020 01:51:42 +0900"}
+{"comment"=>"ひん", "user_name"=>"tamuneta", "time"=>"Sat, 04 Jan 2020 01:51:42 +0900"}
 {"comment"=>"ひん", "user_name"=>"fufryhe", "time"=>"Sun, 05 Jan 2020 11:00:39 +0900"}
 {"comment"=>"ひん", "user_name"=>"ぴざりん", "time"=>"Wed, 08 Jan 2020 20:34:47 +0900"}
 {"comment"=>"たいきー", "user_name"=>"内堀 拓哉", "time"=>"Thu, 09 Jan 2020 23:01:24 +0900"}
@@ -369,7 +369,7 @@
 {"comment"=>"ひん", "user_name"=>"aiueo", "time"=>"Sat, 25 Jan 2020 21:25:12 +0900"}
 {"comment"=>"ひん", "user_name"=>"出雲", "time"=>"Sat, 25 Jan 2020 22:33:59 +0900"}
 {"comment"=>"配信しろ", "user_name"=>"一郎", "time"=>"Sat, 01 Feb 2020 22:50:43 +0900"}
-{"comment"=>"ぴょぉぉぉおおおお", "user_name"=>"たーむ", "time"=>"Sun, 02 Feb 2020 03:00:48 +0900"}
+{"comment"=>"ぴょぉぉぉおおおお", "user_name"=>"tamuneta", "time"=>"Sun, 02 Feb 2020 03:00:48 +0900"}
 {"comment"=>"配信して", "user_name"=>"わなび", "time"=>"Sun, 02 Feb 2020 13:28:32 +0900"}
 {"comment"=>"やあ", "user_name"=>"かめ", "time"=>"Sun, 02 Feb 2020 15:04:33 +0900"}
 {"comment"=>"配信して", "user_name"=>"アオカン", "time"=>"Mon, 03 Feb 2020 00:54:50 +0900"}
@@ -506,5 +506,6 @@
 {"comment"=>"はよｾｲｰ", "user_name"=>"くそ垢", "time"=>"Fri, 14 Aug 2020 00:37:50 +0900"}
 {"comment"=>"あ", "user_name"=>"住人Aさん", "time"=>"Fri, 14 Aug 2020 01:33:33 +0900"}
 {"comment"=>"やあ", "user_name"=>"みんキャス", "time"=>"Sat, 15 Aug 2020 00:42:30 +0900"}
-{"comment"=>"やあ", "user_name"=>"テキ", "time"=>"Mon, 17 Aug 2020 00:37:44 +0900"}
+{"comment"=>"やあ", "user_name"=>"純けい", "time"=>"Mon, 17 Aug 2020 00:37:44 +0900"}
 {"comment"=>"次はいつだい", "user_name"=>"緑の緑茶", "time"=>"Mon, 17 Aug 2020 01:34:11 +0900"}
+{"comment"=>"いつまで俺は座して待てばいいんだ; ;", "user_name"=>"あやつじ", "time"=>"Tue, 18 Aug 2020 19:05:32 +0900"}
