@@ -1,0 +1,13 @@
+current directory: /Users/tf0101/Desktop/ruby_devlop/video_chat_get/video_chat_get/vendor/bundle/ruby/2.5.0/gems/json-2.3.0/ext/json
+/Users/tf0101/.rbenv/versions/2.5.8/bin/ruby -r ./siteconf20200821-51303-1433jf5.rb extconf.rb
+creating Makefile
+
+current directory: /Users/tf0101/Desktop/ruby_devlop/video_chat_get/video_chat_get/vendor/bundle/ruby/2.5.0/gems/json-2.3.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/tf0101/Desktop/ruby_devlop/video_chat_get/video_chat_get/vendor/bundle/ruby/2.5.0/gems/json-2.3.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/tf0101/Desktop/ruby_devlop/video_chat_get/video_chat_get/vendor/bundle/ruby/2.5.0/gems/json-2.3.0/ext/json
+make "DESTDIR=" install
