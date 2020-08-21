@@ -513,3 +513,4 @@
 {"comment"=>"やあ", "user_name"=>"忌む夫", "time"=>"Thu, 20 Aug 2020 06:00:47 +0900"}
 {"comment"=>"ひん", "user_name"=>"たっちゃん", "time"=>"Thu, 20 Aug 2020 15:28:34 +0900"}
 {"comment"=>"やあ", "user_name"=>"koko", "time"=>"Fri, 21 Aug 2020 15:02:16 +0900"}
+{"comment"=>"やあ", "user_name"=>"うーんたたた", "time"=>"Fri, 21 Aug 2020 20:12:38 +0900"}
