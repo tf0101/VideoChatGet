@@ -24,21 +24,19 @@ class Twitcasting_analyze<Video_analyze
 
 
     def videoid_get()
-        videoid=@video_url.split("/")[5].split("&")[0]
-        return videoid
+        return @video_url.split("/")[5].split("&")[0]
     end
 
 
     def userid_get()
-        userid=@video_url.split("/")[3]
-        return userid
+        return @video_url.split("/")[3]
     end
 
 
     def videoinfo_get()
 
         videoinfo={}
-        videoinfo["user_name"]=@videoinfo_request_body.at_css(".tw-user-nav-name").text.gsub(" ","")
+        videoinfo["user_name"]=@videoinfo_request_body.at_css(".tw-user-nav-name").text.strip
         videoinfo["video_title"]=@videoinfo_request_body.at_css("#movie_title_content").text
         videoinfo["video_time"]=@videoinfo_request_body.at_css(".tw-player-duration-time").text.strip
         videoinfo["video_start_time"]=@videoinfo_request_body.at_css(".tw-player-meta__status_item > time")[:datetime]
@@ -47,47 +45,53 @@ class Twitcasting_analyze<Video_analyze
         i=0
         videoinfo_polymer.each do |fact|
             if i==1 then
-                fact=fact.text.gsub(/ {2,}|\n/, "").split(":",2)
-                videoinfo["total_view"]=fact[1]
+                videoinfo["total_view"]=fact.text.strip.split(":",2)[1]
+                return videoinfo
             end
             i+=1
         end
-        
+
         return videoinfo
     end
 
 
     def chat_page_range()
-        
         size=@chat_request_body.css(".paging").css("a").size()
         range=@chat_request_body.css(".paging").css("a")[size-1].text
-        range=range.to_i
+        return range.to_i
+    end
+
+
+    def chat_date_get(chatinfo_body)
+
+        chat_list=[]
+        chat_fact_dic={}
+
+        chatinfo_body.css(".tw-comment-history-item").each do |chat|
+            chat_fact_dic["comment"]=chat.at_css(".tw-comment-history-item__content__text").text.strip
+            chat_fact_dic["user_name"]=chat.at_css(".tw-comment-history-item__details__user-link").text.strip
+            chat_fact_dic["time"]=chat.at_css(".tw-comment-history-item__info__date")[:datetime]
+            chat_list.push(chat_fact_dic)
+            chat_fact_dic={}
+        end
         
-        return range
+        return chat_list
     end
 
 
     def chat_scrape(log_flag=true,log_path=@chatlog_filepath)
 
-        chat_fact_dic={}
         chat_list=[]
-        next_url=""
         chatinfo_body=@chat_request_body
-        page_count=0
         page_range=chat_page_range()
+        page_count=0
 
         while page_count<=page_range do
             begin
-                chatinfo_body.css(".tw-comment-history-item").each do |chat|
-                    chat_fact_dic["comment"]=chat.at_css(".tw-comment-history-item__content__text").text.strip
-                    chat_fact_dic["user_name"]=chat.at_css(".tw-comment-history-item__details__user-link").text.strip
-                    chat_fact_dic["time"]=chat.at_css(".tw-comment-history-item__info__date")[:datetime]
-                    chat_list.push(chat_fact_dic)
-                    chat_fact_dic={}
-                end
+                chat_list+=chat_date_get(chatinfo_body)
                 page_count+=1
                 next_url=@chat_request_url+"-"+"#{page_count}"
-                chatinfo_body,status=request_html_parse(next_url,{})
+                chatinfo_body,_=request_html_parse(next_url,{})
                 progressbar(page_count,page_range)
                 sleep(1)
 
@@ -103,6 +107,6 @@ class Twitcasting_analyze<Video_analyze
     end
 
     public :chat_scrape
-    private :videoid_get, :userid_get, :videoinfo_get, :chat_page_range
+    private :videoid_get, :userid_get, :videoinfo_get, :chat_page_range, :chat_date_get
 
 end
