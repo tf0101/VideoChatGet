@@ -43,19 +43,19 @@ RSpec.describe Twitcasting_analyze do
                 
                 context 'video_time_range is existence' do
                     it 'return string video_time_range' do
-                        expect(!(@videoinfo["Duration"].empty?)).to eq true
+                        expect(!(@videoinfo["video_time"].empty?)).to eq true
                     end
                 end
 
-                context 'videocount is existence' do
-                    it 'return string videocount' do
-                        expect(!(@videoinfo["Total"].empty?)).to eq true
+                context 'total_view is existence' do
+                    it 'return string total_view' do
+                        expect(!(@videoinfo["total_view"].empty?)).to eq true
                     end
                 end
 
-                context 'MaxLiveViewers is existence' do
-                    it 'return string MaxLiveViewers' do
-                        expect(!(@videoinfo["Max Live Viewers"].empty?)).to eq true
+                context 'video_start_time is existence' do
+                    it 'return string video_start_time' do
+                        expect(!(@videoinfo["video_start_time"].empty?)).to eq true
                     end
                 end
 
