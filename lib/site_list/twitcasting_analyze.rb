@@ -24,14 +24,12 @@ class Twitcasting_analyze<Video_analyze
 
 
     def videoid_get()
-        videoid=@video_url.split("/")[5].split("&")[0]
-        return videoid
+        return @video_url.split("/")[5].split("&")[0]
     end
 
 
     def userid_get()
-        userid=@video_url.split("/")[3]
-        return userid
+        return @video_url.split("/")[3]
     end
 
 
@@ -58,12 +56,9 @@ class Twitcasting_analyze<Video_analyze
 
 
     def chat_page_range()
-        
         size=@chat_request_body.css(".paging").css("a").size()
         range=@chat_request_body.css(".paging").css("a")[size-1].text
-        range=range.to_i
-        
-        return range
+        return range.to_i
     end
 
 
