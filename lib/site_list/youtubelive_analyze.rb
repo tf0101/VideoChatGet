@@ -23,19 +23,13 @@ class Youtubelive_analyze<Video_analyze
     
 
     def videoid_get(url=@video_url)
-        videoid=url.split("=")[1].split("&")[0]
-        return videoid
+        return url.split("=")[1].split("&")[0]
     end
 
 
     def videoinfo_get(url=@video_url)
-        
-        opt={}
-        videoinfo_body=""
-
-        videoinfo_respons,videoinfo_status=request_html_parse(url,opt)
-        videoinfo_body=htmlpage_script_parse(videoinfo_respons,method(:videoinfo_script_cleanup))
-        return videoinfo_body,videoinfo_status
+        videoinfo_respons,videoinfo_status=request_html_parse(url,{})
+        return htmlpage_script_parse(videoinfo_respons,method(:videoinfo_script_cleanup)),videoinfo_status
     end
     
 
@@ -55,29 +49,27 @@ class Youtubelive_analyze<Video_analyze
     
 
     def videoinfo_script_cleanup(script_date)
-        script_body=""
-        script_body=script_date.split("=",2)[1].split("\n",2)[0].strip.chomp(";")
-        return script_body
+        return script_date.split("=",2)[1].split("\n",2)[0].strip.chomp(";")
     end
 
 
     def chatinfo_script_cleanup(script_date)
-        script_body=""
-        script_body=script_date.split("=",2)[1].chomp("</script>").strip.chomp(";")
-        return script_body
+        return script_date.split("=",2)[1].chomp("</script>").strip.chomp(";")
     end
 
 
     def htmlpage_script_parse(respons,callback)
-        script_body=""
+
         respons.search('script').each do |script|
             script=script.to_s
             if script.include?("window[\"ytInitialData\"]") then
                 script_body=callback.call(script)
                 script_body=JSON.parse(script_body)
+                
+                return script_body
             end
         end
-        return script_body
+        return ""
     end
 
 
