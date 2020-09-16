@@ -50,7 +50,7 @@ class Twitcasting_analyze<Video_analyze
             end
             i+=1
         end
-        
+
         return videoinfo
     end
 
@@ -83,16 +83,16 @@ class Twitcasting_analyze<Video_analyze
 
         chat_list=[]
         chatinfo_body=@chat_request_body
-        chat_range=chat_page_range()
+        page_range=chat_page_range()
         page_count=0
 
-        while page_count<=chat_range do
+        while page_count<=page_range do
             begin
                 chat_list+=chat_date_get(chatinfo_body)
                 page_count+=1
                 next_url=@chat_request_url+"-"+"#{page_count}"
                 chatinfo_body,_=request_html_parse(next_url,{})
-                progressbar(page_count,chat_range)
+                progressbar(page_count,page_range)
                 sleep(1)
 
             rescue
