@@ -40,13 +40,17 @@ class Twitcasting_analyze<Video_analyze
         videoinfo={}
         videoinfo["user_name"]=@videoinfo_request_body.at_css(".tw-user-nav-name").text.gsub(" ","")
         videoinfo["video_title"]=@videoinfo_request_body.at_css("#movie_title_content").text
+        videoinfo["video_time"]=@videoinfo_request_body.at_css(".tw-player-duration-time").text.strip
+        videoinfo["video_start_time"]=@videoinfo_request_body.at_css(".tw-player-duration-time > time")[:datetime]
 
         videoinfo_polymer=@videoinfo_request_body.css(".tw-player-meta__status").css(".tw-player-meta__status_item")
+        i=0
         videoinfo_polymer.each do |fact|
-            fact=fact.text
-            fact=fact.gsub(/ {2,}|\n/, "")
-            fact=fact.split(":",2)
-            videoinfo[fact[0]]=fact[1]
+            if i==1 then
+                fact=fact.text.gsub(/ {2,}|\n/, "").split(":",2)
+                videoinfo["Total"]=fact[1]
+            end
+            i+=1
         end
         
         return videoinfo
