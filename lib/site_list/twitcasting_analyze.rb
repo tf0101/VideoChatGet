@@ -46,6 +46,7 @@ class Twitcasting_analyze<Video_analyze
         videoinfo_polymer.each do |fact|
             if i==1 then
                 videoinfo["total_view"]=fact.text.strip.split(":",2)[1]
+                return videoinfo
             end
             i+=1
         end
