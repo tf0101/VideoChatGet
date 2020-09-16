@@ -71,28 +71,28 @@ class Youtubelive_analyze<Video_analyze
     end
 
 
+    def chat_body_get(next_url, opt={'User-Agent' => @USER_AGENT}){
+        chat_respons,chat_status=request_html_parse(next_url,opt)
+        return htmlpage_script_parse(chat_respons,method(:chatinfo_script_cleanup))
+    }
+
+
     def chat_scrape(log_flag=true,log_path=@chatlog_filepath)
 
-        chat_body={}
         chat_list=[]
         chat_count=0
-        opt={'User-Agent' => @USER_AGENT}
-        continue_parameter=@videoinfo_body["contents"]["twoColumnWatchNextResults"]["conversationBar"]["liveChatRenderer"]["continuations"][0]["reloadContinuationData"]["continuation"]
-        next_url=@CHAT_REQUEST_URL+continue_parameter
+        next_url=@CHAT_REQUEST_URL + @videoinfo_body["contents"]["twoColumnWatchNextResults"]["conversationBar"]["liveChatRenderer"]["continuations"][0]["reloadContinuationData"]["continuation"]
 
         while true do
             begin
-                chat_respons,chat_status=request_html_parse(next_url,opt)
-                chat_body=htmlpage_script_parse(chat_respons,method(:chatinfo_script_cleanup))
-                continue_parameter = chat_body["continuationContents"]["liveChatContinuation"]["continuations"][0]["liveChatReplayContinuationData"]["continuation"]
-                next_url=@CHAT_REQUEST_URL+continue_parameter
-
+                chat_body=chat_body_get(next_url)
                 chat_body["continuationContents"]["liveChatContinuation"]["actions"][1..-1].each do |chat|
                     chat_count+=1
                     chat_list.push chat
                 end
-
                 progressbar(chat_count,"chat_count_inf")
+
+                next_url=@CHAT_REQUEST_URL + chat_body["continuationContents"]["liveChatContinuation"]["continuations"][0]["liveChatReplayContinuationData"]["continuation"]
                 sleep(1)
 
             rescue
@@ -107,6 +107,6 @@ class Youtubelive_analyze<Video_analyze
 
 
     public :chat_scrape
-    private :videoid_get, :videoinfo_get, :videoinfo_extraction, :htmlpage_script_parse, :videoinfo_script_cleanup, :chatinfo_script_cleanup
+    private :videoid_get, :videoinfo_get, :videoinfo_extraction, :htmlpage_script_parse, :videoinfo_script_cleanup, :chatinfo_script_cleanup, :chat_body_get
 
 end
