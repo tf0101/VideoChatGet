@@ -71,10 +71,11 @@ class Youtubelive_analyze<Video_analyze
     end
 
 
-    def chat_body_get(next_url, opt={'User-Agent' => @USER_AGENT}){
+    def chat_body_get(next_url, opt={'User-Agent' => @USER_AGENT})
         chat_respons,chat_status=request_html_parse(next_url,opt)
         return htmlpage_script_parse(chat_respons,method(:chatinfo_script_cleanup))
-    }
+    end
+    
 
 
     def chat_scrape(log_flag=true,log_path=@chatlog_filepath)
