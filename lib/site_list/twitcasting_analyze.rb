@@ -61,28 +61,37 @@ class Twitcasting_analyze<Video_analyze
     end
 
 
+    def chat_date_get(chatinfo_body)
+
+        chat_list=[]
+        chat_fact_dic={}
+
+        chatinfo_body.css(".tw-comment-history-item").each do |chat|
+            chat_fact_dic["comment"]=chat.at_css(".tw-comment-history-item__content__text").text.strip
+            chat_fact_dic["user_name"]=chat.at_css(".tw-comment-history-item__details__user-link").text.strip
+            chat_fact_dic["time"]=chat.at_css(".tw-comment-history-item__info__date")[:datetime]
+            chat_list.push(chat_fact_dic)
+            chat_fact_dic={}
+        end
+        
+        return chat_list
+    end
+
+
     def chat_scrape(log_flag=true,log_path=@chatlog_filepath)
 
-        chat_fact_dic={}
         chat_list=[]
-        next_url=""
         chatinfo_body=@chat_request_body
+        chat_range=chat_page_range()
         page_count=0
-        page_range=chat_page_range()
 
-        while page_count<=page_range do
+        while page_count<=chat_range do
             begin
-                chatinfo_body.css(".tw-comment-history-item").each do |chat|
-                    chat_fact_dic["comment"]=chat.at_css(".tw-comment-history-item__content__text").text.strip
-                    chat_fact_dic["user_name"]=chat.at_css(".tw-comment-history-item__details__user-link").text.strip
-                    chat_fact_dic["time"]=chat.at_css(".tw-comment-history-item__info__date")[:datetime]
-                    chat_list.push(chat_fact_dic)
-                    chat_fact_dic={}
-                end
+                chat_list+=chat_date_get(chatinfo_body)
                 page_count+=1
                 next_url=@chat_request_url+"-"+"#{page_count}"
-                chatinfo_body,status=request_html_parse(next_url,{})
-                progressbar(page_count,page_range)
+                chatinfo_body,_=request_html_parse(next_url,{})
+                progressbar(page_count,chat_range)
                 sleep(1)
 
             rescue
@@ -97,6 +106,6 @@ class Twitcasting_analyze<Video_analyze
     end
 
     public :chat_scrape
-    private :videoid_get, :userid_get, :videoinfo_get, :chat_page_range
+    private :videoid_get, :userid_get, :videoinfo_get, :chat_page_range, :chat_date_get
 
 end
