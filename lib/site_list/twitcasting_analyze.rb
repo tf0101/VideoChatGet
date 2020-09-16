@@ -48,7 +48,7 @@ class Twitcasting_analyze<Video_analyze
         videoinfo_polymer.each do |fact|
             if i==1 then
                 fact=fact.text.gsub(/ {2,}|\n/, "").split(":",2)
-                videoinfo["Total"]=fact[1]
+                videoinfo["total_view"]=fact[1]
             end
             i+=1
         end

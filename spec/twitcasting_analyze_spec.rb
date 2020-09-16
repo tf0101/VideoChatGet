@@ -47,9 +47,9 @@ RSpec.describe Twitcasting_analyze do
                     end
                 end
 
-                context 'videocount is existence' do
-                    it 'return string videocount' do
-                        expect(!(@videoinfo["Total"].empty?)).to eq true
+                context 'total_view is existence' do
+                    it 'return string total_view' do
+                        expect(!(@videoinfo["total_view"].empty?)).to eq true
                     end
                 end
 
