@@ -41,7 +41,7 @@ class Twitcasting_analyze<Video_analyze
         videoinfo["user_name"]=@videoinfo_request_body.at_css(".tw-user-nav-name").text.gsub(" ","")
         videoinfo["video_title"]=@videoinfo_request_body.at_css("#movie_title_content").text
         videoinfo["video_time"]=@videoinfo_request_body.at_css(".tw-player-duration-time").text.strip
-        videoinfo["video_start_time"]=@videoinfo_request_body.at_css(".tw-player-duration-time > time")[:datetime]
+        videoinfo["video_start_time"]=@videoinfo_request_body.at_css(".tw-player-meta__status_item > time")[:datetime]
 
         videoinfo_polymer=@videoinfo_request_body.css(".tw-player-meta__status").css(".tw-player-meta__status_item")
         i=0
