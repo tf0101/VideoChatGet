@@ -23,19 +23,13 @@ class Youtubelive_analyze<Video_analyze
     
 
     def videoid_get(url=@video_url)
-        videoid=url.split("=")[1].split("&")[0]
-        return videoid
+        return url.split("=")[1].split("&")[0]
     end
 
 
     def videoinfo_get(url=@video_url)
-        
-        opt={}
-        videoinfo_body=""
-
-        videoinfo_respons,videoinfo_status=request_html_parse(url,opt)
-        videoinfo_body=htmlpage_script_parse(videoinfo_respons,method(:videoinfo_script_cleanup))
-        return videoinfo_body,videoinfo_status
+        videoinfo_respons,videoinfo_status=request_html_parse(url,{})
+        return htmlpage_script_parse(videoinfo_respons,method(:videoinfo_script_cleanup)),videoinfo_status
     end
     
 
@@ -55,54 +49,51 @@ class Youtubelive_analyze<Video_analyze
     
 
     def videoinfo_script_cleanup(script_date)
-        script_body=""
-        script_body=script_date.split("=",2)[1].split("\n",2)[0].strip.chomp(";")
-        return script_body
+        return script_date.split("=",2)[1].split("\n",2)[0].strip.chomp(";")
     end
 
 
     def chatinfo_script_cleanup(script_date)
-        script_body=""
-        script_body=script_date.split("=",2)[1].chomp("</script>").strip.chomp(";")
-        return script_body
+        return script_date.split("=",2)[1].chomp("</script>").strip.chomp(";")
     end
 
 
     def htmlpage_script_parse(respons,callback)
-        script_body=""
+
         respons.search('script').each do |script|
-            script=script.to_s
-            if script.include?("window[\"ytInitialData\"]") then
-                script_body=callback.call(script)
+            if script.to_s.include?("window[\"ytInitialData\"]") then
+                script_body=callback.call(script.to_s)
                 script_body=JSON.parse(script_body)
+                return script_body
             end
         end
-        return script_body
+        return ""
     end
+
+
+    def chat_body_get(next_url, opt={'User-Agent' => @USER_AGENT})
+        chat_respons,chat_status=request_html_parse(next_url,opt)
+        return htmlpage_script_parse(chat_respons,method(:chatinfo_script_cleanup))
+    end
+    
 
 
     def chat_scrape(log_flag=true,log_path=@chatlog_filepath)
 
-        chat_body={}
         chat_list=[]
         chat_count=0
-        opt={'User-Agent' => @USER_AGENT}
-        continue_parameter=@videoinfo_body["contents"]["twoColumnWatchNextResults"]["conversationBar"]["liveChatRenderer"]["continuations"][0]["reloadContinuationData"]["continuation"]
-        next_url=@CHAT_REQUEST_URL+continue_parameter
+        next_url=@CHAT_REQUEST_URL + @videoinfo_body["contents"]["twoColumnWatchNextResults"]["conversationBar"]["liveChatRenderer"]["continuations"][0]["reloadContinuationData"]["continuation"]
 
         while true do
             begin
-                chat_respons,chat_status=request_html_parse(next_url,opt)
-                chat_body=htmlpage_script_parse(chat_respons,method(:chatinfo_script_cleanup))
-                continue_parameter = chat_body["continuationContents"]["liveChatContinuation"]["continuations"][0]["liveChatReplayContinuationData"]["continuation"]
-                next_url=@CHAT_REQUEST_URL+continue_parameter
-
+                chat_body=chat_body_get(next_url)
                 chat_body["continuationContents"]["liveChatContinuation"]["actions"][1..-1].each do |chat|
                     chat_count+=1
                     chat_list.push chat
                 end
-
                 progressbar(chat_count,"chat_count_inf")
+
+                next_url=@CHAT_REQUEST_URL + chat_body["continuationContents"]["liveChatContinuation"]["continuations"][0]["liveChatReplayContinuationData"]["continuation"]
                 sleep(1)
 
             rescue
@@ -117,6 +108,6 @@ class Youtubelive_analyze<Video_analyze
 
 
     public :chat_scrape
-    private :videoid_get, :videoinfo_get, :videoinfo_extraction, :htmlpage_script_parse, :videoinfo_script_cleanup, :chatinfo_script_cleanup
+    private :videoid_get, :videoinfo_get, :videoinfo_extraction, :htmlpage_script_parse, :videoinfo_script_cleanup, :chatinfo_script_cleanup, :chat_body_get
 
 end
