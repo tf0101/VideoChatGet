@@ -61,11 +61,9 @@ class Youtubelive_analyze<Video_analyze
     def htmlpage_script_parse(respons,callback)
 
         respons.search('script').each do |script|
-            script=script.to_s
-            if script.include?("window[\"ytInitialData\"]") then
-                script_body=callback.call(script)
+            if script.to_s.include?("window[\"ytInitialData\"]") then
+                script_body=callback.call(script.to_s)
                 script_body=JSON.parse(script_body)
-                
                 return script_body
             end
         end
