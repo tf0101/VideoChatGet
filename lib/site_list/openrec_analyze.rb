@@ -17,16 +17,15 @@ class Openrec_analyze<Video_analyze
         @CHAT_REQEST_PARAMETER2="&is_including_system_message=false"
 
         @video_url=url
-        @video_id=videoid_get(@video_url)
+        @video_id=videoid_get()
         @videoinfo,@videoinfo_request_status=request_json_parse(@VIDEOINFO_REQEST_URL+@video_id)
         @chatlog_filepath="./"+@video_id+".txt"
     
     end
 
 
-    def videoid_get(url=@video_url)
-        videoid=url.split("/")[4].split("&")[0]
-        return videoid
+    def videoid_get()
+        return @video_url.split("/")[4].split("&")[0]
     end
 
 
@@ -37,9 +36,7 @@ class Openrec_analyze<Video_analyze
     def chat_nextpage_get(time_key)
         #datatime型→time型→iso8601型
         time_key=DateTime.parse(time_key).to_time.utc.iso8601
-        chat_request_url=@VIDEOINFO_REQEST_URL+@video_id+@CHAT_REQEST_PARAMETER1+time_key+@CHAT_REQEST_PARAMETER2
-
-        return chat_request_url
+        return @VIDEOINFO_REQEST_URL+@video_id+@CHAT_REQEST_PARAMETER1+time_key+@CHAT_REQEST_PARAMETER2
     end
 
 
