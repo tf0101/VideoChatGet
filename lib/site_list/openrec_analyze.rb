@@ -17,16 +17,15 @@ class Openrec_analyze<Video_analyze
         @CHAT_REQEST_PARAMETER2="&is_including_system_message=false"
 
         @video_url=url
-        @video_id=videoid_get(@video_url)
+        @video_id=videoid_get()
         @videoinfo,@videoinfo_request_status=request_json_parse(@VIDEOINFO_REQEST_URL+@video_id)
         @chatlog_filepath="./"+@video_id+".txt"
     
     end
 
 
-    def videoid_get(url=@video_url)
-        videoid=url.split("/")[4].split("&")[0]
-        return videoid
+    def videoid_get()
+        return @video_url.split("/")[4].split("&")[0]
     end
 
 
@@ -37,33 +36,28 @@ class Openrec_analyze<Video_analyze
     def chat_nextpage_get(time_key)
         #datatime型→time型→iso8601型
         time_key=DateTime.parse(time_key).to_time.utc.iso8601
-        chat_request_url=@VIDEOINFO_REQEST_URL+@video_id+@CHAT_REQEST_PARAMETER1+time_key+@CHAT_REQEST_PARAMETER2
-
-        return chat_request_url
+        return @VIDEOINFO_REQEST_URL+@video_id+@CHAT_REQEST_PARAMETER1+time_key+@CHAT_REQEST_PARAMETER2
     end
 
 
     def chat_scrape(log_flag=true,log_path=@chatlog_filepath)
 
-        start_time=@videoinfo["started_at"]
-        end_time=@videoinfo["ended_at"]
-        next_url=chat_nextpage_get(start_time)
-        chat_body,chat_status=request_json_parse(next_url)
-
         chat_list=[]
-        next_time=""
         head=0
+        next_time=@videoinfo["started_at"]
+        chat_body=chat_body_get(next_time)
         
         while !(chat_body[head..-1].empty?) do
+
             chat_body[head..-1].each do |chat|
                 chat_list.push chat
                 next_time=chat["posted_at"]
             end
-            
+
+            chat_body=chat_body_get(next_time)
             head=1
-            next_url=chat_nextpage_get(next_time)
-            chat_body,chat_status=request_json_parse(next_url)
-            progressbar(next_time,end_time)
+
+            progressbar(next_time,@videoinfo["ended_at"])
             sleep(1)
         end
 
@@ -71,7 +65,14 @@ class Openrec_analyze<Video_analyze
         return chat_list
     end
 
+
+    def chat_body_get(next_time)
+        next_url=chat_nextpage_get(next_time)
+        chat_body,_=request_json_parse(next_url)
+        return chat_body
+    end
+
     public :chat_scrape
-    private :videoid_get, :chat_nextpage_get
+    private :videoid_get, :chat_nextpage_get, :chat_body_get
 
 end
