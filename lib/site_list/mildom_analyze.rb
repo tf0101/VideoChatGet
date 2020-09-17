@@ -18,22 +18,19 @@ class Mildom_analyze<Video_analyze
         @CHAT_STARTTIME="0"
 
         @video_url=url
-        @video_id=videoid_get(@video_url)
+        @video_id=videoid_get()
         @videoinfo,@videoinfo_request_status=request_json_parse(@VIDEOINFO_REQEST_URL+@video_id)
         @chatlog_filepath="./"+@video_id+".txt"
     end
 
 
-    def videoid_get(url=@video_url)
-        videoid=url.split("=")[1].split("&")[0]
-        return videoid
+    def videoid_get()
+        return @video_url.split("=")[1].split("&")[0]
     end
 
 
     def chat_nextpage_get(time_key)
-        time_key=time_key.to_s
-        chat_request_url=@CHAT_REQEST_URL+@video_id+@CHAT_REQEST_PARAMETER+time_key
-        return chat_request_url
+        return @CHAT_REQEST_URL+@video_id+@CHAT_REQEST_PARAMETER+time_key.to_s
     end
 
 
