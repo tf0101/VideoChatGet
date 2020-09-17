@@ -42,25 +42,22 @@ class Openrec_analyze<Video_analyze
 
     def chat_scrape(log_flag=true,log_path=@chatlog_filepath)
 
-        start_time=@videoinfo["started_at"]
-        end_time=@videoinfo["ended_at"]
-        next_url=chat_nextpage_get(start_time)
-        chat_body,chat_status=request_json_parse(next_url)
-
         chat_list=[]
-        next_time=""
         head=0
+        next_time=@videoinfo["started_at"]
+        chat_body=chat_body_get(next_time)
         
         while !(chat_body[head..-1].empty?) do
+
             chat_body[head..-1].each do |chat|
                 chat_list.push chat
                 next_time=chat["posted_at"]
             end
-            
+
+            chat_body=chat_body_get(next_time)
             head=1
-            next_url=chat_nextpage_get(next_time)
-            chat_body,chat_status=request_json_parse(next_url)
-            progressbar(next_time,end_time)
+
+            progressbar(next_time,@videoinfo["ended_at"])
             sleep(1)
         end
 
@@ -68,7 +65,14 @@ class Openrec_analyze<Video_analyze
         return chat_list
     end
 
+
+    def chat_body_get(next_time)
+        next_url=chat_nextpage_get(next_time)
+        chat_body,_=request_json_parse(next_url)
+        return chat_body
+    end
+
     public :chat_scrape
-    private :videoid_get, :chat_nextpage_get
+    private :videoid_get, :chat_nextpage_get, :chat_body_get
 
 end
