@@ -37,18 +37,16 @@ class Mildom_analyze<Video_analyze
 
         chat_list=[]
         next_time=0
-        chat_body=chat_body_get(next_time)
         time_length=@videoinfo["body"]["playback"]["video_length"]
 
         while next_time<=time_length do
 
+            chat_body=chat_body_get(next_time)
             chat_body["body"]["models"][0]["detail"][0..-1].each do |chat|
                 chat_list.push chat
             end
 
             next_time=chat_body["body"]["models"][0]["summary"]["end_offset_ms"]
-            chat_body=chat_body_get(next_time)
-
             progressbar(next_time,time_length)
             sleep(1)
         end
