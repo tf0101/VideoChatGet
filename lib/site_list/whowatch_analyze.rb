@@ -16,16 +16,15 @@ class Whowatch_analyze<Video_analyze
         @VIDEOINFO_REQEST_URL="https://api.whowatch.tv/lives/"
         
         @video_url=url
-        @video_id=videoid_get(@video_url)
+        @video_id=videoid_get()
         @videoinfo,@chat_body,@videoandchat_info_request_status=videoinfo_get(@VIDEOINFO_REQEST_URL+@video_id)
         @chatlog_filepath="./"+@video_id+".txt"
 
     end
 
 
-    def videoid_get(url=@video_url)
-        videoid=url.split("/")[4]
-        return videoid
+    def videoid_get()
+        return @video_url.split("/")[4]
     end
 
 
@@ -37,15 +36,14 @@ class Whowatch_analyze<Video_analyze
 
 
     def chat_scrape(log_flag=true,log_path=@chatlog_filepath)
-        
-        comment_count=@videoinfo["live"]["comment_count"]
+
         chat_list=[]
         count=0
         
         @chat_body[0..-1].each do |chat|
             chat_list.push chat
             count+=1
-            progressbar(count,comment_count)
+            progressbar(count,@videoinfo["live"]["comment_count"])
         end
         
         file_write(chat_list,log_flag,log_path)
