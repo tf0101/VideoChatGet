@@ -132,7 +132,7 @@
 {"comment"=>"ひん", "user_name"=>"ましろ", "time"=>"Thu, 12 Dec 2019 03:30:42 +0900"}
 {"comment"=>"おやすみ", "user_name"=>"メルせんぱい", "time"=>"Thu, 12 Dec 2019 03:30:42 +0900"}
 {"comment"=>"ひん", "user_name"=>"あ", "time"=>"Thu, 12 Dec 2019 03:30:42 +0900"}
-{"comment"=>"おやすみ", "user_name"=>"rutiru", "time"=>"Thu, 12 Dec 2019 03:30:42 +0900"}
+{"comment"=>"おやすみ", "user_name"=>"rutir", "time"=>"Thu, 12 Dec 2019 03:30:42 +0900"}
 {"comment"=>"ひん", "user_name"=>"KASOW", "time"=>"Thu, 12 Dec 2019 03:30:42 +0900"}
 {"comment"=>"おやすみなさい", "user_name"=>"たけちよ/竹千代の翁", "time"=>"Thu, 12 Dec 2019 03:30:42 +0900"}
 {"comment"=>"ひん", "user_name"=>"ようかん", "time"=>"Thu, 12 Dec 2019 03:30:42 +0900"}
@@ -252,7 +252,7 @@
 {"comment"=>"kenshiもな", "user_name"=>"芦毛馬@オグリキャップ", "time"=>"Thu, 12 Dec 2019 03:30:54 +0900"}
 {"comment"=>"早く配信見せてくれ", "user_name"=>"流男", "time"=>"Thu, 12 Dec 2019 03:30:54 +0900"}
 {"comment"=>"やったあああああああああああああああああああああああああああ", "user_name"=>"ミント", "time"=>"Thu, 12 Dec 2019 03:30:54 +0900"}
-{"comment"=>"ひん", "user_name"=>"rutiru", "time"=>"Thu, 12 Dec 2019 03:30:54 +0900"}
+{"comment"=>"ひん", "user_name"=>"rutir", "time"=>"Thu, 12 Dec 2019 03:30:54 +0900"}
 {"comment"=>"ひん", "user_name"=>"しゅう", "time"=>"Thu, 12 Dec 2019 03:30:54 +0900"}
 {"comment"=>"ひん", "user_name"=>"GM", "time"=>"Thu, 12 Dec 2019 03:30:54 +0900"}
 {"comment"=>"ひん", "user_name"=>"めーぷるぱん", "time"=>"Thu, 12 Dec 2019 03:30:54 +0900"}
@@ -524,7 +524,7 @@
 {"comment"=>"やあ", "user_name"=>"ムー民", "time"=>"Tue, 01 Sep 2020 02:36:45 +0900"}
 {"comment"=>"やあ", "user_name"=>"石丸@しょーは俺の嫁", "time"=>"Wed, 02 Sep 2020 02:19:23 +0900"}
 {"comment"=>"今日来るかな？", "user_name"=>"中田 英史", "time"=>"Thu, 03 Sep 2020 21:57:56 +0900"}
-{"comment"=>"やあ", "user_name"=>"ほおおおおおお", "time"=>"Sun, 06 Sep 2020 07:35:46 +0900"}
+{"comment"=>"やあ", "user_name"=>"鬱病になったほおおお", "time"=>"Sun, 06 Sep 2020 07:35:46 +0900"}
 {"comment"=>"やあ", "user_name"=>"", "time"=>"Mon, 07 Sep 2020 00:25:15 +0900"}
 {"comment"=>"やっほー", "user_name"=>".", "time"=>"Mon, 07 Sep 2020 23:17:22 +0900"}
 {"comment"=>"まちがえました", "user_name"=>".", "time"=>"Mon, 07 Sep 2020 23:17:33 +0900"}
@@ -534,3 +534,4 @@
 {"comment"=>"yaa", "user_name"=>"sinobu", "time"=>"Sat, 12 Sep 2020 23:39:06 +0900"}
 {"comment"=>"やあ", "user_name"=>"ぽてと", "time"=>"Sun, 13 Sep 2020 19:59:27 +0900"}
 {"comment"=>"やあ", "user_name"=>"taro", "time"=>"Tue, 15 Sep 2020 14:16:27 +0900"}
+{"comment"=>"やあ", "user_name"=>"モンゴルマン", "time"=>"Sun, 20 Sep 2020 20:56:49 +0900"}
