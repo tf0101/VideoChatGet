@@ -15,20 +15,20 @@ class Youtubelive_analyze<Video_analyze
         @USER_AGENT='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36'
 
         @video_url=url
-        @video_id=videoid_get(@video_url)
-        @videoinfo_body,@videoinfo_request_status=videoinfo_get(@video_url)
+        @video_id=videoid_get()
+        @videoinfo_body,@videoinfo_request_status=videoinfo_get()
         @videoinfo=videoinfo_extraction()
         @chatlog_filepath="./"+@video_id+".txt"
     end
     
 
-    def videoid_get(url=@video_url)
-        return url.split("=")[1].split("&")[0]
+    def videoid_get()
+        return @video_url.split("=")[1].split("&")[0]
     end
 
 
-    def videoinfo_get(url=@video_url)
-        videoinfo_respons,videoinfo_status=request_html_parse(url,{})
+    def videoinfo_get()
+        videoinfo_respons,videoinfo_status=request_html_parse(@video_url,{})
         return htmlpage_script_parse(videoinfo_respons,method(:videoinfo_script_cleanup)),videoinfo_status
     end
     
