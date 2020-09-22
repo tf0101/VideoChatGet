@@ -446,7 +446,7 @@
 {"comment"=>"やあ", "user_name"=>"なすび", "time"=>"Sat, 23 May 2020 19:45:29 +0900"}
 {"comment"=>"うんこ", "user_name"=>"ちらかわ", "time"=>"Sat, 23 May 2020 22:27:27 +0900"}
 {"comment"=>"コレコレは本当にgm", "user_name"=>"たまごっち", "time"=>"Wed, 27 May 2020 13:32:11 +0900"}
-{"comment"=>"ひんひんひーーーーーん", "user_name"=>"藤川俊介", "time"=>"Sun, 31 May 2020 09:46:16 +0900"}
+{"comment"=>"ひんひんひーーーーーん", "user_name"=>"うどんの妖精", "time"=>"Sun, 31 May 2020 09:46:16 +0900"}
 {"comment"=>"カイキングのチャンネル荒らすな", "user_name"=>"ソルジャー 七十六", "time"=>"Sun, 31 May 2020 22:25:22 +0900"}
 {"comment"=>"あ", "user_name"=>"中卒DQN゛", "time"=>"Tue, 02 Jun 2020 05:19:27 +0900"}
 {"comment"=>"やぁ", "user_name"=>"nova", "time"=>"Wed, 03 Jun 2020 05:52:26 +0900"}
@@ -516,8 +516,7 @@
 {"comment"=>"やあ", "user_name"=>"うにょんぽつ", "time"=>"Sun, 23 Aug 2020 22:29:48 +0900"}
 {"comment"=>"やあ", "user_name"=>"紅凛或", "time"=>"Mon, 24 Aug 2020 16:38:25 +0900"}
 {"comment"=>"やぁ", "user_name"=>"K", "time"=>"Tue, 25 Aug 2020 06:52:38 +0900"}
-{"comment"=>"やあ", "user_name"=>"藤川俊介", "time"=>"Tue, 25 Aug 2020 20:36:14 +0900"}
-{"comment"=>"やぁ", "user_name"=>"丹沢（たんざわ）", "time"=>"Thu, 27 Aug 2020 09:01:37 +0900"}
+{"comment"=>"やあ", "user_name"=>"うどんの妖精", "time"=>"Tue, 25 Aug 2020 20:36:14 +0900"}
 {"comment"=>"やぁ", "user_name"=>"尾骶骨骨折", "time"=>"Thu, 27 Aug 2020 23:59:04 +0900"}
 {"comment"=>"やあ", "user_name"=>"シャワー", "time"=>"Sun, 30 Aug 2020 11:32:59 +0900"}
 {"comment"=>"やあ", "user_name"=>"Phantom", "time"=>"Mon, 31 Aug 2020 09:59:31 +0900"}
@@ -535,3 +534,4 @@
 {"comment"=>"やあ", "user_name"=>"ぽてと", "time"=>"Sun, 13 Sep 2020 19:59:27 +0900"}
 {"comment"=>"やあ", "user_name"=>"taro", "time"=>"Tue, 15 Sep 2020 14:16:27 +0900"}
 {"comment"=>"やあ", "user_name"=>"モンゴルマン", "time"=>"Sun, 20 Sep 2020 20:56:49 +0900"}
+{"comment"=>"やあ", "user_name"=>"丹沢（たんざわ）", "time"=>"Mon, 21 Sep 2020 00:50:11 +0900"}
