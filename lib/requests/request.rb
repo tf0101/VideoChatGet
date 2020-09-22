@@ -13,7 +13,7 @@ def request_json_parse(url)
         return JSON.parse(response.body),response.status
     end
 
-    return {},response.status
+    return nil,response.status
  end
 
 
@@ -26,7 +26,11 @@ def request_json_parse(url)
         status=f.status
         f.read
     end
-    
-    return Nokogiri::HTML.parse(response,nil,charset),status
+
+    if status[0]=="200"
+        return Nokogiri::HTML.parse(response,nil,charset),status
+    end
+
+    return nil,status
  end
  
