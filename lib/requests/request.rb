@@ -26,8 +26,7 @@ def request_json_parse(url)
         status=f.status
         f.read
     end
-
-    response_body=Nokogiri::HTML.parse(response,nil,charset)
-    return response_body,status
+    
+    return Nokogiri::HTML.parse(response,nil,charset),status
  end
  
