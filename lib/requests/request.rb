@@ -5,16 +5,15 @@ require 'open-uri'
 
 
 def request_json_parse(url)
-    body_dic={}
 
     client=HTTPClient.new()
     response=client.get(url)
 
     if response.status==200
-     body_dic=JSON.parse(response.body)
+        return JSON.parse(response.body),response.status
     end
 
-    return body_dic,response.status
+    return {},response.status
  end
 
 
