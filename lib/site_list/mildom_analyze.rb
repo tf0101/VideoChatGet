@@ -24,7 +24,7 @@ class Mildom_analyze<Video_analyze
 
 
     def videoid_get()
-        return @video_url.split("=")[1].split("&")[0]
+        return @video_url.split("/")[5].split("&")[0]
     end
 
 
