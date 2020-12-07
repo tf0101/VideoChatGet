@@ -68,12 +68,12 @@ class Youtubelive_analyze<Video_analyze
 
 
     def videoinfo_script_cleanup_p2(script_date)
-        return script_date.split("var ytInitialData =",2)[1].split(";if (window.ytcsi)",2)[0].chomp(";</script>").strip
+        return script_date.split("var ytInitialData =",2)[1].split(";if (window.ytcsi)",2)[0].strip.chomp(";</script>").strip
     end
 
 
     def chatinfo_script_cleanup(script_date)
-        return script_date.split("=",2)[1].chomp("</script>").strip.chomp(";")
+        return script_date.split("=",2)[1].strip.chomp(";</script>").strip
     end
 
 
