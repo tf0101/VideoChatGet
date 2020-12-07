@@ -73,7 +73,7 @@ class Youtubelive_analyze<Video_analyze
 
 
     def chatinfo_script_cleanup(script_date)
-        return script_date.split("=",2)[1].strip.chomp(";</script>").strip
+        return script_date.split("=",2)[1].strip.chomp("</script>").strip.chomp(";")
     end
 
 
