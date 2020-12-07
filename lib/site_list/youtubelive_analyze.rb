@@ -28,10 +28,24 @@ class Youtubelive_analyze<Video_analyze
 
 
     def videoinfo_get()
+
         videoinfo_respons,videoinfo_status=request_html_parse(@video_url,{})
-        return htmlpage_script_parse(videoinfo_respons,method(:videoinfo_script_cleanup)),videoinfo_status
+
+        videoinfo_respons.search('script').each do |script|
+
+            if script.to_s.include?("window[\"ytInitialData\"]") then
+                return htmlpage_script_parse(script,method(:videoinfo_script_cleanup)),videoinfo_status
+            end
+
+            if script.to_s.include?("var ytInitialData =") then
+                return htmlpage_script_parse(script,method(:videoinfo_script_cleanup_p2)),videoinfo_status
+            end
+
+        end
+
+        return ""
     end
-    
+
 
     def videoinfo_extraction()
 
@@ -53,27 +67,35 @@ class Youtubelive_analyze<Video_analyze
     end
 
 
+    def videoinfo_script_cleanup_p2(script_date)
+        return script_date.split("var ytInitialData =",2)[1].split(";if (window.ytcsi)",2)[0].strip
+    end
+
+
     def chatinfo_script_cleanup(script_date)
         return script_date.split("=",2)[1].chomp("</script>").strip.chomp(";")
     end
 
 
     def htmlpage_script_parse(respons,callback)
-
-        respons.search('script').each do |script|
-            if script.to_s.include?("window[\"ytInitialData\"]") then
-                script_body=callback.call(script.to_s)
-                script_body=JSON.parse(script_body)
-                return script_body
-            end
-        end
-        return ""
+        script_body=callback.call(respons.to_s)
+        return JSON.parse(script_body)
     end
 
 
     def chat_body_get(next_url, opt={'User-Agent' => @USER_AGENT})
+
         chat_respons,chat_status=request_html_parse(next_url,opt)
-        return htmlpage_script_parse(chat_respons,method(:chatinfo_script_cleanup))
+
+        chat_respons.search('script').each do |script|
+
+            if script.to_s.include?("window[\"ytInitialData\"]") then
+                return htmlpage_script_parse(script,method(:chatinfo_script_cleanup))
+            end
+
+        end
+
+        return ""
     end
     
 
@@ -108,6 +130,6 @@ class Youtubelive_analyze<Video_analyze
 
 
     public :chat_scrape
-    private :videoid_get, :videoinfo_get, :videoinfo_extraction, :htmlpage_script_parse, :videoinfo_script_cleanup, :chatinfo_script_cleanup, :chat_body_get
+    private :videoid_get, :videoinfo_get, :videoinfo_extraction, :htmlpage_script_parse, :videoinfo_script_cleanup, :chatinfo_script_cleanup, :chat_body_get, :videoinfo_script_cleanup_p2
 
 end
