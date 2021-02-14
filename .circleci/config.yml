@@ -1,4 +1,8 @@
 version: 2.1
+
+orbs:
+  slack: circleci/slack@3.4.3
+
 executors:
    my-executor:
     docker:
@@ -27,13 +31,14 @@ jobs:
       - run: 
            name: bundle exec rake spec
            command: bundle exec rake spec
+      
+      - slack/status:
+          success_message: ':circleci-pass: $CIRCLE_BRANCH のテストが完了しました\n:github_octocat: User：$CIRCLE_USERNAME'
+          failure_message: ':circleci-fail: $CIRCLE_BRANCH のテストが失敗しました\n:github_octocat: User：$CIRCLE_USERNAME'
+          webhook: '${SLACK_WEBHOOK}'
 
 workflows:
   version: 2
   test-:
     jobs:
-      - test:
-         filters:
-            branches:
-              only:
-                - master
+      - test
