@@ -56,8 +56,8 @@ class Twitcasting_analyze<Video_analyze
 
 
     def chat_page_range()
-        size=@chat_request_body.css(".paging").css("a").size()
-        range=@chat_request_body.css(".paging").css("a")[size-1].text
+        size=@chat_request_body.css(".tw-pager").css("a").size()
+        range=@chat_request_body.css(".tw-pager").css("a")[size-1].text
         return range.to_i
     end
 
