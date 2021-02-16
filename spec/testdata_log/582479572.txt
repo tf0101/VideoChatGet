@@ -588,3 +588,4 @@
 {"comment"=>"やあ", "user_name"=>"89", "time"=>"Tue, 09 Feb 2021 00:07:43 +0900"}
 {"comment"=>"やあ", "user_name"=>"タタラ", "time"=>"Tue, 09 Feb 2021 21:30:15 +0900"}
 {"comment"=>"やあ", "user_name"=>"Agate(あがて）", "time"=>"Sun, 14 Feb 2021 23:51:21 +0900"}
+{"comment"=>"やあ", "user_name"=>"城福甲府", "time"=>"Mon, 15 Feb 2021 05:48:08 +0900"}
