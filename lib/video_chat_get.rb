@@ -21,37 +21,40 @@ module VideoChatGet
   @@YOUTUBELIVE_IDENTFIER="https://www.youtube.com/watch?"
   @@TWITCASTING_IDENTFIER="https://twitcasting.tv/"
 
-  def self.test
-    "hello"
-  end
-
+  
   def self.url_route(url)
 
     if url.include?(@@OPENREC_IDENTFIER) then
         puts "identifier:openrec videourl:#{url}"
         obj=Openrec_analyze.new(url)
-        obj.chat_scrape
-    elsif url.include?(@@MILDOM_IDENTFIER) then
-        puts "identifier:mildom videourl:#{url}"
-        obj=Mildom_analyze.new(url)
-        obj.chat_scrape
-    elsif url.include?(@@WHOWATCH_IDENTFIER) then
-        puts "identifier:whowatch videourl:#{url}"
-        obj=Whowatch_analyze.new(url)
-        obj.chat_scrape
-    elsif url.include?(@@YOUTUBELIVE_IDENTFIER) then
-        puts "identifier:youtube videourl:#{url}"
-        obj=Youtubelive_analyze.new(url)
-        obj.chat_scrape
-    elsif url.include?(@@TWITCASTING_IDENTFIER) then
-        puts "identifier:twitcasting videourl:#{url}"
-        obj=Twitcasting_analyze.new(url)
-        obj.chat_scrape
-    else
-        puts "urlerr"
+        return obj.chat_scrape
     end
 
-    "end"
+    if url.include?(@@MILDOM_IDENTFIER) then
+        puts "identifier:mildom videourl:#{url}"
+        obj=Mildom_analyze.new(url)
+        return obj.chat_scrape
+    end
+
+    if url.include?(@@WHOWATCH_IDENTFIER) then
+        puts "identifier:whowatch videourl:#{url}"
+        obj=Whowatch_analyze.new(url)
+        return obj.chat_scrape
+    end
+
+    if url.include?(@@YOUTUBELIVE_IDENTFIER) then
+        puts "identifier:youtube videourl:#{url}"
+        obj=Youtubelive_analyze.new(url)
+        return obj.chat_scrape
+    end
+
+    if url.include?(@@TWITCASTING_IDENTFIER) then
+        puts "identifier:twitcasting videourl:#{url}"
+        obj=Twitcasting_analyze.new(url)
+        return obj.chat_scrape
+    end
+
+    return "url error"
   end
 
 end
