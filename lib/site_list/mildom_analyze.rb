@@ -13,12 +13,13 @@ class Mildom_analyze<Video_analyze
 
     def initialize(url)
         @VIDEOINFO_REQEST_URL="https://cloudac.mildom.com/nonolive/videocontent/playback/getPlaybackDetail?v_id="
+        @VIDEOINFO_REQEST_PARAMETER="&__platform=web"
         @CHAT_REQEST_URL="https://cloudac.mildom.com/nonolive/videocontent/chat/replay?video_id="
         @CHAT_REQEST_PARAMETER="&time_offset_ms="
 
         @video_url=url
         @video_id=videoid_get()
-        @videoinfo,@videoinfo_request_status=request_json_parse(@VIDEOINFO_REQEST_URL+@video_id)
+        @videoinfo,@videoinfo_request_status=request_json_parse(@VIDEOINFO_REQEST_URL+@video_id+@VIDEOINFO_REQEST_PARAMETER)
         @chatlog_filepath="./"+@video_id+".txt"
     end
 
