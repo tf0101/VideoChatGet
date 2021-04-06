@@ -4,7 +4,7 @@ PATH
     video_chat_get (0.2.1)
       httpclient (~> 2.8.3)
       json (~> 2.3.0)
-      nokogiri (~> 1.10.9)
+      nokogiri (>= 1.10.9, < 1.12.0)
 
 GEM
   remote: https://rubygems.org/
@@ -12,9 +12,11 @@ GEM
     diff-lcs (1.3)
     httpclient (2.8.3)
     json (2.3.1)
-    mini_portile2 (2.4.0)
-    nokogiri (1.10.10)
-      mini_portile2 (~> 2.4.0)
+    mini_portile2 (2.5.0)
+    nokogiri (1.11.2)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
+    racc (1.5.2)
     rake (10.5.0)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
