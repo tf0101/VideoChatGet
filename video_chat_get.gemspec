@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "video_chat_get"
   spec.version       = VideoChatGet::VERSION
   spec.authors       = ["tf0101"]
-  spec.email         = ["tf0101_sh@icloud.com"]
+  spec.email         = ["tf0101_emaile"]
 
   spec.summary       = %q{videochat scraping package}
   spec.description   = %q{videochat scraping}
