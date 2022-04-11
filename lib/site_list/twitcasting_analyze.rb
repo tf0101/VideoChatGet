@@ -39,13 +39,13 @@ class Twitcasting_analyze<Video_analyze
         videoinfo["user_name"]=@videoinfo_request_body.at_css(".tw-user-nav-name").text.strip
         videoinfo["video_title"]=@videoinfo_request_body.at_css(".tw-player-page__title-editor-value").text
         videoinfo["video_time"]=@videoinfo_request_body.at_css(".tw-player-duration-time").text.strip
-        videoinfo["video_start_time"]=@videoinfo_request_body.at_css(".tw-player-meta__status_item > time")[:datetime]
+        videoinfo["video_start_time"]=@videoinfo_request_body.at_css(".tw-player-meta__status_item > time").attribute('datetime').text
 
         videoinfo_polymer=@videoinfo_request_body.css(".tw-player-meta__status").css(".tw-player-meta__status_item")
         i=0
         videoinfo_polymer.each do |fact|
             if i==1 then
-                videoinfo["total_view"]=fact.text.strip.split(":",2)[1]
+                videoinfo["total_view"]=fact.attribute('aria-label').text.split(":",2)[1].strip
                 return videoinfo
             end
             i+=1
