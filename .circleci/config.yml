@@ -59,7 +59,9 @@ jobs:
       - run: 
            name: build & release
            command: |
-            curl -u tf0101:$RUBYGEMS_PASSWORD https://rubygems.org/api/v1/api_key.yaml > ~/.gem/credentials; chmod 0600 ~/.gem/credentials
+            mkdir -p ~/.gem
+            echo ":rubygems_api_key: $RUBYGEMS_API_KEY" > ~/.gem/credentials
+            chmod 0600 ~/.gem/credentials
             git config user.name tf0101
             git config user.email $RUBYGEMS_EMAIL
             bundle exec rake build
