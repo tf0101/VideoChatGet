@@ -36,12 +36,51 @@ jobs:
           success_message: ':circleci-pass: $CIRCLE_BRANCH のテストが完了しました\n:github_octocat: User：$CIRCLE_USERNAME'
           failure_message: ':circleci-fail: $CIRCLE_BRANCH のテストが失敗しました\n:github_octocat: User：$CIRCLE_USERNAME'
           webhook: '${SLACK_WEBHOOK}'
+  
+  deploy:
+    executor: my-executor
+    steps: 
+      - checkout 
+
+      - restore_cache:
+          name: cache lord
+          key: gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+
+      - run: 
+         name: bundle install  
+         command: bundle check --path=vendor/bundle || bundle install --path vendor/bundle --clean --jobs 4 --retry 3
+
+      - save_cache:
+          name: save cache
+          key: gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+          paths:
+            - ./vendor/bundle
+
+      - run: 
+           name: build & release
+           command:
+            curl -u tf0101:$RUBYGEMS_PASSWORD https://rubygems.org/api/v1/api_key.yaml > ~/.gem/credentials; chmod 0600 ~/.gem/credentials
+            git config user.name tf0101
+            git config user.email $RUBYGEMS_EMAIL
+            bundle exec rake build
+            bundle exec rake release
+      
+      - slack/status:
+          success_message: ':circleci-pass: $CIRCLE_BRANCH のリリースが完了しました\n:github_octocat: User：$CIRCLE_USERNAME'
+          failure_message: ':circleci-fail: $CIRCLE_BRANCH のリリースが失敗しました\n:github_octocat: User：$CIRCLE_USERNAME'
+          webhook: '${SLACK_WEBHOOK}'
 
 workflows:
   version: 2
   test:
     jobs:
       - test
+  deploy:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: master
 
   test_cron: 
     triggers:
