@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    video_chat_get (0.2.6)
+    video_chat_get (0.2.6.1)
       httpclient (~> 2.8.3)
       json (~> 2.3.0)
       nokogiri (~> 1.10.9)
