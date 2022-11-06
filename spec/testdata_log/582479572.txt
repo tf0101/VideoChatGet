@@ -1,112 +1,3 @@
-{"comment"=>"もりし！？", "user_name"=>"クズネッツ(ミジンコ)", "time"=>"Thu, 12 Dec 2019 03:30:27 +0900"}
-{"comment"=>"喘ぎ声banか電池切れか", "user_name"=>"HIR(ハイル)", "time"=>"Thu, 12 Dec 2019 03:30:30 +0900"}
-{"comment"=>"やあ", "user_name"=>"そばはた", "time"=>"Thu, 12 Dec 2019 03:30:31 +0900"}
-{"comment"=>"banじゃねーよ", "user_name"=>"ルンバ", "time"=>"Thu, 12 Dec 2019 03:30:31 +0900"}
-{"comment"=>"ユダおるぞ", "user_name"=>"性癖ドンピシャドチャシコ丸", "time"=>"Thu, 12 Dec 2019 03:30:31 +0900"}
-{"comment"=>"やあ", "user_name"=>"oʇɐʞ ıɥɔıunɾ sı sıɥʇ", "time"=>"Thu, 12 Dec 2019 03:30:31 +0900"}
-{"comment"=>"ww", "user_name"=>"メルせんぱい", "time"=>"Thu, 12 Dec 2019 03:30:31 +0900"}
-{"comment"=>"セーーーーーーフ", "user_name"=>"パトリック", "time"=>"Thu, 12 Dec 2019 03:30:32 +0900"}
-{"comment"=>"やあ", "user_name"=>"椛紗", "time"=>"Thu, 12 Dec 2019 03:30:32 +0900"}
-{"comment"=>"やあ", "user_name"=>"Angel", "time"=>"Thu, 12 Dec 2019 03:30:32 +0900"}
-{"comment"=>"充電切れだろうな。おやすみ。", "user_name"=>"k8", "time"=>"Thu, 12 Dec 2019 03:30:32 +0900"}
-{"comment"=>"やあ", "user_name"=>"ルイきゅん", "time"=>"Thu, 12 Dec 2019 03:30:32 +0900"}
-{"comment"=>"聞こえないおー；；", "user_name"=>"あおばばあ", "time"=>"Thu, 12 Dec 2019 03:30:32 +0900"}
-{"comment"=>"やあ", "user_name"=>"memememememememememememe", "time"=>"Thu, 12 Dec 2019 03:30:33 +0900"}
-{"comment"=>"やっぱな", "user_name"=>"〇〇〇", "time"=>"Thu, 12 Dec 2019 03:30:33 +0900"}
-{"comment"=>"やあ", "user_name"=>"︎︎ 真 瑠 ︎ ︎︎︎︎", "time"=>"Thu, 12 Dec 2019 03:30:33 +0900"}
-{"comment"=>"やぁ", "user_name"=>"ターニャ#凛fam", "time"=>"Thu, 12 Dec 2019 03:30:33 +0900"}
-{"comment"=>"ツイキャスがわるい", "user_name"=>"ノコッチR", "time"=>"Thu, 12 Dec 2019 03:30:33 +0900"}
-{"comment"=>"やあ", "user_name"=>"あ", "time"=>"Thu, 12 Dec 2019 03:30:33 +0900"}
-{"comment"=>"やあ", "user_name"=>"茅", "time"=>"Thu, 12 Dec 2019 03:30:34 +0900"}
-{"comment"=>"やあ", "user_name"=>"センリツ", "time"=>"Thu, 12 Dec 2019 03:30:34 +0900"}
-{"comment"=>"やあ", "user_name"=>"まなとん", "time"=>"Thu, 12 Dec 2019 03:30:34 +0900"}
-{"comment"=>"やあ", "user_name"=>"ゆずカービィ", "time"=>"Thu, 12 Dec 2019 03:30:34 +0900"}
-{"comment"=>"やあ", "user_name"=>"ゴードドン", "time"=>"Thu, 12 Dec 2019 03:30:34 +0900"}
-{"comment"=>"やああ", "user_name"=>"こまじろう", "time"=>"Thu, 12 Dec 2019 03:30:34 +0900"}
-{"comment"=>"やぁ", "user_name"=>"ルシファー", "time"=>"Thu, 12 Dec 2019 03:30:35 +0900"}
-{"comment"=>"やあ", "user_name"=>"諸手", "time"=>"Thu, 12 Dec 2019 03:30:35 +0900"}
-{"comment"=>"やあ", "user_name"=>"無", "time"=>"Thu, 12 Dec 2019 03:30:35 +0900"}
-{"comment"=>"ひん", "user_name"=>"わみすけ", "time"=>"Thu, 12 Dec 2019 03:30:35 +0900"}
-{"comment"=>"やあ", "user_name"=>"竜胆寺", "time"=>"Thu, 12 Dec 2019 03:30:35 +0900"}
-{"comment"=>"やあ", "user_name"=>"ゆうた", "time"=>"Thu, 12 Dec 2019 03:30:35 +0900"}
-{"comment"=>"おやすみ", "user_name"=>"キソ", "time"=>"Thu, 12 Dec 2019 03:30:35 +0900"}
-{"comment"=>"やあ", "user_name"=>"雅", "time"=>"Thu, 12 Dec 2019 03:30:35 +0900"}
-{"comment"=>"やあ", "user_name"=>"假屋崎", "time"=>"Thu, 12 Dec 2019 03:30:36 +0900"}
-{"comment"=>"やあ", "user_name"=>"rioty", "time"=>"Thu, 12 Dec 2019 03:30:36 +0900"}
-{"comment"=>"わぁ！？", "user_name"=>"玄", "time"=>"Thu, 12 Dec 2019 03:30:36 +0900"}
-{"comment"=>"やあ", "user_name"=>"ウィン", "time"=>"Thu, 12 Dec 2019 03:30:36 +0900"}
-{"comment"=>"ひん", "user_name"=>"おにい", "time"=>"Thu, 12 Dec 2019 03:30:36 +0900"}
-{"comment"=>"おやすみ", "user_name"=>"GM", "time"=>"Thu, 12 Dec 2019 03:30:36 +0900"}
-{"comment"=>"やあ", "user_name"=>"DVマニア", "time"=>"Thu, 12 Dec 2019 03:30:36 +0900"}
-{"comment"=>"やあ", "user_name"=>"🤺", "time"=>"Thu, 12 Dec 2019 03:30:36 +0900"}
-{"comment"=>"毎回BAN説出るの笑う", "user_name"=>"米", "time"=>"Thu, 12 Dec 2019 03:30:36 +0900"}
-{"comment"=>"やあ", "user_name"=>"グリン", "time"=>"Thu, 12 Dec 2019 03:30:36 +0900"}
-{"comment"=>"きたああ", "user_name"=>"クズネッツ(ミジンコ)", "time"=>"Thu, 12 Dec 2019 03:30:36 +0900"}
-{"comment"=>"え", "user_name"=>"パトリック", "time"=>"Thu, 12 Dec 2019 03:30:36 +0900"}
-{"comment"=>"やあ", "user_name"=>"なほし", "time"=>"Thu, 12 Dec 2019 03:30:36 +0900"}
-{"comment"=>"やあ", "user_name"=>"em", "time"=>"Thu, 12 Dec 2019 03:30:36 +0900"}
-{"comment"=>"あら", "user_name"=>"guchi18", "time"=>"Thu, 12 Dec 2019 03:30:37 +0900"}
-{"comment"=>"やあ", "user_name"=>"ユリスを左に戻してくれぃ！", "time"=>"Thu, 12 Dec 2019 03:30:37 +0900"}
-{"comment"=>"ひん", "user_name"=>"memememememememememememe", "time"=>"Thu, 12 Dec 2019 03:30:37 +0900"}
-{"comment"=>"おやすみ", "user_name"=>"oʇɐʞ ıɥɔıunɾ sı sıɥʇ", "time"=>"Thu, 12 Dec 2019 03:30:37 +0900"}
-{"comment"=>"ひん", "user_name"=>"センリツ", "time"=>"Thu, 12 Dec 2019 03:30:37 +0900"}
-{"comment"=>"やあ", "user_name"=>"クロ", "time"=>"Thu, 12 Dec 2019 03:30:37 +0900"}
-{"comment"=>"おやすみ", "user_name"=>"でんがく", "time"=>"Thu, 12 Dec 2019 03:30:37 +0900"}
-{"comment"=>"おやすみ", "user_name"=>"opopo", "time"=>"Thu, 12 Dec 2019 03:30:37 +0900"}
-{"comment"=>"ひん", "user_name"=>"茅", "time"=>"Thu, 12 Dec 2019 03:30:37 +0900"}
-{"comment"=>"ひん", "user_name"=>"浪浪ノア・ゾ浪", "time"=>"Thu, 12 Dec 2019 03:30:37 +0900"}
-{"comment"=>"やだ", "user_name"=>"あ  あ", "time"=>"Thu, 12 Dec 2019 03:30:37 +0900"}
-{"comment"=>"やあひん", "user_name"=>"Eリンギ", "time"=>"Thu, 12 Dec 2019 03:30:37 +0900"}
-{"comment"=>"やあひん", "user_name"=>"、", "time"=>"Thu, 12 Dec 2019 03:30:37 +0900"}
-{"comment"=>"さいー", "user_name"=>"日与沢", "time"=>"Thu, 12 Dec 2019 03:30:37 +0900"}
-{"comment"=>"やあ", "user_name"=>"爪", "time"=>"Thu, 12 Dec 2019 03:30:37 +0900"}
-{"comment"=>"やあ", "user_name"=>"みなりん", "time"=>"Thu, 12 Dec 2019 03:30:37 +0900"}
-{"comment"=>"おやすみ", "user_name"=>"のこ²", "time"=>"Thu, 12 Dec 2019 03:30:37 +0900"}
-{"comment"=>"ひん", "user_name"=>"無", "time"=>"Thu, 12 Dec 2019 03:30:37 +0900"}
-{"comment"=>"やぁ", "user_name"=>"た", "time"=>"Thu, 12 Dec 2019 03:30:37 +0900"}
-{"comment"=>"わぁ！？", "user_name"=>"Ron", "time"=>"Thu, 12 Dec 2019 03:30:37 +0900"}
-{"comment"=>"やあ", "user_name"=>"東から出た", "time"=>"Thu, 12 Dec 2019 03:30:38 +0900"}
-{"comment"=>"やだ", "user_name"=>"かんとした", "time"=>"Thu, 12 Dec 2019 03:30:38 +0900"}
-{"comment"=>"おやすみな", "user_name"=>"しょうた", "time"=>"Thu, 12 Dec 2019 03:30:38 +0900"}
-{"comment"=>"ひん", "user_name"=>"あ", "time"=>"Thu, 12 Dec 2019 03:30:38 +0900"}
-{"comment"=>"ひん", "user_name"=>"芦毛馬@オグリキャップ", "time"=>"Thu, 12 Dec 2019 03:30:38 +0900"}
-{"comment"=>"え", "user_name"=>"rioty", "time"=>"Thu, 12 Dec 2019 03:30:38 +0900"}
-{"comment"=>"やあ", "user_name"=>"藤井", "time"=>"Thu, 12 Dec 2019 03:30:38 +0900"}
-{"comment"=>"やあ", "user_name"=>"ra", "time"=>"Thu, 12 Dec 2019 03:30:38 +0900"}
-{"comment"=>"おやすみ", "user_name"=>"もくもく", "time"=>"Thu, 12 Dec 2019 03:30:38 +0900"}
-{"comment"=>"やあ", "user_name"=>"S", "time"=>"Thu, 12 Dec 2019 03:30:38 +0900"}
-{"comment"=>"やあ", "user_name"=>"腹へりダリル", "time"=>"Thu, 12 Dec 2019 03:30:38 +0900"}
-{"comment"=>"ひん", "user_name"=>"よっしー@本垢爆破済み", "time"=>"Thu, 12 Dec 2019 03:30:38 +0900"}
-{"comment"=>"ひん", "user_name"=>"asdfghjk", "time"=>"Thu, 12 Dec 2019 03:30:38 +0900"}
-{"comment"=>"ひん", "user_name"=>"幸村", "time"=>"Thu, 12 Dec 2019 03:30:38 +0900"}
-{"comment"=>"やあ", "user_name"=>"ようかん", "time"=>"Thu, 12 Dec 2019 03:30:38 +0900"}
-{"comment"=>"ひん", "user_name"=>"DVマニア", "time"=>"Thu, 12 Dec 2019 03:30:38 +0900"}
-{"comment"=>"ひん", "user_name"=>"🤺", "time"=>"Thu, 12 Dec 2019 03:30:38 +0900"}
-{"comment"=>"おい", "user_name"=>"そばはた", "time"=>"Thu, 12 Dec 2019 03:30:39 +0900"}
-{"comment"=>"おやすみ", "user_name"=>"丸助", "time"=>"Thu, 12 Dec 2019 03:30:39 +0900"}
-{"comment"=>"え", "user_name"=>"クズネッツ(ミジンコ)", "time"=>"Thu, 12 Dec 2019 03:30:39 +0900"}
-{"comment"=>"やあ", "user_name"=>"くりマロン", "time"=>"Thu, 12 Dec 2019 03:30:39 +0900"}
-{"comment"=>"ひん", "user_name"=>"ゴードドン", "time"=>"Thu, 12 Dec 2019 03:30:39 +0900"}
-{"comment"=>"おつかれ", "user_name"=>"キーブレードさん", "time"=>"Thu, 12 Dec 2019 03:30:39 +0900"}
-{"comment"=>"やあ", "user_name"=>"七瀬", "time"=>"Thu, 12 Dec 2019 03:30:39 +0900"}
-{"comment"=>"やあ", "user_name"=>"倫理", "time"=>"Thu, 12 Dec 2019 03:30:39 +0900"}
-{"comment"=>"おやすみ", "user_name"=>"新原", "time"=>"Thu, 12 Dec 2019 03:30:39 +0900"}
-{"comment"=>"やあひん", "user_name"=>"Angel", "time"=>"Thu, 12 Dec 2019 03:30:39 +0900"}
-{"comment"=>"おつ", "user_name"=>"人の抜け殻", "time"=>"Thu, 12 Dec 2019 03:30:39 +0900"}
-{"comment"=>"ひん", "user_name"=>"さんしき", "time"=>"Thu, 12 Dec 2019 03:30:39 +0900"}
-{"comment"=>"ひん", "user_name"=>"しょうた", "time"=>"Thu, 12 Dec 2019 03:30:39 +0900"}
-{"comment"=>"ひん", "user_name"=>"エタノールマシン✭", "time"=>"Thu, 12 Dec 2019 03:30:39 +0900"}
-{"comment"=>"やあひん", "user_name"=>"あおばばあ", "time"=>"Thu, 12 Dec 2019 03:30:39 +0900"}
-{"comment"=>"BANかとおもったわ", "user_name"=>"はちこう", "time"=>"Thu, 12 Dec 2019 03:30:39 +0900"}
-{"comment"=>"ひん", "user_name"=>"ジョンそん", "time"=>"Thu, 12 Dec 2019 03:30:39 +0900"}
-{"comment"=>"おつかれ", "user_name"=>"じんすけ", "time"=>"Thu, 12 Dec 2019 03:30:39 +0900"}
-{"comment"=>"じゃあな", "user_name"=>"流男", "time"=>"Thu, 12 Dec 2019 03:30:40 +0900"}
-{"comment"=>"やあああああ", "user_name"=>"あ", "time"=>"Thu, 12 Dec 2019 03:30:40 +0900"}
-{"comment"=>"やあ", "user_name"=>"歩けMr.", "time"=>"Thu, 12 Dec 2019 03:30:40 +0900"}
-{"comment"=>"沼", "user_name"=>"ビルダーANKK", "time"=>"Thu, 12 Dec 2019 03:30:40 +0900"}
-{"comment"=>"おやすみ", "user_name"=>"桔梗(ききょう)", "time"=>"Thu, 12 Dec 2019 03:30:40 +0900"}
-{"comment"=>"やあひん", "user_name"=>"TAKUYA", "time"=>"Thu, 12 Dec 2019 03:30:40 +0900"}
-{"comment"=>"やあ", "user_name"=>"ジョー", "time"=>"Thu, 12 Dec 2019 03:30:40 +0900"}
 {"comment"=>"ひん", "user_name"=>"シーラカンス", "time"=>"Thu, 12 Dec 2019 03:30:40 +0900"}
 {"comment"=>"またね", "user_name"=>"ぱぴるす", "time"=>"Thu, 12 Dec 2019 03:30:40 +0900"}
 {"comment"=>"えええええええ", "user_name"=>"んだほ", "time"=>"Thu, 12 Dec 2019 03:30:40 +0900"}
@@ -118,7 +9,7 @@
 {"comment"=>"やあひん", "user_name"=>"maki", "time"=>"Thu, 12 Dec 2019 03:30:41 +0900"}
 {"comment"=>"おやすみ", "user_name"=>"つぃとろーねんしゅ", "time"=>"Thu, 12 Dec 2019 03:30:41 +0900"}
 {"comment"=>"おつ", "user_name"=>"ジッパー", "time"=>"Thu, 12 Dec 2019 03:30:41 +0900"}
-{"comment"=>"やあ", "user_name"=>"ホイミスマイル", "time"=>"Thu, 12 Dec 2019 03:30:41 +0900"}
+{"comment"=>"やあ", "user_name"=>"モブ", "time"=>"Thu, 12 Dec 2019 03:30:41 +0900"}
 {"comment"=>"やあ", "user_name"=>"XYZ", "time"=>"Thu, 12 Dec 2019 03:30:41 +0900"}
 {"comment"=>"やあひん", "user_name"=>"スペック", "time"=>"Thu, 12 Dec 2019 03:30:41 +0900"}
 {"comment"=>"ひん", "user_name"=>"カサブランカ", "time"=>"Thu, 12 Dec 2019 03:30:41 +0900"}
@@ -162,27 +53,29 @@
 {"comment"=>"ひん", "user_name"=>"ズン類", "time"=>"Thu, 12 Dec 2019 03:30:44 +0900"}
 {"comment"=>"おやすみなさい", "user_name"=>"エンパティ", "time"=>"Thu, 12 Dec 2019 03:30:44 +0900"}
 {"comment"=>"やあ", "user_name"=>"とーし", "time"=>"Thu, 12 Dec 2019 03:30:44 +0900"}
-{"comment"=>"やあひん", "user_name"=>"No name", "time"=>"Thu, 12 Dec 2019 03:30:44 +0900"}
+{"comment"=>"やあひん", "user_name"=>"Uta", "time"=>"Thu, 12 Dec 2019 03:30:44 +0900"}
 {"comment"=>"やあひん", "user_name"=>"神崎", "time"=>"Thu, 12 Dec 2019 03:30:44 +0900"}
 {"comment"=>"ひん", "user_name"=>"ルシファー", "time"=>"Thu, 12 Dec 2019 03:30:44 +0900"}
-{"comment"=>"やあ", "user_name"=>"MasuoTV", "time"=>"Thu, 12 Dec 2019 03:30:45 +0900"}
+{"comment"=>"やあ", "user_name"=>"名前", "time"=>"Thu, 12 Dec 2019 03:30:45 +0900"}
 {"comment"=>"やぁ、ひん", "user_name"=>"マーティー", "time"=>"Thu, 12 Dec 2019 03:30:45 +0900"}
 {"comment"=>"純", "user_name"=>"クズネッツ(ミジンコ)", "time"=>"Thu, 12 Dec 2019 03:30:45 +0900"}
 {"comment"=>"ひん", "user_name"=>"。", "time"=>"Thu, 12 Dec 2019 03:30:45 +0900"}
+{"comment"=>"わかった", "user_name"=>"ただし", "time"=>"Thu, 12 Dec 2019 03:30:45 +0900"}
 {"comment"=>"明日もしてくれ", "user_name"=>"椛紗", "time"=>"Thu, 12 Dec 2019 03:30:45 +0900"}
 {"comment"=>"やあ", "user_name"=>"タルップル", "time"=>"Thu, 12 Dec 2019 03:30:45 +0900"}
 {"comment"=>"ひん", "user_name"=>"オーリリア@DMP", "time"=>"Thu, 12 Dec 2019 03:30:45 +0900"}
 {"comment"=>"やあああああああああああああああああああああああああああああああああああああああああああああああああああああああ", "user_name"=>"性癖ドンピシャドチャシコ丸", "time"=>"Thu, 12 Dec 2019 03:30:45 +0900"}
 {"comment"=>"さいー", "user_name"=>"日与沢", "time"=>"Thu, 12 Dec 2019 03:30:46 +0900"}
 {"comment"=>"ひん", "user_name"=>"うじむ君", "time"=>"Thu, 12 Dec 2019 03:30:46 +0900"}
-{"comment"=>"ひん", "user_name"=>"ホイミスマイル", "time"=>"Thu, 12 Dec 2019 03:30:46 +0900"}
+{"comment"=>"ひん", "user_name"=>"モブ", "time"=>"Thu, 12 Dec 2019 03:30:46 +0900"}
 {"comment"=>"やあ", "user_name"=>"猫ドリル", "time"=>"Thu, 12 Dec 2019 03:30:46 +0900"}
 {"comment"=>"おっつん", "user_name"=>"センリツ", "time"=>"Thu, 12 Dec 2019 03:30:46 +0900"}
 {"comment"=>"ひん", "user_name"=>"た", "time"=>"Thu, 12 Dec 2019 03:30:46 +0900"}
 {"comment"=>"おやすみ", "user_name"=>"cookie", "time"=>"Thu, 12 Dec 2019 03:30:46 +0900"}
 {"comment"=>"ひん", "user_name"=>"ルンバ", "time"=>"Thu, 12 Dec 2019 03:30:47 +0900"}
+{"comment"=>"やあわあやあやあやあやあやあやあやあやあやいゆあやあやあやあ", "user_name"=>"NONAME", "time"=>"Thu, 12 Dec 2019 03:30:47 +0900"}
 {"comment"=>"ひん", "user_name"=>"くりマロン", "time"=>"Thu, 12 Dec 2019 03:30:47 +0900"}
-{"comment"=>"ひん", "user_name"=>"MasuoTV", "time"=>"Thu, 12 Dec 2019 03:30:47 +0900"}
+{"comment"=>"ひん", "user_name"=>"名前", "time"=>"Thu, 12 Dec 2019 03:30:47 +0900"}
 {"comment"=>"ひん", "user_name"=>"えもん", "time"=>"Thu, 12 Dec 2019 03:30:47 +0900"}
 {"comment"=>"ひん", "user_name"=>"のののの", "time"=>"Thu, 12 Dec 2019 03:30:47 +0900"}
 {"comment"=>"ポケモンたのむぞ！", "user_name"=>"、", "time"=>"Thu, 12 Dec 2019 03:30:47 +0900"}
@@ -209,17 +102,17 @@
 {"comment"=>"ひん", "user_name"=>"ウィン", "time"=>"Thu, 12 Dec 2019 03:30:49 +0900"}
 {"comment"=>"やあ", "user_name"=>"ひ", "time"=>"Thu, 12 Dec 2019 03:30:49 +0900"}
 {"comment"=>"やあ", "user_name"=>"めーぷるぱん", "time"=>"Thu, 12 Dec 2019 03:30:49 +0900"}
-{"comment"=>"明日に響かないようにな", "user_name"=>"大室さんちのあびこランドサガ卒", "time"=>"Thu, 12 Dec 2019 03:30:49 +0900"}
+{"comment"=>"明日に響かないようにな", "user_name"=>"あびこりす･あびこいる", "time"=>"Thu, 12 Dec 2019 03:30:49 +0900"}
 {"comment"=>"ひん", "user_name"=>"こまじろう", "time"=>"Thu, 12 Dec 2019 03:30:49 +0900"}
-{"comment"=>"やあ", "user_name"=>"No name", "time"=>"Thu, 12 Dec 2019 03:30:49 +0900"}
+{"comment"=>"やあ", "user_name"=>"Uta", "time"=>"Thu, 12 Dec 2019 03:30:49 +0900"}
 {"comment"=>"ひん", "user_name"=>"無名", "time"=>"Thu, 12 Dec 2019 03:30:50 +0900"}
 {"comment"=>"気をつけてな", "user_name"=>"DVマニア", "time"=>"Thu, 12 Dec 2019 03:30:50 +0900"}
 {"comment"=>"良い夢を", "user_name"=>"ねろたろう＠FANBOX始めました", "time"=>"Thu, 12 Dec 2019 03:30:50 +0900"}
 {"comment"=>"やあひん", "user_name"=>"なほし", "time"=>"Thu, 12 Dec 2019 03:30:50 +0900"}
-{"comment"=>"やあひん", "user_name"=>"MasuoTV", "time"=>"Thu, 12 Dec 2019 03:30:50 +0900"}
+{"comment"=>"やあひん", "user_name"=>"名前", "time"=>"Thu, 12 Dec 2019 03:30:50 +0900"}
 {"comment"=>"ひん", "user_name"=>"ざ", "time"=>"Thu, 12 Dec 2019 03:30:50 +0900"}
 {"comment"=>"おつかれ", "user_name"=>"のこ²", "time"=>"Thu, 12 Dec 2019 03:30:50 +0900"}
-{"comment"=>"座して待つ", "user_name"=>"ビルダーANKK", "time"=>"Thu, 12 Dec 2019 03:30:51 +0900"}
+{"comment"=>"座して待つ", "user_name"=>"Ankk", "time"=>"Thu, 12 Dec 2019 03:30:51 +0900"}
 {"comment"=>"ひん", "user_name"=>"乳母車", "time"=>"Thu, 12 Dec 2019 03:30:51 +0900"}
 {"comment"=>"おやすみ", "user_name"=>"m.m", "time"=>"Thu, 12 Dec 2019 03:30:51 +0900"}
 {"comment"=>"朝までやれ", "user_name"=>"配信通知を待ち続ける男", "time"=>"Thu, 12 Dec 2019 03:30:51 +0900"}
@@ -227,11 +120,11 @@
 {"comment"=>"座して待つ", "user_name"=>"無", "time"=>"Thu, 12 Dec 2019 03:30:51 +0900"}
 {"comment"=>"いいね", "user_name"=>"oʇɐʞ ıɥɔıunɾ sı sıɥʇ", "time"=>"Thu, 12 Dec 2019 03:30:51 +0900"}
 {"comment"=>"おやすみ純", "user_name"=>"asdfghjk", "time"=>"Thu, 12 Dec 2019 03:30:52 +0900"}
-{"comment"=>"おやすみ", "user_name"=>"みや", "time"=>"Thu, 12 Dec 2019 03:30:52 +0900"}
+{"comment"=>"おやすみ", "user_name"=>"「みや」またの名を「宮ノ入（みやのいり）」※趣味丸出しアカウント", "time"=>"Thu, 12 Dec 2019 03:30:52 +0900"}
 {"comment"=>"ひんんんんんんんんん", "user_name"=>"性癖ドンピシャドチャシコ丸", "time"=>"Thu, 12 Dec 2019 03:30:52 +0900"}
 {"comment"=>"やったあ", "user_name"=>"あおばばあ", "time"=>"Thu, 12 Dec 2019 03:30:52 +0900"}
 {"comment"=>"kenshiやれな", "user_name"=>"ふぁみぱん", "time"=>"Thu, 12 Dec 2019 03:30:52 +0900"}
-{"comment"=>"ひん", "user_name"=>"No name", "time"=>"Thu, 12 Dec 2019 03:30:52 +0900"}
+{"comment"=>"ひん", "user_name"=>"Uta", "time"=>"Thu, 12 Dec 2019 03:30:52 +0900"}
 {"comment"=>"楽しみだわ", "user_name"=>"キソ", "time"=>"Thu, 12 Dec 2019 03:30:52 +0900"}
 {"comment"=>"おやすみじゅん", "user_name"=>"︎︎ 真 瑠 ︎ ︎︎︎︎", "time"=>"Thu, 12 Dec 2019 03:30:52 +0900"}
 {"comment"=>"ポケモン待ってる", "user_name"=>"わっさ", "time"=>"Thu, 12 Dec 2019 03:30:52 +0900"}
@@ -242,13 +135,14 @@
 {"comment"=>"楽しみだなぁ", "user_name"=>"椛紗", "time"=>"Thu, 12 Dec 2019 03:30:53 +0900"}
 {"comment"=>"おやすみ", "user_name"=>"とろ", "time"=>"Thu, 12 Dec 2019 03:30:53 +0900"}
 {"comment"=>"わかった", "user_name"=>"🤺", "time"=>"Thu, 12 Dec 2019 03:30:53 +0900"}
-{"comment"=>"ひん。おやすみ", "user_name"=>"ユリスを左に戻してくれぃ！", "time"=>"Thu, 12 Dec 2019 03:30:53 +0900"}
+{"comment"=>"ひん。おやすみ", "user_name"=>"ユリコリス", "time"=>"Thu, 12 Dec 2019 03:30:53 +0900"}
 {"comment"=>"座して待つ", "user_name"=>"こまじろう", "time"=>"Thu, 12 Dec 2019 03:30:54 +0900"}
 {"comment"=>"あんがとな", "user_name"=>"ミスチルの民", "time"=>"Thu, 12 Dec 2019 03:30:54 +0900"}
 {"comment"=>"剣士はやめろ", "user_name"=>"パトリック", "time"=>"Thu, 12 Dec 2019 03:30:54 +0900"}
 {"comment"=>"はいっ！", "user_name"=>"B", "time"=>"Thu, 12 Dec 2019 03:30:54 +0900"}
 {"comment"=>"kenshiもな", "user_name"=>"芦毛馬@オグリキャップ", "time"=>"Thu, 12 Dec 2019 03:30:54 +0900"}
 {"comment"=>"早く配信見せてくれ", "user_name"=>"流男", "time"=>"Thu, 12 Dec 2019 03:30:54 +0900"}
+{"comment"=>"やたやあわいやあやあやあやあやあやあやあやあやあやあやあやあ", "user_name"=>"NONAME", "time"=>"Thu, 12 Dec 2019 03:30:54 +0900"}
 {"comment"=>"やったあああああああああああああああああああああああああああ", "user_name"=>"ミント", "time"=>"Thu, 12 Dec 2019 03:30:54 +0900"}
 {"comment"=>"ひん", "user_name"=>"rutir", "time"=>"Thu, 12 Dec 2019 03:30:54 +0900"}
 {"comment"=>"ひん", "user_name"=>"しゅう", "time"=>"Thu, 12 Dec 2019 03:30:54 +0900"}
@@ -272,7 +166,7 @@
 {"comment"=>"ひん", "user_name"=>"かんとした", "time"=>"Thu, 12 Dec 2019 03:30:55 +0900"}
 {"comment"=>"楽しみにしてるよ", "user_name"=>"くろりんご", "time"=>"Thu, 12 Dec 2019 03:30:55 +0900"}
 {"comment"=>"ﾊﾖｾｲｰ", "user_name"=>"新原", "time"=>"Thu, 12 Dec 2019 03:30:55 +0900"}
-{"comment"=>"お疲れ", "user_name"=>"大室さんちのあびこランドサガ卒", "time"=>"Thu, 12 Dec 2019 03:30:55 +0900"}
+{"comment"=>"お疲れ", "user_name"=>"あびこりす･あびこいる", "time"=>"Thu, 12 Dec 2019 03:30:55 +0900"}
 {"comment"=>"ひん", "user_name"=>"ra", "time"=>"Thu, 12 Dec 2019 03:30:55 +0900"}
 {"comment"=>"ひん", "user_name"=>"そばはた", "time"=>"Thu, 12 Dec 2019 03:30:55 +0900"}
 {"comment"=>"やあああああ", "user_name"=>"DCM", "time"=>"Thu, 12 Dec 2019 03:30:55 +0900"}
@@ -284,6 +178,7 @@
 {"comment"=>"剣士もやれ！", "user_name"=>"キーブレードさん", "time"=>"Thu, 12 Dec 2019 03:30:56 +0900"}
 {"comment"=>"ひん", "user_name"=>"米", "time"=>"Thu, 12 Dec 2019 03:30:56 +0900"}
 {"comment"=>"ひん", "user_name"=>"あ", "time"=>"Thu, 12 Dec 2019 03:30:56 +0900"}
+{"comment"=>"ひん", "user_name"=>"ただし", "time"=>"Thu, 12 Dec 2019 03:30:56 +0900"}
 {"comment"=>"おつ", "user_name"=>"だいぽん", "time"=>"Thu, 12 Dec 2019 03:30:56 +0900"}
 {"comment"=>"ひんひん", "user_name"=>"、", "time"=>"Thu, 12 Dec 2019 03:30:56 +0900"}
 {"comment"=>"やったあああああ", "user_name"=>"TAKUYA", "time"=>"Thu, 12 Dec 2019 03:30:56 +0900"}
@@ -310,6 +205,7 @@
 {"comment"=>"ひひんがひん！", "user_name"=>"センリツ", "time"=>"Thu, 12 Dec 2019 03:30:59 +0900"}
 {"comment"=>"洋ゲーしてくれ", "user_name"=>"南の三四郎", "time"=>"Thu, 12 Dec 2019 03:30:59 +0900"}
 {"comment"=>"やあひん", "user_name"=>"七瀬", "time"=>"Thu, 12 Dec 2019 03:31:00 +0900"}
+{"comment"=>"やあやあやあやあわあやあやいやあわあわあやあやあやいや", "user_name"=>"NONAME", "time"=>"Thu, 12 Dec 2019 03:31:00 +0900"}
 {"comment"=>"楽しみにしてる", "user_name"=>"おれき", "time"=>"Thu, 12 Dec 2019 03:31:00 +0900"}
 {"comment"=>"ひん", "user_name"=>"星男", "time"=>"Thu, 12 Dec 2019 03:31:00 +0900"}
 {"comment"=>"ひん", "user_name"=>"jeighwxk", "time"=>"Thu, 12 Dec 2019 03:31:00 +0900"}
@@ -329,6 +225,7 @@
 {"comment"=>"ひんひんうるさ", "user_name"=>"にー", "time"=>"Thu, 12 Dec 2019 03:31:06 +0900"}
 {"comment"=>"髪型蟹江", "user_name"=>"オーリリア@DMP", "time"=>"Thu, 12 Dec 2019 03:31:06 +0900"}
 {"comment"=>"満たされた", "user_name"=>"ゴードドン", "time"=>"Thu, 12 Dec 2019 03:31:07 +0900"}
+{"comment"=>"やあやあやあやあやいやあやあやあやあやあやあやあやあやあやあ", "user_name"=>"NONAME", "time"=>"Thu, 12 Dec 2019 03:31:07 +0900"}
 {"comment"=>"やん", "user_name"=>"トムホ", "time"=>"Thu, 12 Dec 2019 03:31:07 +0900"}
 {"comment"=>"ひん", "user_name"=>"︎︎ 真 瑠 ︎ ︎︎︎︎", "time"=>"Thu, 12 Dec 2019 03:31:08 +0900"}
 {"comment"=>"おやすみ", "user_name"=>"タルップル", "time"=>"Thu, 12 Dec 2019 03:31:09 +0900"}
@@ -336,14 +233,24 @@
 {"comment"=>"ひん", "user_name"=>"たけちよ", "time"=>"Thu, 12 Dec 2019 03:31:11 +0900"}
 {"comment"=>"いい夢みろよ", "user_name"=>"東から出た", "time"=>"Thu, 12 Dec 2019 03:31:11 +0900"}
 {"comment"=>"満たされた", "user_name"=>"星男", "time"=>"Thu, 12 Dec 2019 03:31:11 +0900"}
+{"comment"=>"やあやあやあやあやいやあやあやあやあやあやあやうやあや", "user_name"=>"NONAME", "time"=>"Thu, 12 Dec 2019 03:31:12 +0900"}
+{"comment"=>"やあやあやあやいやあやあやあやあやあわあ", "user_name"=>"NONAME", "time"=>"Thu, 12 Dec 2019 03:31:16 +0900"}
 {"comment"=>"ひん", "user_name"=>"芦毛馬@オグリキャップ", "time"=>"Thu, 12 Dec 2019 03:31:17 +0900"}
 {"comment"=>"ひん", "user_name"=>"ねふす", "time"=>"Thu, 12 Dec 2019 03:31:17 +0900"}
 {"comment"=>"満たされた", "user_name"=>"ゆうた", "time"=>"Thu, 12 Dec 2019 03:31:19 +0900"}
+{"comment"=>"やあやあやあやあやあやあやあやあやあ", "user_name"=>"NONAME", "time"=>"Thu, 12 Dec 2019 03:31:20 +0900"}
 {"comment"=>"ひん", "user_name"=>"くろりんご", "time"=>"Thu, 12 Dec 2019 03:31:25 +0900"}
+{"comment"=>"やあやあやあやいやあやあやあやあやあやあやあやあやあやあやあ", "user_name"=>"NONAME", "time"=>"Thu, 12 Dec 2019 03:31:25 +0900"}
+{"comment"=>"ゆあやあやいやあやあやあやあやあやあやあやあやあやあやあやあ", "user_name"=>"NONAME", "time"=>"Thu, 12 Dec 2019 03:31:31 +0900"}
+{"comment"=>"やいゆいやあやあやあやあやあやあやあやいやあやあやあやあや", "user_name"=>"NONAME", "time"=>"Thu, 12 Dec 2019 03:31:36 +0900"}
 {"comment"=>"ひん", "user_name"=>"ななし", "time"=>"Thu, 12 Dec 2019 03:31:37 +0900"}
 {"comment"=>"にじさんじのせいだ", "user_name"=>"もも", "time"=>"Thu, 12 Dec 2019 03:31:53 +0900"}
+{"comment"=>"みて", "user_name"=>"NONAME", "time"=>"Thu, 12 Dec 2019 03:31:54 +0900"}
+{"comment"=>"みてみてみてみてみてみてみて", "user_name"=>"NONAME", "time"=>"Thu, 12 Dec 2019 03:32:03 +0900"}
+{"comment"=>"みてみてみてみてみてみてみてみてみてみてみて", "user_name"=>"NONAME", "time"=>"Thu, 12 Dec 2019 03:32:17 +0900"}
 {"comment"=>"ざ", "user_name"=>"トムホ", "time"=>"Thu, 12 Dec 2019 03:32:23 +0900"}
 {"comment"=>"ひん", "user_name"=>"bear@フォートナイト垢", "time"=>"Thu, 12 Dec 2019 03:32:49 +0900"}
+{"comment"=>"なんで", "user_name"=>"NONAME", "time"=>"Thu, 12 Dec 2019 03:32:50 +0900"}
 {"comment"=>"ひん", "user_name"=>"こまじろう", "time"=>"Thu, 12 Dec 2019 03:33:42 +0900"}
 {"comment"=>"ひん", "user_name"=>"ハナチョロ", "time"=>"Thu, 12 Dec 2019 03:33:56 +0900"}
 {"comment"=>"ひん", "user_name"=>"DCM", "time"=>"Thu, 12 Dec 2019 03:44:23 +0900"}
@@ -354,21 +261,21 @@
 {"comment"=>"ひん", "user_name"=>"あんにん", "time"=>"Wed, 18 Dec 2019 03:50:33 +0900"}
 {"comment"=>"ひん", "user_name"=>"シルバーレモン", "time"=>"Thu, 19 Dec 2019 13:00:44 +0900"}
 {"comment"=>"ひん", "user_name"=>"kl", "time"=>"Sun, 22 Dec 2019 17:27:12 +0900"}
-{"comment"=>"ひん", "user_name"=>"termunator", "time"=>"Sat, 04 Jan 2020 01:51:42 +0900"}
+{"comment"=>"ひん", "user_name"=>"たーむねーたー", "time"=>"Sat, 04 Jan 2020 01:51:42 +0900"}
 {"comment"=>"ひん", "user_name"=>"fufryhe", "time"=>"Sun, 05 Jan 2020 11:00:39 +0900"}
-{"comment"=>"ひん", "user_name"=>"ぴ", "time"=>"Wed, 08 Jan 2020 20:34:47 +0900"}
+{"comment"=>"ひん", "user_name"=>"ぴざ", "time"=>"Wed, 08 Jan 2020 20:34:47 +0900"}
 {"comment"=>"たいきー", "user_name"=>"内堀 拓哉", "time"=>"Thu, 09 Jan 2020 23:01:24 +0900"}
 {"comment"=>"ひん", "user_name"=>"えりく", "time"=>"Fri, 10 Jan 2020 03:26:50 +0900"}
 {"comment"=>"ひん", "user_name"=>"calm", "time"=>"Wed, 15 Jan 2020 21:09:13 +0900"}
 {"comment"=>"ひん", "user_name"=>"aiueo", "time"=>"Sat, 25 Jan 2020 21:25:12 +0900"}
 {"comment"=>"ひん", "user_name"=>"出雲", "time"=>"Sat, 25 Jan 2020 22:33:59 +0900"}
 {"comment"=>"配信しろ", "user_name"=>"一郎", "time"=>"Sat, 01 Feb 2020 22:50:43 +0900"}
-{"comment"=>"ぴょぉぉぉおおおお", "user_name"=>"termunator", "time"=>"Sun, 02 Feb 2020 03:00:48 +0900"}
+{"comment"=>"ぴょぉぉぉおおおお", "user_name"=>"たーむねーたー", "time"=>"Sun, 02 Feb 2020 03:00:48 +0900"}
 {"comment"=>"配信して", "user_name"=>"わなび", "time"=>"Sun, 02 Feb 2020 13:28:32 +0900"}
 {"comment"=>"やあ", "user_name"=>"かめ", "time"=>"Sun, 02 Feb 2020 15:04:33 +0900"}
 {"comment"=>"配信して", "user_name"=>"アオカン", "time"=>"Mon, 03 Feb 2020 00:54:50 +0900"}
 {"comment"=>"やあ", "user_name"=>"ドドさん", "time"=>"Sat, 08 Feb 2020 20:42:30 +0900"}
-{"comment"=>"ひん", "user_name"=>"けーと", "time"=>"Sat, 08 Feb 2020 21:46:18 +0900"}
+{"comment"=>"ひん", "user_name"=>"靴下", "time"=>"Sat, 08 Feb 2020 21:46:18 +0900"}
 {"comment"=>"コレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレコレ", "user_name"=>"アオカン", "time"=>"Mon, 10 Feb 2020 18:39:08 +0900"}
 {"comment"=>"やあ", "user_name"=>"joker", "time"=>"Wed, 12 Feb 2020 17:05:36 +0900"}
 {"comment"=>"たぁ", "user_name"=>"F氏", "time"=>"Sat, 22 Feb 2020 00:58:33 +0900"}
@@ -395,7 +302,7 @@
 {"comment"=>"やあやあやあやあやあひんひんひん", "user_name"=>"でかきのこofficial", "time"=>"Wed, 18 Mar 2020 04:53:17 +0900"}
 {"comment"=>"やあ", "user_name"=>"エロマンガの民", "time"=>"Thu, 19 Mar 2020 09:18:41 +0900"}
 {"comment"=>"やあ", "user_name"=>"やんばる@よもぎさん", "time"=>"Sat, 21 Mar 2020 22:13:46 +0900"}
-{"comment"=>"やあ", "user_name"=>"米良総理", "time"=>"Sun, 22 Mar 2020 15:44:27 +0900"}
+{"comment"=>"やあ", "user_name"=>"米良草履", "time"=>"Sun, 22 Mar 2020 15:44:27 +0900"}
 {"comment"=>"ひん", "user_name"=>"qm", "time"=>"Thu, 26 Mar 2020 01:36:56 +0900"}
 {"comment"=>"あ", "user_name"=>"ウミニイクイレブン", "time"=>"Thu, 26 Mar 2020 04:40:14 +0900"}
 {"comment"=>"やあ", "user_name"=>"moto🤩", "time"=>"Thu, 02 Apr 2020 00:02:26 +0900"}
@@ -416,24 +323,36 @@
 {"comment"=>"やあ", "user_name"=>"さとし", "time"=>"Wed, 22 Apr 2020 23:43:28 +0900"}
 {"comment"=>"Ho", "user_name"=>"藤井怜人", "time"=>"Sat, 25 Apr 2020 23:15:59 +0900"}
 {"comment"=>"これまじうんこちゃん？", "user_name"=>"まじエブリ七太郎", "time"=>"Sun, 26 Apr 2020 14:44:59 +0900"}
+{"comment"=>"4月28日今日も一日頑張るぞい←なんてもう昼間やったわ(笑)コロナみんな大変やな(このしずくみたいなやつ涙とちゃうで！汗のマークやで！！←ここ大切)俺の大学もコロナで5月末までありそうにないわー。実はまだ5月6日までとしか言われてないけど個人予想(笑笑)", "user_name"=>"おんjみん", "time"=>"Tue, 28 Apr 2020 12:25:23 +0900"}
+{"comment"=>"愛知県の大学が5月末まで休校ってなったから個人的にそうなるんちゃうかなって思っとる←(心の声)勝手に決めつけんな！でも大学始まったらみんなに負けへんように勉強頑張らなあかんな思ってるからひたすら勉強や！！！🤛🤛みんなの会社や学校はどうかな？社会人の方たちは今はテレワークかな？", "user_name"=>"おんjみん", "time"=>"Tue, 28 Apr 2020 12:29:10 +0900"}
+{"comment"=>"学生のみんなはスタードダッシュが大切やって俺の担任の先生がいっとってん！！俺実はそんな成績良くなかったからよくしばかれとってん（泣）辛かったわほんま。←(心の声「今は関係あらへんやろ！！」)ごめんな話逸れて、でもほんまにその先生の言う通りやと俺は思う(急に真面目になん", "user_name"=>"おんjみん", "time"=>"Tue, 28 Apr 2020 12:33:02 +0900"}
+{"comment"=>"な笑笑)やからみんな今はコロナ大変やけど頑張ろうな！！！また明日うんこちゃんのツイキャスのコメント欄に現れると思うでみんな要チェックやで！病は気から！コロナにみんなに負けるな！", "user_name"=>"おんjみん", "time"=>"Tue, 28 Apr 2020 12:35:03 +0900"}
+{"comment"=>"@qjd8vw0iksp16by そんなん言ったらちゃん可哀想やん←うんこちゃんって名前下品やから←このマーク使った方がええで！！！←「(心の声)全然変われへんわ！！！」笑笑笑ごめんなすぐふざけてまって笑笑嫌いにならへんとってな", "user_name"=>"おんjみん", "time"=>"Wed, 29 Apr 2020 18:15:53 +0900"}
 {"comment"=>"あ", "user_name"=>"ははは", "time"=>"Fri, 01 May 2020 04:06:36 +0900"}
+{"comment"=>"ツイキャス1位とって欲しいなぁ、、", "user_name"=>"あ あ", "time"=>"Fri, 01 May 2020 14:27:01 +0900"}
 {"comment"=>".", "user_name"=>"しろ", "time"=>"Tue, 05 May 2020 02:41:57 +0900"}
 {"comment"=>"今日配信ない？", "user_name"=>"まさ", "time"=>"Sat, 09 May 2020 23:20:21 +0900"}
 {"comment"=>"やあ", "user_name"=>"らいむくん", "time"=>"Sun, 10 May 2020 16:08:20 +0900"}
 {"comment"=>"やあ", "user_name"=>"りっく@Mｒ.ドーナッツ", "time"=>"Mon, 11 May 2020 15:00:54 +0900"}
+{"comment"=>"やあ", "user_name"=>"きんたま62", "time"=>"Mon, 11 May 2020 20:06:42 +0900"}
 {"comment"=>"ኃ ﾝቻがቺｯቻቺቻ", "user_name"=>"ኃ ﾝቻがቺｯቻቺቻ", "time"=>"Mon, 11 May 2020 20:45:09 +0900"}
 {"comment"=>"うんこ", "user_name"=>"衛門", "time"=>"Wed, 13 May 2020 14:14:16 +0900"}
-{"comment"=>"あ", "user_name"=>"谷やん🦁", "time"=>"Thu, 14 May 2020 01:08:51 +0900"}
+{"comment"=>"あ", "user_name"=>"谷やん🦁 青柳晃洋現人神信仰垢", "time"=>"Thu, 14 May 2020 01:08:51 +0900"}
+{"comment"=>"5月15日今日も今日とて、うんこちゃんのツイキャスを待ちます", "user_name"=>"ヅラじゃない桂だ！", "time"=>"Fri, 15 May 2020 17:34:20 +0900"}
 {"comment"=>"こないかな", "user_name"=>"れ", "time"=>"Fri, 15 May 2020 22:30:19 +0900"}
+{"comment"=>"5月16日今日も今日とて配信をまちます", "user_name"=>"ヅラじゃない桂だ！", "time"=>"Sat, 16 May 2020 23:20:43 +0900"}
 {"comment"=>"ぴょおおおおおおおおおおおおおおおおおお", "user_name"=>"雪だるま", "time"=>"Tue, 19 May 2020 18:36:53 +0900"}
 {"comment"=>"あ", "user_name"=>"くんぱんMarc_2", "time"=>"Tue, 19 May 2020 20:27:34 +0900"}
 {"comment"=>"やあ", "user_name"=>"鎌田", "time"=>"Wed, 20 May 2020 05:59:01 +0900"}
 {"comment"=>"これって本物の加藤純一さんのツイキャス垢ですか？", "user_name"=>"中田 英史", "time"=>"Wed, 20 May 2020 22:07:45 +0900"}
+{"comment"=>"待機！", "user_name"=>"ふぇるま", "time"=>"Wed, 20 May 2020 22:26:58 +0900"}
 {"comment"=>"コレコレの未成年淫行について", "user_name"=>"コロオギせんべい", "time"=>"Wed, 20 May 2020 22:53:04 +0900"}
 {"comment"=>"なう(2020/05/22 18:14:43)", "user_name"=>"こんす", "time"=>"Fri, 22 May 2020 18:14:44 +0900"}
+{"comment"=>"やあ", "user_name"=>"ﾐﾝｸﾞﾘ", "time"=>"Sat, 23 May 2020 15:39:36 +0900"}
 {"comment"=>"やあ", "user_name"=>"なすび", "time"=>"Sat, 23 May 2020 19:45:29 +0900"}
 {"comment"=>"うんこ", "user_name"=>"ちらかわ", "time"=>"Sat, 23 May 2020 22:27:27 +0900"}
 {"comment"=>"コレコレは本当にgm", "user_name"=>"たまごっち", "time"=>"Wed, 27 May 2020 13:32:11 +0900"}
+{"comment"=>"ひん", "user_name"=>"優也", "time"=>"Fri, 29 May 2020 01:50:45 +0900"}
 {"comment"=>"カイキングのチャンネル荒らすな", "user_name"=>"ソルジャー 七十六", "time"=>"Sun, 31 May 2020 22:25:22 +0900"}
 {"comment"=>"あ", "user_name"=>"中卒DQN゛", "time"=>"Tue, 02 Jun 2020 05:19:27 +0900"}
 {"comment"=>"やぁ", "user_name"=>"nova", "time"=>"Wed, 03 Jun 2020 05:52:26 +0900"}
@@ -441,17 +360,17 @@
 {"comment"=>"配信ｾｲｰ", "user_name"=>"Entoro-chan", "time"=>"Sat, 06 Jun 2020 20:21:29 +0900"}
 {"comment"=>"あ", "user_name"=>"圭悟", "time"=>"Sat, 06 Jun 2020 23:39:15 +0900"}
 {"comment"=>"配信ｾｲｰ", "user_name"=>"star_ct4r", "time"=>"Sun, 07 Jun 2020 19:44:11 +0900"}
+{"comment"=>"配信今日無い？", "user_name"=>"masa", "time"=>"Sun, 07 Jun 2020 21:49:15 +0900"}
 {"comment"=>"やあ", "user_name"=>"haru01030808", "time"=>"Mon, 08 Jun 2020 23:57:06 +0900"}
 {"comment"=>"やあ", "user_name"=>"りこハゲ", "time"=>"Tue, 09 Jun 2020 13:58:46 +0900"}
 {"comment"=>"やあ", "user_name"=>"赤石　～低浮上になりたい～", "time"=>"Tue, 09 Jun 2020 16:33:57 +0900"}
-{"comment"=>"やあ", "user_name"=>"ちくわ", "time"=>"Wed, 10 Jun 2020 03:57:52 +0900"}
 {"comment"=>"あ", "user_name"=>"Entoro-chan", "time"=>"Wed, 10 Jun 2020 23:45:55 +0900"}
 {"comment"=>"やあ", "user_name"=>"こーた。", "time"=>"Thu, 11 Jun 2020 02:35:40 +0900"}
 {"comment"=>"やあ", "user_name"=>"ちんぱん", "time"=>"Fri, 12 Jun 2020 02:33:16 +0900"}
 {"comment"=>"やってる？", "user_name"=>"shibutaku", "time"=>"Fri, 12 Jun 2020 03:36:30 +0900"}
 {"comment"=>"ち", "user_name"=>"shibutaku", "time"=>"Fri, 12 Jun 2020 03:36:49 +0900"}
 {"comment"=>"　　　／へへ　 ＼　　／／⌒⌒＼　 ＼　 / /　　　　ヽ　 ヽ　｜｜ヽ　／⌒ |　　|　 ﾚY-･／　-･- ヽ　 |　　| /　　　　 Ｖ) |　　|(＿つ　 ･　 丿ノ　　|＜三三＞)　/ /　　ヽ　ﾞﾞ　　／ﾚｿ　　　＼从ww／　｜　　　　/)￣", "user_name"=>"西村博之", "time"=>"Sat, 13 Jun 2020 17:59:50 +0900"}
-{"comment"=>"　　　∧∧　　（*･ω･） 　おやすみ　 ＿|　⊃／(＿＿_／　└-(＿＿＿_／￣￣￣￣￣￣￣", "user_name"=>"花京院︎ミツル", "time"=>"Sat, 13 Jun 2020 20:42:39 +0900"}
+{"comment"=>"　　　∧∧　　（*･ω･） 　おやすみ　 ＿|　⊃／(＿＿_／　└-(＿＿＿_／￣￣￣￣￣￣￣", "user_name"=>"花京院ミツル", "time"=>"Sat, 13 Jun 2020 20:42:39 +0900"}
 {"comment"=>"うんこ", "user_name"=>"くち", "time"=>"Sun, 14 Jun 2020 22:24:37 +0900"}
 {"comment"=>"うんこ", "user_name"=>"陽ฅ", "time"=>"Thu, 18 Jun 2020 15:16:15 +0900"}
 {"comment"=>"やあ", "user_name"=>"Entoro-chan", "time"=>"Sun, 21 Jun 2020 22:14:59 +0900"}
@@ -462,7 +381,7 @@
 {"comment"=>"やあ", "user_name"=>"りゃと", "time"=>"Sat, 04 Jul 2020 21:40:21 +0900"}
 {"comment"=>"やあ", "user_name"=>"ちょこﾗﾃｨ", "time"=>"Mon, 06 Jul 2020 22:50:55 +0900"}
 {"comment"=>"やあ", "user_name"=>"としょんか", "time"=>"Thu, 09 Jul 2020 15:18:33 +0900"}
-{"comment"=>"やあ", "user_name"=>"デカイ・マクラ24世", "time"=>"Sun, 12 Jul 2020 23:45:39 +0900"}
+{"comment"=>"やあ", "user_name"=>"大元帥", "time"=>"Sun, 12 Jul 2020 23:45:39 +0900"}
 {"comment"=>"やあ", "user_name"=>"ディグダに似た何か", "time"=>"Mon, 13 Jul 2020 00:35:04 +0900"}
 {"comment"=>"やあ", "user_name"=>"無名", "time"=>"Mon, 13 Jul 2020 21:37:02 +0900"}
 {"comment"=>"やあ", "user_name"=>"パン屋", "time"=>"Thu, 16 Jul 2020 22:27:23 +0900"}
@@ -488,8 +407,10 @@
 {"comment"=>"やあ", "user_name"=>"松", "time"=>"Thu, 13 Aug 2020 01:14:11 +0900"}
 {"comment"=>"やあ", "user_name"=>"ランド", "time"=>"Thu, 13 Aug 2020 03:44:18 +0900"}
 {"comment"=>"やあ", "user_name"=>"コレリス@たき", "time"=>"Thu, 13 Aug 2020 05:37:36 +0900"}
+{"comment"=>"はよｾｲｰ", "user_name"=>"くそ垢", "time"=>"Fri, 14 Aug 2020 00:37:50 +0900"}
 {"comment"=>"あ", "user_name"=>"住人Aさん", "time"=>"Fri, 14 Aug 2020 01:33:33 +0900"}
 {"comment"=>"やあ", "user_name"=>"みんキャス", "time"=>"Sat, 15 Aug 2020 00:42:30 +0900"}
+{"comment"=>"やあ", "user_name"=>"ごるどら", "time"=>"Mon, 17 Aug 2020 00:37:44 +0900"}
 {"comment"=>"次はいつだい", "user_name"=>"緑の緑茶", "time"=>"Mon, 17 Aug 2020 01:34:11 +0900"}
 {"comment"=>"いつまで俺は座して待てばいいんだ; ;", "user_name"=>"あやつじ", "time"=>"Tue, 18 Aug 2020 19:05:32 +0900"}
 {"comment"=>"やあ", "user_name"=>"忌む夫", "time"=>"Thu, 20 Aug 2020 05:57:44 +0900"}
@@ -504,10 +425,12 @@
 {"comment"=>"やぁ", "user_name"=>"尾骶骨骨折", "time"=>"Thu, 27 Aug 2020 23:59:04 +0900"}
 {"comment"=>"やあ", "user_name"=>"シャワー", "time"=>"Sun, 30 Aug 2020 11:32:59 +0900"}
 {"comment"=>"やあ", "user_name"=>"Phantom", "time"=>"Mon, 31 Aug 2020 09:59:31 +0900"}
+{"comment"=>"やあ", "user_name"=>"ムー民", "time"=>"Tue, 01 Sep 2020 02:36:45 +0900"}
 {"comment"=>"やあ", "user_name"=>"石丸", "time"=>"Wed, 02 Sep 2020 02:19:23 +0900"}
 {"comment"=>"今日来るかな？", "user_name"=>"中田 英史", "time"=>"Thu, 03 Sep 2020 21:57:56 +0900"}
 {"comment"=>"やあ", "user_name"=>"ほおな", "time"=>"Sun, 06 Sep 2020 07:35:46 +0900"}
 {"comment"=>"やあ", "user_name"=>"", "time"=>"Mon, 07 Sep 2020 00:25:15 +0900"}
+{"comment"=>"はやくやれ 2020/9/12", "user_name"=>"くそ垢", "time"=>"Sat, 12 Sep 2020 10:05:44 +0900"}
 {"comment"=>"はよやれgm", "user_name"=>"Lªin", "time"=>"Sat, 12 Sep 2020 14:12:26 +0900"}
 {"comment"=>"yaa", "user_name"=>"sinobu", "time"=>"Sat, 12 Sep 2020 23:39:06 +0900"}
 {"comment"=>"やあ", "user_name"=>"ぽてと", "time"=>"Sun, 13 Sep 2020 19:59:27 +0900"}
@@ -517,12 +440,13 @@
 {"comment"=>"待ってる間ツイキャスしろ", "user_name"=>"、", "time"=>"Fri, 25 Sep 2020 10:22:18 +0900"}
 {"comment"=>"はよｾｲｰ", "user_name"=>"とばん", "time"=>"Mon, 28 Sep 2020 19:27:52 +0900"}
 {"comment"=>"やあ", "user_name"=>"がるぼみに", "time"=>"Thu, 01 Oct 2020 20:04:26 +0900"}
-{"comment"=>"テイッ", "user_name"=>"美浦かずき🏴‍☠ 王となれ†", "time"=>"Sat, 03 Oct 2020 01:53:17 +0900"}
+{"comment"=>"テイッ", "user_name"=>"美浦かずき†🏴‍☠ Mimw", "time"=>"Sat, 03 Oct 2020 01:53:17 +0900"}
 {"comment"=>"ﾊﾖｾｲｰ", "user_name"=>"なoき", "time"=>"Mon, 05 Oct 2020 22:17:58 +0900"}
 {"comment"=>"復帰", "user_name"=>"taku", "time"=>"Sun, 11 Oct 2020 23:05:55 +0900"}
 {"comment"=>"あ", "user_name"=>"みっちゃん＠おっすくん 一对☠", "time"=>"Tue, 13 Oct 2020 17:48:56 +0900"}
 {"comment"=>"やあ", "user_name"=>"笹川", "time"=>"Tue, 13 Oct 2020 18:25:00 +0900"}
 {"comment"=>"やあ", "user_name"=>"あさ", "time"=>"Thu, 15 Oct 2020 22:43:32 +0900"}
+{"comment"=>"はやくやれ 10/16", "user_name"=>"くそ垢", "time"=>"Fri, 16 Oct 2020 03:17:10 +0900"}
 {"comment"=>"おはけーき", "user_name"=>"𝙲𝚊𝚔𝚎", "time"=>"Sun, 18 Oct 2020 21:28:29 +0900"}
 {"comment"=>"こんちゃーす", "user_name"=>"汚言症", "time"=>"Tue, 20 Oct 2020 21:47:34 +0900"}
 {"comment"=>"やあ", "user_name"=>"まうこ", "time"=>"Mon, 02 Nov 2020 17:55:30 +0900"}
@@ -553,7 +477,7 @@
 {"comment"=>"やあ", "user_name"=>"⎊かいと⎊", "time"=>"Thu, 07 Jan 2021 23:38:06 +0900"}
 {"comment"=>"やあ", "user_name"=>"あ", "time"=>"Fri, 15 Jan 2021 16:57:47 +0900"}
 {"comment"=>"はよｾｲー", "user_name"=>"もふ", "time"=>"Mon, 18 Jan 2021 21:38:07 +0900"}
-{"comment"=>"", "user_name"=>"茉莉花", "time"=>"Tue, 19 Jan 2021 22:35:19 +0900"}
+{"comment"=>"", "user_name"=>"^_^", "time"=>"Tue, 19 Jan 2021 22:35:19 +0900"}
 {"comment"=>"やあ", "user_name"=>"がっくん", "time"=>"Thu, 21 Jan 2021 21:40:33 +0900"}
 {"comment"=>"やああ", "user_name"=>"かこもゆ", "time"=>"Sat, 23 Jan 2021 00:18:25 +0900"}
 {"comment"=>"やあ", "user_name"=>"Tetsuya", "time"=>"Mon, 25 Jan 2021 00:23:49 +0900"}
@@ -587,7 +511,7 @@
 {"comment"=>"やあ！？", "user_name"=>"ソラくん", "time"=>"Thu, 22 Apr 2021 20:49:12 +0900"}
 {"comment"=>"やあ", "user_name"=>"ひろ", "time"=>"Sat, 24 Apr 2021 13:50:58 +0900"}
 {"comment"=>"やあ！", "user_name"=>"だじゅる", "time"=>"Mon, 03 May 2021 15:24:00 +0900"}
-{"comment"=>"やぁ", "user_name"=>"Schirm(ふりゅ)", "time"=>"Wed, 05 May 2021 14:19:49 +0900"}
+{"comment"=>"やぁ", "user_name"=>"ふぃるむ!", "time"=>"Wed, 05 May 2021 14:19:49 +0900"}
 {"comment"=>"やあ", "user_name"=>"ファイヤー", "time"=>"Wed, 05 May 2021 18:21:38 +0900"}
 {"comment"=>"やああ", "user_name"=>"ファイヤー", "time"=>"Wed, 05 May 2021 18:22:00 +0900"}
 {"comment"=>"おはけーき", "user_name"=>"𝙲𝚊𝚔𝚎", "time"=>"Sat, 08 May 2021 01:09:16 +0900"}
@@ -640,7 +564,7 @@
 {"comment"=>"PJCT(PUBG大会)2次会『まだ寝ないAPEX LEGENDS』Withスタヌ&もこう(22:41～放送開始)", "user_name"=>"unkolink", "time"=>"Sun, 18 Jul 2021 23:42:56 +0900"}
 {"comment"=>"ニコ生『雑談』(13:22～放送開始)", "user_name"=>"crisiscore", "time"=>"Tue, 20 Jul 2021 13:43:32 +0900"}
 {"comment"=>"『おい！！！ふざけるな！！！放送！』", "user_name"=>"unkolink", "time"=>"Tue, 20 Jul 2021 19:14:30 +0900"}
-{"comment"=>"まだか", "user_name"=>"お顔から", "time"=>"Sat, 24 Jul 2021 20:17:36 +0900"}
+{"comment"=>"まだか", "user_name"=>"ずいえき", "time"=>"Sat, 24 Jul 2021 20:17:36 +0900"}
 {"comment"=>"『GTA5で生きる。(ストーリーモード)7日目』(22:26～放送開始)", "user_name"=>"unkolink", "time"=>"Sun, 25 Jul 2021 00:49:45 +0900"}
 {"comment"=>"『Dead By Daylight/1試合でいいからラクーンシティやらせてくれ。頼む』(2:07～放送開始)", "user_name"=>"crisiscore", "time"=>"Sun, 25 Jul 2021 02:27:41 +0900"}
 {"comment"=>"『Call Of Duty Warzone やってみる。』(11:46～放送開始)", "user_name"=>"unkolink", "time"=>"Sun, 25 Jul 2021 12:02:11 +0900"}
@@ -684,7 +608,7 @@
 {"comment"=>"『(誕生日に)金ネジキを遂にクリアする。』【37回目】(19:03～配信開始)", "user_name"=>"crisiscore", "time"=>"Tue, 17 Aug 2021 21:59:59 +0900"}
 {"comment"=>"『ふて寝する前に(顔出し)』", "user_name"=>"crisiscore", "time"=>"Tue, 17 Aug 2021 23:11:25 +0900"}
 {"comment"=>"あ", "user_name"=>"184", "time"=>"Thu, 19 Aug 2021 13:17:40 +0900"}
-{"comment"=>"やあ", "user_name"=>"美浦かずき🏴‍☠ 王となれ†", "time"=>"Sat, 21 Aug 2021 05:08:04 +0900"}
+{"comment"=>"やあ", "user_name"=>"美浦かずき†🏴‍☠ Mimw", "time"=>"Sat, 21 Aug 2021 05:08:04 +0900"}
 {"comment"=>"『ハイパークッキングたこ焼き編』(14:12～放送開始)", "user_name"=>"crisiscore", "time"=>"Sat, 21 Aug 2021 14:41:11 +0900"}
 {"comment"=>"『ポケットモンスターBW2を普通にやる。(ストーリー実況プレイ)初日』(19:00～配信開始)", "user_name"=>"crisiscore", "time"=>"Sat, 21 Aug 2021 19:18:55 +0900"}
 {"comment"=>"『モーニング雑談』(10:20～配信開始)", "user_name"=>"Virtual SEX", "time"=>"Mon, 23 Aug 2021 10:28:30 +0900"}
@@ -721,7 +645,7 @@
 {"comment"=>"『雑談する→カイジ 人生逆転ゲーム』アマプラ/ウォッチパーティー』(21:21～放送開始)", "user_name"=>"crisiscore", "time"=>"Sun, 10 Oct 2021 23:25:21 +0900"}
 {"comment"=>"『カイジ2～人生奪回ゲーム～アマプラ/ウォッチパーティー』(22:30～放送開始)", "user_name"=>"unkolink", "time"=>"Mon, 11 Oct 2021 22:48:14 +0900"}
 {"comment"=>"あ、あぅ", "user_name"=>"チタン", "time"=>"Mon, 11 Oct 2021 23:29:45 +0900"}
-{"comment"=>"oh.....", "user_name"=>"かねごん 。", "time"=>"Wed, 13 Oct 2021 23:09:45 +0900"}
+{"comment"=>"oh.....", "user_name"=>"かねごん", "time"=>"Wed, 13 Oct 2021 23:09:45 +0900"}
 {"comment"=>"こんばんは", "user_name"=>"UT", "time"=>"Thu, 14 Oct 2021 00:04:12 +0900"}
 {"comment"=>"『FIFA 2022→Back 4 Bloodなるゲームをやる』×おにや×はんじょう×よしなま(初コラボ)(20:03～放送開始)", "user_name"=>"unkolink", "time"=>"Fri, 15 Oct 2021 22:29:52 +0900"}
 {"comment"=>"『加藤純一VS金ネジキ』49日目/最終章(長時間耐久配信)『ポケットモンスタープラチナカトネジキ』1枠目(18:11～放送開始)", "user_name"=>"unkolink", "time"=>"Sat, 16 Oct 2021 18:39:13 +0900"}
@@ -756,6 +680,7 @@
 {"comment"=>"12/12に対面ボドゲをやる。18:00～予約枠あり、メンバー一覧", "user_name"=>"unkolink", "time"=>"Fri, 26 Nov 2021 18:29:34 +0900"}
 {"comment"=>"『登録者100万人カウントダウン放送』(18:15～放送開始)", "user_name"=>"unkolink", "time"=>"Sat, 27 Nov 2021 18:18:04 +0900"}
 {"comment"=>"『Twitch久々杉内APEX』×布団ちゃん(松本匡生)【ゴールドⅠ→プラチナⅣ】(9:42～放送開始)", "user_name"=>"crisiscore", "time"=>"Mon, 29 Nov 2021 13:45:26 +0900"}
+{"comment"=>"やあ", "user_name"=>"すぺだん", "time"=>"Fri, 03 Dec 2021 08:46:46 +0900"}
 {"comment"=>"『加藤純一題材MAD動画選手権(日本カトデミー賞会場) in ニコ生』(18:00～放送開始)", "user_name"=>"crisiscore", "time"=>"Tue, 07 Dec 2021 17:52:57 +0900"}
 {"comment"=>"えこれコメントできるんだ", "user_name"=>"ぬこ", "time"=>"Tue, 07 Dec 2021 22:04:11 +0900"}
 {"comment"=>"『大乱闘スマッシュブラザーズSPを幕末志士とやる。』(21:00～放送開始)", "user_name"=>"unkolink", "time"=>"Thu, 09 Dec 2021 17:13:05 +0900"}
@@ -766,6 +691,7 @@
 {"comment"=>"『つべら雑談』", "user_name"=>"unkolink", "time"=>"Thu, 16 Dec 2021 20:20:20 +0900"}
 {"comment"=>"『スマプラSP。ケンvs戦闘力(レート)250万チャレンジ』(21:02～放送開始)", "user_name"=>"crisiscore", "time"=>"Fri, 17 Dec 2021 22:07:26 +0900"}
 {"comment"=>"『諸々決める雑談』(22:23～放送開始)", "user_name"=>"crisiscore", "time"=>"Mon, 20 Dec 2021 22:28:23 +0900"}
+{"comment"=>"ちんこ", "user_name"=>"あ@サーラ", "time"=>"Mon, 20 Dec 2021 22:58:10 +0900"}
 {"comment"=>"『雑談』(19:41～放送開始)", "user_name"=>"unkolink", "time"=>"Tue, 21 Dec 2021 21:32:46 +0900"}
 {"comment"=>"『CIV6✕→Kenshiしながらいろいろ考える。』(次回のゲームを決める)(23:19～放送開始)", "user_name"=>"crisiscore", "time"=>"Tue, 21 Dec 2021 23:53:18 +0900"}
 {"comment"=>"『安眠KENSHIDay2』(23:52～放送開始)", "user_name"=>"unkolink", "time"=>"Thu, 23 Dec 2021 00:06:02 +0900"}
@@ -807,10 +733,12 @@
 {"comment"=>"『ふしぎ遊戯→ジョジョアニメ→ポケモンココ試写会→深夜のAPEX。新シーズン12ランクマ』(23:21～放送開始)", "user_name"=>"unkolink", "time"=>"Wed, 09 Feb 2022 04:01:24 +0900"}
 {"comment"=>"APEX Season12 #2『APEX、新シーズンランクの必勝法』【ゴールドⅡ】(10:44～放送開始)", "user_name"=>"crisiscore", "time"=>"Wed, 09 Feb 2022 11:59:10 +0900"}
 {"comment"=>"『暇つぶし丸』Steam(PC)脱出ゲーム×カードゲーム「Inscription(インスクリプション)」#2(9:58～放送開始)", "user_name"=>"crisiscore", "time"=>"Thu, 10 Feb 2022 11:43:49 +0900"}
+{"comment"=>"純帰ってこい", "user_name"=>"藤田", "time"=>"Sat, 12 Feb 2022 22:36:20 +0900"}
 {"comment"=>"『令和の大雑談(企画会議)』(22:16～放送開始)", "user_name"=>"crisiscore", "time"=>"Sun, 13 Feb 2022 22:17:11 +0900"}
 {"comment"=>"『純がニコ生するぞ』(23:50～放送開始)", "user_name"=>"crisiscore", "time"=>"Sun, 13 Feb 2022 23:50:21 +0900"}
 {"comment"=>"Season12 Part5『APEX/卑劣にマスター目指す男』【プラチナⅣ】(4:30～放送開始)", "user_name"=>"unkolink", "time"=>"Mon, 14 Feb 2022 07:09:40 +0900"}
 {"comment"=>"『どうぶつタワーバトル 信者衛門杯Withもこう』(20:55～放送開始)", "user_name"=>"unkolink", "time"=>"Mon, 14 Feb 2022 21:02:54 +0900"}
+{"comment"=>"純！？", "user_name"=>"藤田", "time"=>"Tue, 15 Feb 2022 17:54:20 +0900"}
 {"comment"=>"『今後何をするか考える群衆(企画会議)』(20:46～放送開始)", "user_name"=>"unkolink", "time"=>"Tue, 15 Feb 2022 20:58:33 +0900"}
 {"comment"=>"『ゲームしてたらなんか賞が貰える(;O;)』吉本興業主催ゲームストリーマーアワード2021(18:07～放送開始)", "user_name"=>"unkolink", "time"=>"Thu, 17 Feb 2022 18:16:33 +0900"}
 {"comment"=>"雑談→スペース(Twitter音声サービス)同時放送", "user_name"=>"crisiscore", "time"=>"Sun, 20 Feb 2022 00:35:12 +0900"}
@@ -829,23 +757,104 @@
 {"comment"=>"『結婚披露宴前、最後の雑談』(19:57～放送開始)", "user_name"=>"unkolink", "time"=>"Thu, 10 Mar 2022 20:26:20 +0900"}
 {"comment"=>"『11時まで暇をつぶす男』FFⅡピクセルリマスターver.(3:53～放送開始)", "user_name"=>"crisiscore", "time"=>"Fri, 11 Mar 2022 04:14:15 +0900"}
 {"comment"=>"ニコ生『やぁ』(16:50～放送開始)", "user_name"=>"unkolink", "time"=>"Fri, 11 Mar 2022 16:57:35 +0900"}
-{"comment"=>"結婚おめでとう", "user_name"=>"先天性の嘘つき★¯_¯▲", "time"=>"Sat, 12 Mar 2022 17:17:38 +0900"}
+{"comment"=>"結婚おめでとう", "user_name"=>"かとうぽんいち", "time"=>"Sat, 12 Mar 2022 17:17:38 +0900"}
 {"comment"=>"結婚おめでとう", "user_name"=>"鯖の水煮缶", "time"=>"Sat, 12 Mar 2022 20:54:23 +0900"}
-{"comment"=>"結婚おめでとうございます", "user_name"=>"みおん", "time"=>"Sun, 13 Mar 2022 02:01:39 +0900"}
+{"comment"=>"結婚おめでとうございます", "user_name"=>"みお", "time"=>"Sun, 13 Mar 2022 02:01:39 +0900"}
 {"comment"=>"結婚おめでとう", "user_name"=>"れの", "time"=>"Sun, 13 Mar 2022 02:27:36 +0900"}
 {"comment"=>"結構おめでとう", "user_name"=>"アス", "time"=>"Sun, 13 Mar 2022 03:26:03 +0900"}
-{"comment"=>"結婚おめでとう", "user_name"=>"秋瀬　虎徹", "time"=>"Sun, 13 Mar 2022 03:50:12 +0900"}
-{"comment"=>"結婚おめでとう", "user_name"=>"今日のご飯は焼肉", "time"=>"Sun, 13 Mar 2022 13:39:55 +0900"}
+{"comment"=>"結婚おめでとう", "user_name"=>"秋瀬虎徹", "time"=>"Sun, 13 Mar 2022 03:50:12 +0900"}
 {"comment"=>"『結婚披露宴後日談』", "user_name"=>"unkolink", "time"=>"Sun, 13 Mar 2022 20:37:19 +0900"}
 {"comment"=>"", "user_name"=>"crisiscore", "time"=>"Wed, 16 Mar 2022 22:05:00 +0900"}
 {"comment"=>"伊豆", "user_name"=>"Tommy", "time"=>"Sun, 20 Mar 2022 01:47:56 +0900"}
 {"comment"=>"伊豆", "user_name"=>"博士", "time"=>"Wed, 23 Mar 2022 10:49:26 +0900"}
 {"comment"=>"やあ", "user_name"=>"とばん", "time"=>"Wed, 23 Mar 2022 17:27:15 +0900"}
 {"comment"=>"『ペヤング獄激辛Final完食チャレンジ(Case.33/36歳、ゲーム実況者・加藤純一)』(21:00～放送開始)", "user_name"=>"unkolink", "time"=>"Fri, 01 Apr 2022 20:19:43 +0900"}
-{"comment"=>"シイナのアカウントコメ欄見てね！", "user_name"=>"シイナはスク水転売ヤー", "time"=>"Fri, 01 Apr 2022 21:45:50 +0900"}
 {"comment"=>"やあ", "user_name"=>"卑怯", "time"=>"Sun, 03 Apr 2022 13:04:42 +0900"}
 {"comment"=>"加藤純一最強加藤純一最強加藤純一最強加藤純一最強加藤純一最強加藤純一最強加藤純一最強加藤純一最強加藤純一最強加藤純一最強加藤純一最強加藤純一最強加藤純一最強加藤純一最強加藤純一最強加藤純一最強加藤純一最強加藤純一最強加藤純一最強加藤純一最強加藤純一最強加藤純一最強加藤純一最強", "user_name"=>"卑怯", "time"=>"Sun, 03 Apr 2022 13:05:34 +0900"}
 {"comment"=>"『雑談→PCR検査前日のAPEXをする』【ダイヤⅣ】(22:56～放送開始)", "user_name"=>"crisiscore", "time"=>"Sun, 03 Apr 2022 23:56:21 +0900"}
 {"comment"=>"『APEXマスターランクラストチャレンジ』【ダイヤⅢ】(11:43～放送開始)", "user_name"=>"unkolink", "time"=>"Tue, 05 Apr 2022 18:43:15 +0900"}
 {"comment"=>"結婚おめでとう", "user_name"=>"ソラ", "time"=>"Fri, 08 Apr 2022 01:29:54 +0900"}
 {"comment"=>"『呑みながら寝る』(22:12～放送開始)", "user_name"=>"unkolink", "time"=>"Sat, 09 Apr 2022 22:18:00 +0900"}
+{"comment"=>"やあ", "user_name"=>"ピュアワン", "time"=>"Tue, 12 Apr 2022 07:19:21 +0900"}
+{"comment"=>"やあ", "user_name"=>"まめ", "time"=>"Thu, 14 Apr 2022 13:23:29 +0900"}
+{"comment"=>"『寝る前に雑談』(23:27～放送開始)", "user_name"=>"crisiscore", "time"=>"Thu, 14 Apr 2022 23:37:04 +0900"}
+{"comment"=>"『競馬/410万円回収放送～皐月賞編』(12:31～放送開始)", "user_name"=>"crisiscore", "time"=>"Sun, 17 Apr 2022 12:38:35 +0900"}
+{"comment"=>"『外配信/ひとりカラオケをする中年』(20:59～放送開始)", "user_name"=>"unkolink", "time"=>"Sun, 17 Apr 2022 21:11:35 +0900"}
+{"comment"=>"『BANが解かれた獣』eBaseBall パワフルプロ野球2022 #2(1:26～放送開始)", "user_name"=>"crisiscore", "time"=>"Fri, 22 Apr 2022 01:41:45 +0900"}
+{"comment"=>"達人パワフェスクリアする男のコソ練パワプロ 2022 #3(15:48～放送開始)", "user_name"=>"unkolink", "time"=>"Sun, 24 Apr 2022 16:21:14 +0900"}
+{"comment"=>"『パワプロ2022パワフェス達人編 2日目』#4", "user_name"=>"unkolink", "time"=>"Sun, 24 Apr 2022 18:24:58 +0900"}
+{"comment"=>"APEXLEGENDS(PC)シーズン13 #1『APEXをする37歳♂』【ゴールドⅠ】(12:26～放送開始)", "user_name"=>"unkolink", "time"=>"Mon, 25 Apr 2022 14:59:41 +0900"}
+{"comment"=>"ニコ生配信者発掘企画加藤純一・とろみ・横山緑・ユキちゃんの超配信者「雑談」公式生放送@ニコニコ超会議2022【4/26】  (22:00～開演)", "user_name"=>"crisiscore", "time"=>"Tue, 26 Apr 2022 22:01:07 +0900"}
+{"comment"=>"『パワフェスの練習』その4(15:35～)", "user_name"=>"unkolink", "time"=>"Thu, 28 Apr 2022 15:46:32 +0900"}
+{"comment"=>"『雑談(競馬+APEX世界大会観戦前日)』(18:35～放送開始)", "user_name"=>"unkolink", "time"=>"Sat, 30 Apr 2022 19:20:26 +0900"}
+{"comment"=>"『絶対に勝つ。4戦目・天皇賞(春)編』(3連敗中/収支－460万)(13:07～放送開始)", "user_name"=>"crisiscore", "time"=>"Sun, 01 May 2022 13:57:29 +0900"}
+{"comment"=>"『ALGSまで何かで暇をつぶすか』(21:21～放送開始)", "user_name"=>"crisiscore", "time"=>"Sun, 01 May 2022 21:27:49 +0900"}
+{"comment"=>"『APEX ALGS Split2 Play Offを釈迦と観る。』(22:51～放送開始)", "user_name"=>"unkolink", "time"=>"Sun, 01 May 2022 22:58:21 +0900"}
+{"comment"=>"『ゲームの発掘』(18:07～放送開始)", "user_name"=>"crisiscore", "time"=>"Mon, 02 May 2022 18:15:21 +0900"}
+{"comment"=>"『タクシー雑談。サウナまで』(22:41～放送開始)", "user_name"=>"crisiscore", "time"=>"Mon, 02 May 2022 22:47:59 +0900"}
+{"comment"=>"『19:30(イワラジ)まで』(16:21～放送開始)", "user_name"=>"crisiscore", "time"=>"Wed, 04 May 2022 16:30:03 +0900"}
+{"comment"=>"『0時くらいまで何かゲームをする。』(19:21～放送開始)", "user_name"=>"unkolink", "time"=>"Sat, 07 May 2022 19:38:43 +0900"}
+{"comment"=>"『Switch版モンスターファーム2の世界大会に参戦する放送。序章』(16:37～放送開始)", "user_name"=>"unkolink", "time"=>"Sun, 08 May 2022 17:18:47 +0900"}
+{"comment"=>"『モンスターファーム2(Switch)』～ぽんいちリベンジ～かとうぽんいち編(18:59～放送開始)", "user_name"=>"unkolink", "time"=>"Mon, 09 May 2022 19:29:24 +0900"}
+{"comment"=>"Steam(PC)架空戦争略奪サバイバルゲーム「RUST(ラスト)」シーズン8 第2話『RUSTその２/帝国建築編』(21:51～放送開始)", "user_name"=>"crisiscore", "time"=>"Tue, 10 May 2022 22:10:17 +0900"}
+{"comment"=>"「RUST」シーズン8/第3話『RUST大レイドする/ワイプ前の決戦』(19:24～放送開始)", "user_name"=>"crisiscore", "time"=>"Thu, 12 May 2022 19:28:59 +0900"}
+{"comment"=>"Apex Season13 #2『ガスおじでダブハン取る』【ブロンズⅠ】(22:58～放送開始)", "user_name"=>"crisiscore", "time"=>"Sat, 14 May 2022 23:43:40 +0900"}
+{"comment"=>"『ｴﾙﾃﾞﾝﾘﾝｸﾞかパワプロやる』2022/栄冠ナイン(3:18～放送開始)", "user_name"=>"unkolink", "time"=>"Sun, 15 May 2022 12:14:26 +0900"}
+{"comment"=>"Spygea(高橋恵) TwitterCRカップに加藤純一さん、蛇足さんと出ます。22:40", "user_name"=>"unkolink", "time"=>"Sun, 15 May 2022 22:58:23 +0900"}
+{"comment"=>"『APEX』(スパイギア×蛇足)(18:49～放送開始)", "user_name"=>"unkolink", "time"=>"Wed, 18 May 2022 19:41:18 +0900"}
+{"comment"=>"『モンスターファーム2本編』#3(13:16～放送開始)", "user_name"=>"crisiscore", "time"=>"Sat, 21 May 2022 14:26:10 +0900"}
+{"comment"=>"『オクトパストラベラーやる。1時まで』(22:03～放送開始)", "user_name"=>"crisiscore", "time"=>"Tue, 24 May 2022 22:29:48 +0900"}
+{"comment"=>"『真腫れ物Valorantやる。』(19:05～放送開始)", "user_name"=>"unkolink", "time"=>"Tue, 31 May 2022 19:19:20 +0900"}
+{"comment"=>"【西村博之×ゲスト・トークライブ】夜な夜な生配信/質問ゼメナール第23回ゲスト・加藤純一(18:00～放送開始)", "user_name"=>"unkolink", "time"=>"Fri, 03 Jun 2022 18:01:23 +0900"}
+{"comment"=>"『CRカップに出る』APEX→FallGuys+Golf It(16:45～放送開始)", "user_name"=>"unkolink", "time"=>"Sat, 04 Jun 2022 16:52:26 +0900"}
+{"comment"=>"『呑み会(雑談)』(20:25～放送開始)", "user_name"=>"unkolink", "time"=>"Sun, 05 Jun 2022 20:27:20 +0900"}
+{"comment"=>"『何やるか決める』", "user_name"=>"crisiscore", "time"=>"Thu, 09 Jun 2022 18:38:54 +0900"}
+{"comment"=>"『Police Simulatorにて街の治安を守る。』(21:35～放送開始)", "user_name"=>"unkolink", "time"=>"Thu, 09 Jun 2022 22:08:16 +0900"}
+{"comment"=>"シバター(斎藤光)(ピアキャス、ニコ生)×うんこちゃん(ニコ生)、禁断の初コラボ前編/ストII編(19:00～プレミア公開)", "user_name"=>"crisiscore", "time"=>"Sat, 11 Jun 2022 17:58:59 +0900"}
+{"comment"=>"対談編(後編)(23:00～プレミア公開予定)", "user_name"=>"unkolink", "time"=>"Sat, 11 Jun 2022 18:01:32 +0900"}
+{"comment"=>"『また今日も変な事をやる男』(2枠目)雑談/Valorant(×もこう)(19:10～放送開始)", "user_name"=>"crisiscore", "time"=>"Sat, 11 Jun 2022 21:48:44 +0900"}
+{"comment"=>"やあ", "user_name"=>"デュン", "time"=>"Sun, 12 Jun 2022 12:20:49 +0900"}
+{"comment"=>"『今日は21:45-VCC Valorant』×3BR(スタヌ、釈迦、スパイギア)×蛇足コーチ・ジャスパー(20:41～放送開始)", "user_name"=>"crisiscore", "time"=>"Mon, 13 Jun 2022 20:55:02 +0900"}
+{"comment"=>"6/17【ストV大会】トパチャン公認ミラー配信【TOPANGA】×こくじん(20:10～放送開始)", "user_name"=>"unkolink", "time"=>"Fri, 17 Jun 2022 21:15:15 +0900"}
+{"comment"=>"『愛犬はな様が出演する世にも奇妙な物語を見る枠』(20:43～放送開始)", "user_name"=>"crisiscore", "time"=>"Sat, 18 Jun 2022 20:50:25 +0900"}
+{"comment"=>"『ストレッチ面白雑談小僧』(15:28～放送開始)", "user_name"=>"unkolink", "time"=>"Mon, 20 Jun 2022 16:07:11 +0900"}
+{"comment"=>"『RimWorld(リムワールド)をやる』(20:13～放送開始)", "user_name"=>"unkolink", "time"=>"Tue, 21 Jun 2022 21:05:47 +0900"}
+{"comment"=>"『Rim Worldをやる2日目』(15:58～放送開始)", "user_name"=>"crisiscore", "time"=>"Wed, 22 Jun 2022 16:16:49 +0900"}
+{"comment"=>"『ポケモン実況をやる。厳選編』(17:33～放送開始)", "user_name"=>"unkolink", "time"=>"Fri, 24 Jun 2022 18:28:31 +0900"}
+{"comment"=>"『ポケモンSS人生縛り』(19:29～放送開始)", "user_name"=>"unkolink", "time"=>"Fri, 24 Jun 2022 20:11:52 +0900"}
+{"comment"=>"ポケモンHGSS『ソウルシルバー人生プレイ』#2", "user_name"=>"crisiscore", "time"=>"Sat, 25 Jun 2022 20:23:08 +0900"}
+{"comment"=>"『今日はだら～っと過ごす』(17:53～放送開始)", "user_name"=>"crisiscore", "time"=>"Sun, 26 Jun 2022 18:00:55 +0900"}
+{"comment"=>"『ヴァロラント vs格ゲープロ集団スクリム(練習試合)』UNK×もこう×おにや×はんじょう×ゆゆうたvsウメハラ×こくじん×総師範KSK×オオヌキ×マゴ(22:20～放送開始)", "user_name"=>"crisiscore", "time"=>"Mon, 27 Jun 2022 22:30:09 +0900"}
+{"comment"=>"『23時～決戦、vs格ゲーマーヴァロラント』UNK×もこう×おにや×ゆゆうた×はんじょうvs ウメハラ×こくじん×総師範KSK×マゴ×オオヌキ(21:17～放送開始)", "user_name"=>"crisiscore", "time"=>"Thu, 30 Jun 2022 21:22:40 +0900"}
+{"comment"=>"『釣り配信2日目』(13:02～放送開始)", "user_name"=>"unkolink", "time"=>"Fri, 01 Jul 2022 13:14:24 +0900"}
+{"comment"=>"『釣り配信2日目 大物を釣るまで諦めないぞ!!放送(2枠目)』(17:30～放送開始)", "user_name"=>"unkolink", "time"=>"Fri, 01 Jul 2022 17:36:21 +0900"}
+{"comment"=>"『ポケモンSS人生縛り。ポケモンセンター閉鎖のお知らせ。第３章』Youtube×Twitch×ニコ生Twitch会場(18:02～放送開始)", "user_name"=>"crisiscore", "time"=>"Sun, 03 Jul 2022 20:46:27 +0900"}
+{"comment"=>"『格ゲー勢とフルパValo』×こくじん×マゴ×総師範KSK×立川(23:24～放送開始)", "user_name"=>"unkolink", "time"=>"Sun, 03 Jul 2022 23:37:54 +0900"}
+{"comment"=>"『友人とヴァロラントする』×布団(14:53～放送開始)", "user_name"=>"unkolink", "time"=>"Tue, 05 Jul 2022 14:59:44 +0900"}
+{"comment"=>"『2時～Apex Legends Grovel Series Year2 Championship Day1をミラーする男』(0:06～放送開始)", "user_name"=>"crisiscore", "time"=>"Fri, 08 Jul 2022 00:13:20 +0900"}
+{"comment"=>"『ちょっと面白い話/雑談』", "user_name"=>"crisiscore", "time"=>"Fri, 08 Jul 2022 22:14:42 +0900"}
+{"comment"=>"ARK:Survival Evolved(PC)『アークを視聴者とやる。』(21:17～放送開始)", "user_name"=>"unkolink", "time"=>"Sat, 09 Jul 2022 22:24:51 +0900"}
+{"comment"=>"『ヴァロラントソロ→アークソロ→FF7PR』(13:19～放送開始)", "user_name"=>"unkolink", "time"=>"Tue, 12 Jul 2022 15:25:11 +0900"}
+{"comment"=>"『配信鬼』(9:31～配信開始)", "user_name"=>"unkolink", "time"=>"Wed, 13 Jul 2022 09:45:05 +0900"}
+{"comment"=>"『伊達行こ』第３回MC:狩野英孝、スパイギアゲスト:UNK、オーイシ(20:00～放送開始)　", "user_name"=>"crisiscore", "time"=>"Wed, 13 Jul 2022 19:33:12 +0900"}
+{"comment"=>"『ｳﾞｧﾛﾗﾝﾄ雑談Ark』(19:25～開始)", "user_name"=>"unkolink", "time"=>"Fri, 15 Jul 2022 19:35:44 +0900"}
+{"comment"=>"『ARKハードコア』(19:44～放送開始)", "user_name"=>"crisiscore", "time"=>"Sat, 16 Jul 2022 20:04:46 +0900"}
+{"comment"=>"『ARKまさかの2日目』(23:02～放送開始)", "user_name"=>"unkolink", "time"=>"Tue, 19 Jul 2022 23:17:49 +0900"}
+{"comment"=>"『Youtuber・ポーカー最強決定戦』シバター、加藤純一、ヒカル、ラファエルピョコタン、えっちゃん(10:05～放送開始)", "user_name"=>"crisiscore", "time"=>"Wed, 20 Jul 2022 10:20:49 +0900"}
+{"comment"=>"『ARKハードコアザウルス』(11:02～放送開始)", "user_name"=>"crisiscore", "time"=>"Thu, 21 Jul 2022 11:58:37 +0900"}
+{"comment"=>"『PCぶっこわれた雑談』スマホ配信(13:05～放送開始)", "user_name"=>"unkolink", "time"=>"Sat, 23 Jul 2022 13:18:38 +0900"}
+{"comment"=>"ARKハードコアソロ#10『ARK2日目に突入→やっぱり最初から』(15:57～放送開始)", "user_name"=>"crisiscore", "time"=>"Sat, 23 Jul 2022 16:23:08 +0900"}
+{"comment"=>"『絶対に死なないARK』(4:25～放送開始)", "user_name"=>"unkolink", "time"=>"Sun, 24 Jul 2022 06:24:54 +0900"}
+{"comment"=>"『第一回加藤純一杯～PUBGカスタム～』(22:03～放送開始)", "user_name"=>"crisiscore", "time"=>"Tue, 26 Jul 2022 22:09:58 +0900"}
+{"comment"=>"「テスト(雑談)」(18:35～放送開始)", "user_name"=>"unkolink", "time"=>"Wed, 27 Jul 2022 19:12:33 +0900"}
+{"comment"=>"『ゲボ吐くまでARKする』ARK Part26(18:18～放送開始)", "user_name"=>"crisiscore", "time"=>"Sun, 31 Jul 2022 23:06:57 +0900"}
+{"comment"=>"コナミ・サイレントヒルシリーズ外伝幻のホラーゲーム『P.T.(Playable Teaster)』PS4Ver.『P.T.実況プレイ。Night1』(22:30～放送開始)", "user_name"=>"unkolink", "time"=>"Mon, 01 Aug 2022 21:55:38 +0900"}
+{"comment"=>"『８月ゲーム部』(19:00～放送開始)", "user_name"=>"crisiscore", "time"=>"Tue, 02 Aug 2022 18:45:53 +0900"}
+{"comment"=>"『もこう、ゆゆうた、加藤のピザラジオ#83』(22:00～放送開始)", "user_name"=>"unkolink", "time"=>"Wed, 03 Aug 2022 21:14:49 +0900"}
+{"comment"=>"わあ", "user_name"=>"ハン", "time"=>"Sat, 13 Aug 2022 18:21:48 +0900"}
+{"comment"=>"加藤純一つまんな", "user_name"=>"Abo", "time"=>"Sat, 01 Oct 2022 22:03:30 +0900"}
+{"comment"=>"やあ！", "user_name"=>"そらる。", "time"=>"Fri, 21 Oct 2022 15:18:37 +0900"}
+{"comment"=>"『20時まで暇つぶし/ムラッシュゲーミングゲーマー公開オーディション』(18:04～放送開始)", "user_name"=>"unkolink", "time"=>"Sun, 30 Oct 2022 18:14:39 +0900"}
+{"comment"=>"やあ", "user_name"=>"匿名コメント", "time"=>"Sun, 30 Oct 2022 21:48:41 +0900"}
+{"comment"=>"『Return Of The Obra Dinnなるゲームをやる』(18:10～放送開始)", "user_name"=>"crisiscore", "time"=>"Mon, 31 Oct 2022 18:16:07 +0900"}
+{"comment"=>"『ムラッシュゲーミングプレイヤー2次試験～電話審査(プレゼン)放送～』(20:44～放送開始)", "user_name"=>"unkolink", "time"=>"Thu, 03 Nov 2022 20:51:17 +0900"}

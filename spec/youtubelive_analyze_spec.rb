@@ -59,12 +59,6 @@ RSpec.describe Youtubelive_analyze do
                     end
                 end
 
-                context 'bad is existence' do
-                    it 'return string bad' do
-                        expect(!(@videoinfo["bad"].empty?)).to eq true
-                    end
-                end
-
             end
         end
 
