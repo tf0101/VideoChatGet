@@ -1,0 +1,473 @@
+var ytInitialData = {
+    "responseContext": {
+        "serviceTrackingParams": [
+            {
+                "service": "CSI",
+                "params": [
+                    {
+                        "key": "c",
+                        "value": "WEB"
+                    },
+                    {
+                        "key": "cver",
+                        "value": "2.20221104.02.00"
+                    },
+                    {
+                        "key": "yt_li",
+                        "value": "1"
+                    },
+                    {
+                        "key": "GetWatchNext_rid",
+                        "value": "0xba2773e63c04567a"
+                    }
+                ]
+            },
+            {
+                "service": "GFEEDBACK",
+                "params": [
+                    {
+                        "key": "logged_in",
+                        "value": "1"
+                    },
+                    {
+                        "key": "e",
+                        "value": "1714249,23804281,23858057,23882503,23885490,23918597,23934970,23946420,23966208,23983296,23986032,23998056,24001373,24002022,24002025,24004644,24007246,24034168,24036948,24058861,24059444,24059508,24077241,24080738,24094857,24120820,24135310,24140247,24152443,24161116,24162919,24164186,24166867,24169501,24181174,24185614,24187043,24187377,24191629,24197450,24199724,24211178,24215600,24216200,24217535,24219382,24219713,24229161,24230619,24239636,24241378,24248091,24254502,24255165,24255543,24255545,24256944,24257696,24258344,24260378,24260783,24261941,24262346,24263796,24267564,24267570,24268142,24271462,24272785,24278596,24279196,24282960,24283093,24283556,24286005,24286017,24287327,24287795,24288045,24288912,24290971,24291857,24292955,24293804,24297746,24298436,24299747,24390202,24390675,24391539,24392058,24392269,24392403,24394546,24396645,24396819,24398124,24398595,24400178,24401278,24401557,24402891,24406381,24406605,24406984,24407199,24407665,24407965,24409034,24411348,24414637,24590921,39322399,39322504,39322574"
+                    }
+                ]
+            },
+            {
+                "service": "GUIDED_HELP",
+                "params": [
+                    {
+                        "key": "logged_in",
+                        "value": "1"
+                    }
+                ]
+            },
+            {
+                "service": "ECATCHER",
+                "params": [
+                    {
+                        "key": "client.version",
+                        "value": "2.20221104"
+                    },
+                    {
+                        "key": "client.name",
+                        "value": "WEB"
+                    },
+                    {
+                        "key": "client.fexp",
+                        "value": "24272785,24400178,1714249,24166867,23885490,24392403,24298436,23966208,24293804,24267570,24268142,24396645,24391539,24260378,24181174,24407665,24390675,24398124,24120820,24288045,24219713,24409034,24002022,24080738,24197450,24278596,23858057,24590921,24169501,39322399,23918597,24059444,24058861,24216200,24254502,24230619,24255545,24392058,24292955,24279196,24290971,39322504,24286005,24411348,24191629,24258344,24001373,24094857,24219382,24211178,24215600,39322574,24034168,24217535,24282960,24401557,24161116,24059508,24392269,24299747,24241378,24187377,24396819,24164186,24407965,24297746,24140247,24283093,24402891,24152443,24255165,24229161,24239636,24199724,24267564,24187043,24406381,24291857,24287327,23934970,24260783,23882503,24263796,24185614,24262346,24271462,24283556,24414637,23998056,24004644,24162919,24077241,24401278,24135310,23986032,24036948,24007246,24394546,24407199,24390202,24257696,24248091,23804281,23946420,24261941,23983296,24406984,24287795,24256944,24286017,24002025,24288912,24406605,24255543,24398595"
+                    }
+                ]
+            }
+        ],
+        "mainAppWebResponseContext": {
+            "datasyncId": "100330638940438952609||",
+            "loggedOut": false
+        },
+        "webResponseContextExtensionData": {
+            "ytConfigData": {
+                "visitorData": "Cgtrb1FXZ2dIemNFMCi85ZybBg%3D%3D",
+                "sessionIndex": 0,
+                "rootVisualElementType": 3832
+            },
+            "webPrefetchData": {
+                "navigationEndpoints": [
+                    {
+                        "clickTrackingParams": "CAAQg2ciEwjgn73v1pj7AhU9QA8CHRwkBMMyDHJlbGF0ZWQtYXV0b0jxzfaTrsKW9UGaAQUIAxD4HQ==",
+                        "commandMetadata": {
+                            "webCommandMetadata": {
+                                "url": "/watch?v=dJqvjU7ucl4\u0026pp=QAFIAQ%3D%3D",
+                                "webPageType": "WEB_PAGE_TYPE_WATCH",
+                                "rootVe": 3832
+                            }
+                        },
+                        "watchEndpoint": {
+                            "videoId": "dJqvjU7ucl4",
+                            "params": "EAEYAdoBAggB",
+                            "playerParams": "QAFIAQ%3D%3D",
+                            "watchEndpointSupportedPrefetchConfig": {
+                                "prefetchHintConfig": {
+                                    "prefetchPriority": 0,
+                                    "countdownUiRelativeSecondsPrefetchCondition": -3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "clickTrackingParams": "CAAQg2ciEwjgn73v1pj7AhU9QA8CHRwkBMMyDHJlbGF0ZWQtYXV0b0jxzfaTrsKW9UGaAQUIAxD4HQ==",
+                        "commandMetadata": {
+                            "webCommandMetadata": {
+                                "url": "/watch?v=dJqvjU7ucl4\u0026pp=QAFIAQ%3D%3D",
+                                "webPageType": "WEB_PAGE_TYPE_WATCH",
+                                "rootVe": 3832
+                            }
+                        },
+                        "watchEndpoint": {
+                            "videoId": "dJqvjU7ucl4",
+                            "params": "EAEYAdoBAggB",
+                            "playerParams": "QAFIAQ%3D%3D",
+                            "watchEndpointSupportedPrefetchConfig": {
+                                "prefetchHintConfig": {
+                                    "prefetchPriority": 0,
+                                    "countdownUiRelativeSecondsPrefetchCondition": -3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "clickTrackingParams": "CAAQg2ciEwjgn73v1pj7AhU9QA8CHRwkBMMyDHJlbGF0ZWQtYXV0b0jxzfaTrsKW9UGaAQUIAxD4HQ==",
+                        "commandMetadata": {
+                            "webCommandMetadata": {
+                                "url": "/watch?v=dJqvjU7ucl4\u0026pp=QAFIAQ%3D%3D",
+                                "webPageType": "WEB_PAGE_TYPE_WATCH",
+                                "rootVe": 3832
+                            }
+                        },
+                        "watchEndpoint": {
+                            "videoId": "dJqvjU7ucl4",
+                            "params": "EAEYAdoBAggB",
+                            "playerParams": "QAFIAQ%3D%3D",
+                            "watchEndpointSupportedPrefetchConfig": {
+                                "prefetchHintConfig": {
+                                    "prefetchPriority": 0,
+                                    "countdownUiRelativeSecondsPrefetchCondition": -3
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "hasDecorated": true
+        }
+    },
+    "contents": {
+        "twoColumnWatchNextResults": {
+            "results": {
+                "results": {
+                    "contents": [
+                        {
+                            "videoPrimaryInfoRenderer": {
+                                "title": {
+                                    "runs": [
+                                        {
+                                            "text": "初めての朝フォートナイト配信【フォートナイト/Fortnite】"
+                                        }
+                                    ]
+                                },
+                                "viewCount": {
+                                    "videoViewCountRenderer": {
+                                        "viewCount": {
+                                            "simpleText": "4,825 回視聴"
+                                        },
+                                        "shortViewCount": {
+                                            "simpleText": "4825 回視聴"
+                                        }
+                                    }
+                                },
+                                "videoActions": {
+                                    "menuRenderer": {
+                                        "items": [
+                                            {
+                                                "menuServiceItemRenderer": {
+                                                    "text": {
+                                                        "runs": [
+                                                            {
+                                                                "text": "報告"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "icon": {
+                                                        "iconType": "FLAG"
+                                                    },
+                                                    "serviceEndpoint": {
+                                                        "clickTrackingParams": "CPwCEMyrARgAIhMI4J-979aY-wIVPUAPAh0cJATD",
+                                                        "commandMetadata": {
+                                                            "webCommandMetadata": {
+                                                                "sendPost": true,
+                                                                "apiUrl": "/youtubei/v1/flag/get_form"
+                                                            }
+                                                        },
+                                                        "getReportFormEndpoint": {
+                                                            "params": "EgtRZXBhRXVKOXB2RUABWAB4BZIBMgowEi5odHRwczovL2kueXRpbWcuY29tL3ZpL1FlcGFFdUo5cHZFL2RlZmF1bHQuanBn"
+                                                        }
+                                                    },
+                                                    "trackingParams": "CPwCEMyrARgAIhMI4J-979aY-wIVPUAPAh0cJATD"
+                                                }
+                                            },
+                                            {
+                                                "menuServiceItemRenderer": {
+                                                    "text": {
+                                                        "runs": [
+                                                            {
+                                                                "text": "文字起こしを表示"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "icon": {
+                                                        "iconType": "SUBTITLES"
+                                                    },
+                                                    "serviceEndpoint": {
+                                                        "clickTrackingParams": "CIkDEOPUCRgEIhMI4J-979aY-wIVPUAPAh0cJATD",
+                                                        "commandMetadata": {
+                                                            "webCommandMetadata": {
+                                                                "sendPost": true
+                                                            }
+                                                        },
+                                                        "signalServiceEndpoint": {
+                                                            "signal": "CLIENT_SIGNAL",
+                                                            "actions": [
+                                                                {
+                                                                    "clickTrackingParams": "CIkDEOPUCRgEIhMI4J-979aY-wIVPUAPAh0cJATD",
+                                                                    "changeEngagementPanelVisibilityAction": {
+                                                                        "targetId": "engagement-panel-searchable-transcript",
+                                                                        "visibility": "ENGAGEMENT_PANEL_VISIBILITY_EXPANDED"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "trackingParams": "CIkDEOPUCRgEIhMI4J-979aY-wIVPUAPAh0cJATD"
+                                                }
+                                            }
+                                        ],
+                                        "trackingParams": "CPwCEMyrARgAIhMI4J-979aY-wIVPUAPAh0cJATD",
+                                        "topLevelButtons": [
+                                            {
+                                                "segmentedLikeDislikeButtonRenderer": {
+                                                    "likeButton": {
+                                                        "toggleButtonRenderer": {
+                                                            "style": {
+                                                                "styleType": "STYLE_TEXT"
+                                                            },
+                                                            "isToggled": false,
+                                                            "isDisabled": false,
+                                                            "defaultIcon": {
+                                                                "iconType": "LIKE"
+                                                            },
+                                                            "defaultText": {
+                                                                "simpleText": "高評価"
+                                                            },
+                                                            "defaultServiceEndpoint": {
+                                                                "clickTrackingParams": "CIgDEJhNIhMI4J-979aY-wIVPUAPAh0cJATD",
+                                                                "commandExecutorCommand": {
+                                                                    "commands": [
+                                                                        {
+                                                                            "clickTrackingParams": "CIgDEJhNIhMI4J-979aY-wIVPUAPAh0cJATD",
+                                                                            "updateToggleButtonStateCommand": {
+                                                                                "toggled": false,
+                                                                                "buttonId": "TOGGLE_BUTTON_ID_TYPE_DISLIKE"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "clickTrackingParams": "CIgDEJhNIhMI4J-979aY-wIVPUAPAh0cJATD",
+                                                                            "commandMetadata": {
+                                                                                "webCommandMetadata": {
+                                                                                    "sendPost": true,
+                                                                                    "apiUrl": "/youtubei/v1/like/like"
+                                                                                }
+                                                                            },
+                                                                            "likeEndpoint": {
+                                                                                "status": "LIKE",
+                                                                                "target": {
+                                                                                    "videoId": "QepaEuJ9pvE"
+                                                                                },
+                                                                                "likeParams": "Cg0KC1FlcGFFdUo5cHZFIAAyCwi95ZybBhCfmsU7"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            "toggledText": {
+                                                                "simpleText": "高評価"
+                                                            },
+                                                            "toggledServiceEndpoint": {
+                                                                "clickTrackingParams": "CIgDEJhNIhMI4J-979aY-wIVPUAPAh0cJATD",
+                                                                "commandMetadata": {
+                                                                    "webCommandMetadata": {
+                                                                        "sendPost": true,
+                                                                        "apiUrl": "/youtubei/v1/like/removelike"
+                                                                    }
+                                                                },
+                                                                "likeEndpoint": {
+                                                                    "status": "INDIFFERENT",
+                                                                    "target": {
+                                                                        "videoId": "QepaEuJ9pvE"
+                                                                    },
+                                                                    "removeLikeParams": "Cg0KC1FlcGFFdUo5cHZFGAAqCwi95ZybBhDJ0sU7"
+                                                                }
+                                                            },
+                                                            "accessibility": {
+                                                                "label": "高く評価"
+                                                            },
+                                                            "trackingParams": "CIgDEJhNIhMI4J-979aY-wIVPUAPAh0cJATD",
+                                                            "defaultTooltip": "高く評価",
+                                                            "toggledTooltip": "高評価を取り消し",
+                                                            "toggledStyle": {
+                                                                "styleType": "STYLE_DEFAULT_ACTIVE"
+                                                            },
+                                                            "accessibilityData": {
+                                                                "accessibilityData": {
+                                                                    "label": "高く評価"
+                                                                }
+                                                            },
+                                                            "toggleButtonSupportedData": {
+                                                                "toggleButtonIdData": {
+                                                                    "id": "TOGGLE_BUTTON_ID_TYPE_LIKE"
+                                                                }
+                                                            },
+                                                            "targetId": "watch-like"
+                                                        }
+                                                    },
+                                                    "dislikeButton": {
+                                                        "toggleButtonRenderer": {
+                                                            "style": {
+                                                                "styleType": "STYLE_TEXT"
+                                                            },
+                                                            "isToggled": false,
+                                                            "isDisabled": false,
+                                                            "defaultIcon": {
+                                                                "iconType": "DISLIKE"
+                                                            },
+                                                            "defaultServiceEndpoint": {
+                                                                "clickTrackingParams": "CIcDEJhNIhMI4J-979aY-wIVPUAPAh0cJATD",
+                                                                "commandExecutorCommand": {
+                                                                    "commands": [
+                                                                        {
+                                                                            "clickTrackingParams": "CIcDEJhNIhMI4J-979aY-wIVPUAPAh0cJATD",
+                                                                            "updateToggleButtonStateCommand": {
+                                                                                "toggled": false,
+                                                                                "buttonId": "TOGGLE_BUTTON_ID_TYPE_LIKE"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "clickTrackingParams": "CIcDEJhNIhMI4J-979aY-wIVPUAPAh0cJATD",
+                                                                            "commandMetadata": {
+                                                                                "webCommandMetadata": {
+                                                                                    "sendPost": true,
+                                                                                    "apiUrl": "/youtubei/v1/like/dislike"
+                                                                                }
+                                                                            },
+                                                                            "likeEndpoint": {
+                                                                                "status": "DISLIKE",
+                                                                                "target": {
+                                                                                    "videoId": "QepaEuJ9pvE"
+                                                                                },
+                                                                                "dislikeParams": "Cg0KC1FlcGFFdUo5cHZFEAAiCwi95ZybBhC1xcY7"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            "toggledServiceEndpoint": {
+                                                                "clickTrackingParams": "CIcDEJhNIhMI4J-979aY-wIVPUAPAh0cJATD",
+                                                                "commandMetadata": {
+                                                                    "webCommandMetadata": {
+                                                                        "sendPost": true,
+                                                                        "apiUrl": "/youtubei/v1/like/removelike"
+                                                                    }
+                                                                },
+                                                                "likeEndpoint": {
+                                                                    "status": "INDIFFERENT",
+                                                                    "target": {
+                                                                        "videoId": "QepaEuJ9pvE"
+                                                                    },
+                                                                    "removeLikeParams": "Cg0KC1FlcGFFdUo5cHZFGAAqCwi95ZybBhDz38Y7"
+                                                                }
+                                                            },
+                                                            "accessibility": {
+                                                                "label": "この動画を低く評価する"
+                                                            },
+                                                            "trackingParams": "CIcDEJhNIhMI4J-979aY-wIVPUAPAh0cJATD",
+                                                            "defaultTooltip": "低く評価",
+                                                            "toggledTooltip": "低く評価",
+                                                            "toggledStyle": {
+                                                                "styleType": "STYLE_DEFAULT_ACTIVE"
+                                                            },
+                                                            "accessibilityData": {
+                                                                "accessibilityData": {
+                                                                    "label": "この動画を低く評価する"
+                                                                }
+                                                            },
+                                                            "toggleButtonSupportedData": {
+                                                                "toggleButtonIdData": {
+                                                                    "id": "TOGGLE_BUTTON_ID_TYPE_DISLIKE"
+                                                                }
+                                                            },
+                                                            "targetId": "watch-dislike"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "buttonRenderer": {
+                                                    "style": "STYLE_DEFAULT",
+                                                    "size": "SIZE_DEFAULT",
+                                                    "isDisabled": false,
+                                                    "text": {
+                                                        "runs": [
+                                                            {
+                                                                "text": "共有"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "serviceEndpoint": {
+                                                        "clickTrackingParams": "CIUDEOWWARgGIhMI4J-979aY-wIVPUAPAh0cJATD",
+                                                        "commandMetadata": {
+                                                            "webCommandMetadata": {
+                                                                "sendPost": true,
+                                                                "apiUrl": "/youtubei/v1/share/get_share_panel"
+                                                            }
+                                                        },
+                                                        "shareEntityServiceEndpoint": {
+                                                            "serializedShareEntity": "CgtRZXBhRXVKOXB2RQ%3D%3D",
+                                                            "commands": [
+                                                                {
+                                                                    "clickTrackingParams": "CIUDEOWWARgGIhMI4J-979aY-wIVPUAPAh0cJATD",
+                                                                    "openPopupAction": {
+                                                                        "popup": {
+                                                                            "unifiedSharePanelRenderer": {
+                                                                                "trackingParams": "CIYDEI5iIhMI4J-979aY-wIVPUAPAh0cJATD",
+                                                                                "showLoadingSpinner": true
+                                                                            }
+                                                                        },
+                                                                        "popupType": "DIALOG",
+                                                                        "beReused": true
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "icon": {
+                                                        "iconType": "SHARE"
+                                                    },
+                                                    "tooltip": "共有",
+                                                    "trackingParams": "CIUDEOWWARgGIhMI4J-979aY-wIVPUAPAh0cJATD",
+                                                    "accessibilityData": {
+                                                        "accessibilityData": {
+                                                            "label": "共有"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "accessibility": {
+                                            "accessibilityData": {
+                                                "label": "その他の操作"
+                                            }
+                                        },
+                                        "flexibleItems": [
+                                            {
+                                                "menuFlexibleItemRenderer": {
+                                                    "menuItem": {
+                                                        "menuServiceItemDownloadRenderer": {
+                                                            "serviceEndpoint": {
+                                                                "clickTrackingParams": "CIQDENGqBSITCOCfve_WmPsCFT1ADwIdHCQEww==",
+                                                                "offlineVideoEndpoint": {
+                                                                    "videoId": "QepaEuJ9pvE",
+                                                                    "onAddCommand": {
+                                                                        "clickTrackingParams": "CIQDENGqBSITCOCfve_WmPsCFT1ADwIdHCQEww==",
+                                                                        "getDownloadActionCommand": {
+                                                                            "videoId": "QepaEuJ9pvE",
+                                                                            "params": "CAE%3D","offl…
