@@ -56,7 +56,7 @@ class Youtubelive_analyze<Video_analyze
         videoinfo["title"]=common_hash[0]["videoPrimaryInfoRenderer"]["title"]["runs"][0]["text"]
         videoinfo["starttime"]=common_hash[0]["videoPrimaryInfoRenderer"]["dateText"]["simpleText"]
         videoinfo["videocount"]=common_hash[0]["videoPrimaryInfoRenderer"]["viewCount"]["videoViewCountRenderer"]["viewCount"]["simpleText"]
-        videoinfo["good"]=common_hash[0]["videoPrimaryInfoRenderer"]["videoActions"]["menuRenderer"]["topLevelButtons"][0]["segmentedLikeDislikeButtonRenderer"]["likeButton"]["toggleButtonRenderer"]["defaultText"]["simpleText"]
+        videoinfo["good"]=common_hash[0]["videoPrimaryInfoRenderer"]["videoActions"]["menuRenderer"]["topLevelButtons"][0]["segmentedLikeDislikeButtonViewModel"]["likeButtonViewModel"]["likeButtonViewModel"]["toggleButtonViewModel"]["toggleButtonViewModel"]["defaultButtonViewModel"]["buttonViewModel"]["title"]
         return videoinfo
     end
     
