@@ -35,6 +35,12 @@ RSpec.describe Youtubelive_analyze do
                     end
                 end
 
+                context 'ch_id is existence' do
+                     it 'return string ch_id' do
+                         expect(!(@videoinfo["chid"].empty?)).to eq true
+                     end
+                end
+
                 context 'title is existence' do
                     it 'return string title' do
                         expect(!(@videoinfo["title"].empty?)).to eq true
