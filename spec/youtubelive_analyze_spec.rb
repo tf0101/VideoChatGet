@@ -53,6 +53,12 @@ RSpec.describe Youtubelive_analyze do
                     end
                 end
 
+                context 'endtime is existence' do
+                    it 'return string endtime' do
+                        expect(!(@videoinfo["endtime"].empty?)).to eq true
+                    end
+                end
+
                 context 'videocount is existence' do
                     it 'return string videocount' do
                         expect(!(@videoinfo["videocount"].empty?)).to eq true
