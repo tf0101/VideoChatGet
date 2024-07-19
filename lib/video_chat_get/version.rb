@@ -1,3 +1,3 @@
 module VideoChatGet
-  VERSION = "0.3.6.8"
+  VERSION = "0.3.6.9"
 end

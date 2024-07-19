@@ -104,11 +104,13 @@ class Youtubelive_analyze<Video_analyze
     
 
 
-    def chat_scrape(log_flag=true,log_path=@chatlog_filepath)
+    def chat_scrape(log_flag=true,log_path=@chatlog_filepath,progressbar=true)
 
         chat_list=[]
         chat_count=0
-        next_url=@CHAT_REQUEST_URL + @videoinfo_body["contents"]["twoColumnWatchNextResults"]["conversationBar"]["liveChatRenderer"]["continuations"][0]["reloadContinuationData"]["continuation"]
+        next_path = @videoinfo_body.dig("contents", "twoColumnWatchNextResults", "conversationBar", "liveChatRenderer", "continuations", 0, "reloadContinuationData", "continuation")
+        return chat_list if next_path.nil?
+        next_url=@CHAT_REQUEST_URL + next_path
 
         while true do
             begin
@@ -117,7 +119,7 @@ class Youtubelive_analyze<Video_analyze
                     chat_count+=1
                     chat_list.push chat
                 end
-                progressbar(chat_count,"chat_count_inf")
+                progressbar(chat_count,"chat_count_inf") if progressbar
 
                 next_url=@CHAT_REQUEST_URL + chat_body["continuationContents"]["liveChatContinuation"]["continuations"][0]["liveChatReplayContinuationData"]["continuation"]
                 sleep(1)
