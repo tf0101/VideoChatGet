@@ -57,7 +57,7 @@ class Youtubelive_analyze<Video_analyze
 
         videoinfo["ch"]=common_hash.dig(1, "videoSecondaryInfoRenderer", "owner", "videoOwnerRenderer", "title", "runs", 0, "text")
         videoinfo["chid"]=common_hash.dig(1, "videoSecondaryInfoRenderer", "owner", "videoOwnerRenderer", "title", "runs", 0, "navigationEndpoint", "browseEndpoint", "browseId")
-        videoinfo["title"]=common_hash.dig(0, "videoPrimaryInfoRenderer", "title", "runs", 0, "text")
+        videoinfo["title"]=common_hash.dig(0, "videoPrimaryInfoRenderer", "title", "runs")&.map { |run| run.dig("text") }&.join
         videoinfo["starttime"]=common_hash.dig(0, "videoPrimaryInfoRenderer", "dateText", "simpleText")
         videoinfo["endtime"]=common_hash.dig(0, "videoPrimaryInfoRenderer","relativeDateText","simpleText")
         videoinfo["videocount"]=common_hash.dig(0, "videoPrimaryInfoRenderer", "viewCount", "videoViewCountRenderer", "viewCount", "simpleText")
